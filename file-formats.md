@@ -2,10 +2,12 @@
 
 Bike supports three file formats: Bike, OPML, and Plain Text.
 
+### Choose Format
+
 * When you first save a document you will be presented with a "Save As" file dialogue. At the bottom you will see a "File Format" popup button for choosing file format.
 * To change an existing document's file format choose the menu `File > Duplicate (Command-Shift-S)`. The document will be duplicated and you will be presented with the "Save As" dialogue where you can choose a new format.
 
-### File Format Options
+### Format Options
 
 `.bike`: This is Bike's native format and the one I would recommend using. It supports all Bike features and it's also a HTML document so you can view Bike files in your web browser.
 

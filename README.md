@@ -1,8 +1,4 @@
----
-description: Tool for thought
----
-
-# Bike
+# What is MyProduct?
 
 {% hint style="info" %}
 **Good to know:** providing a brief overview of your product and its core use cases is a great place to start with product docs. Your product might seem obvious to you – you made it! However, to others, even folks who are trying your product after reading your site or getting a sales demo, it can still be unclear. This is your chance to clarify your product and set the right expectations!
@@ -19,6 +15,16 @@ Here are a couple of examples of succinct overviews from products with really gr
 > The Mailchimp Marketing API provides programmatic access to Mailchimp data and functionality, allowing developers to build custom features to do things like sync email activity and campaign analytics with their database, manage audiences and campaigns, and more.
 >
 > — From the [Mailchimp Marketing API docs](https://mailchimp.com/developer/marketing/docs/fundamentals/)
+
+## Getting Started
+
+**Got 2 minutes?** Check out a video overview of our product:
+
+{% embed url="https://www.loom.com/share/3bfa83acc9fd41b7b98b803ba9197d90" %}
+
+{% hint style="info" %}
+**Good to know:** A succinct video overview is a great way to introduce folks to your product. Embed a Loom, Vimeo or YouTube video and you're good to go! We love this video from the fine folks at [Loom](https://loom.com) as a perfect example of a succinct feature overview.
+{% endhint %}
 
 ### Guides: Jump right in
 
@@ -48,8 +54,8 @@ Learn the fundamentals of MyProduct to get a deeper understanding of our main fe
 [projects.md](fundamentals/projects.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="fundamentals/members.md" %}
+[members.md](fundamentals/members.md)
 {% endcontent-ref %}
 
 {% content-ref url="fundamentals/task-lists.md" %}

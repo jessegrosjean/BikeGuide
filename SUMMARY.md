@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Bike](README.md)
+* [What is MyProduct?](README.md)
 
 ## Guides
 
@@ -11,6 +11,7 @@
 ## Fundamentals
 
 * [Projects](fundamentals/projects.md)
+* [Members](fundamentals/members.md)
 * [Task Lists](fundamentals/task-lists.md)
 * [Tasks](fundamentals/tasks.md)
 
@@ -18,8 +19,8 @@
 
 * [For Designers](use-cases/for-designers/README.md)
   * [Figma Integration](use-cases/for-designers/figma-integration.md)
-  * [GitHub Integration](use-cases/for-designers/github-integration.md)
-* [For Engineers](use-cases/for-engineers.md)
+* [For Engineers](use-cases/for-engineers/README.md)
+  * [GitHub Integration](use-cases/for-engineers/github-integration.md)
 * [For Support](use-cases/for-support/README.md)
   * [Intercom Integration](use-cases/for-support/intercom-integration.md)
 

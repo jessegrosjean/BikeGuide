@@ -1,5 +1,6 @@
 # Table of contents
 
 * [Why Bike?](README.md)
-* [File Formats](file-formats.md)
+* [Using Files](using-files.md)
+* [Using Links](using-links.md)
 * [Keyboard Shortcuts](keyboard-shortcuts.md)

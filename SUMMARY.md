@@ -4,3 +4,4 @@
 * [Using Files](using-files.md)
 * [Using Links](using-links.md)
 * [Keyboard Shortcuts](keyboard-shortcuts.md)
+* [Using Windows](using-windows.md)

@@ -1,6 +1,6 @@
 # Getting Started
 
-Use Bike to record and process your ideas.
+Bike is an outliner:
 
 ![This is Bike](.gitbook/assets/bike.png)
 

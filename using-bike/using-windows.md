@@ -1,5 +1,7 @@
 # Using Windows
 
+Describe restorable state.
+
 Bike allows you to open multiple Windows of the same outline document. Each window can have different select, focus, and expand/collapse. Windows will be restored next time you open Bike.
 
 * Use File > New Window to open a new window for the current outline

@@ -1,12 +1,12 @@
 # Using Windows
 
-From the macOS User's Guide:
+macOS User's Guide:
 
 * [Manage app windows](https://support.apple.com/guide/mac-help/work-with-app-windows-mchlp2469/12.0/mac/12.0)
 * [Use tabs in windows](https://support.apple.com/guide/mac-help/use-tabs-in-windows-mchla4695cce/12.0/mac/12.0)
 * [See open windows and spaces in Mission Control](https://support.apple.com/guide/mac-help/open-windows-spaces-mission-control-mh35798/12.0/mac/12.0)
 
-Bike also supports:
+In addition to standard macOS window behavoir, Bike also supports:
 
 #### Floating windows
 

@@ -1,8 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Getting Started](<README (1).md>)
-* [Why Bike?](<README (1) (1).md>)
+* [Getting Started](getting-started.md)
+* [Why Bike?](why-bike.md)
 * [Using Bike](using-bike/README.md)
   * [Using Check Panel](using-bike/using-check-panel.md)
   * [Using Documents](using-bike/using-documents.md)

@@ -1,8 +1,6 @@
 # Using Windows
 
-First read [Manage app windows on Mac](https://support.apple.com/guide/mac-help/work-with-app-windows-mchlp2469/12.0/mac/12.0) to learn the basics.
-
-In addition to standard window behavior Bike allows:
+First read [Manage app windows on Mac](https://support.apple.com/guide/mac-help/work-with-app-windows-mchlp2469/12.0/mac/12.0) to learn the basics. In addition to that standard behavior Bike also allows:
 
 #### Floating windows
 

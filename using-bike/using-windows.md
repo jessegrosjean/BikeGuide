@@ -1,6 +1,6 @@
 # Using Windows
 
-From macOS User's Guide:
+From macOS User Guide:
 
 * [Manage app windows](https://support.apple.com/guide/mac-help/work-with-app-windows-mchlp2469/12.0/mac/12.0)
 * [Use tabs in windows](https://support.apple.com/guide/mac-help/use-tabs-in-windows-mchla4695cce/12.0/mac/12.0)

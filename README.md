@@ -1,5 +1,7 @@
-# Getting Started
+# Introduction
 
-Welcome, I'm glad you are using Bike.
+Bike is a tool for thought.
 
-Bike is a simple tool that can be used for many purposes.
+Use Bike to record and process your ideas. Bike is a fast and fluid outliner—a simple tool that feels nice. Bike is inspired by this quote:
+
+> We were promised bicycles for the mind, but we got aircraft carriers instead – Jonathan Edwards

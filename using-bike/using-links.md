@@ -1,5 +1,7 @@
 # Using Links
 
+![Links](../.gitbook/assets/links.png)
+
 Bike highlights URL and email links as you type.
 
 When you activate a link it will be opened in the app that has been configured to open that link link type. For example `http` links will open in your web browser.

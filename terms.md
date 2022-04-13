@@ -2,6 +2,7 @@
 
 When describing an outline it's common to use the following terms:
 
+* _Handle_: The triangle to the left of each item __&#x20;
 * _Parent_: The parent of an item is the item that directly contains it
 * _Child_: The children of an item are the items that it directly contains
 * _Sibling_: All children that have the same parent item are siblings

@@ -4,10 +4,11 @@
 
 Use the checking panel to find potential problems in your outline.
 
-Checking will check your entire outline if you haven't focused into a specific branch. If you have focused your outline then checking will only check that focused region. Checking will always check into collapsed items and will expand them to show Check Next results.
+Checking will check the focused branch of your outline. Checking will always check into collapsed items and will expand those items to show Check Next results.
 
-* To show the checking panel and find the next issue use the menu item Edit > Checking > Check Next (`Command-;`)
-* To hide the checking panel press the `Escape` key, or click the Done button.
+#### To show the checking panel and advance to the next suggestion
+
+* Use the menu item Edit > Checking > Check Next (`Command-;`)
 
 #### To advance to the next suggestion
 
@@ -28,3 +29,8 @@ Checking will check your entire outline if you haven't focused into a specific b
 
 * Click the `Replace` button in the checking panel
 * Or press `Return` to apply the correction
+
+#### To hide the checking panel
+
+* Click the `Done` button in the checking panel
+* Or press the `Escape` key

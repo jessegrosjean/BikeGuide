@@ -1,19 +1,23 @@
 # Using Links
 
-Bike highlights URL and email links in your outlines. For example type any of the following the the link will be highlighted. Click on the link to activate.
+Bike automatically highlights URL and email links in your outlines.
 
-* https://www.hogbaysoftware.com
-* www.hogbaysoftware.com
-* jesse@hogbaysoftware.com
+For example type any of the following into Bike and the link will be highlighted. Click on the highlighted link to activate it.
 
-``
+```
+https://www.hogbaysoftware.com
+www.hogbaysoftware.com
+jesse@hogbaysoftware.com
+```
+
+When you activate a link it will be opened in the app that has been configured to open that kind of link. For example `http` links will open in your web browser.
 
 {% hint style="info" %}
-To activate a link using only your keyboard:
+To activate a link without having to use the mouse:
 
-1. Place text caret in the link
-2. Choose menu View > Show Context Menu (`Control-M`)
-3. Choose "Open Link" from that menu
+1. Place text caret somewhere in the link
+2. Show context menu with keyboard shortcut `Control-M`
+3. Press down arrow to choose "Open Link" from context menu
 {% endhint %}
 
 Bike allows you to create links to items in your outline. These links are normal URLs, you can paste them into other macOS apps and they'll still work. For example you can save a Bike link into Apple's "Notes" and when you click that link it will open Bike and select the linked item.

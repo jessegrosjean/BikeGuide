@@ -1,8 +1,8 @@
 # Using Find Panel
 
-![Find Panel](../.gitbook/assets/find.png)
+Use the find panel to find text in your outline:
 
-Use the find panel to find text in your outline.
+![Find Panel](../.gitbook/assets/find.png)
 
 Find will search the focused branch of your outline. Find will always search into collapsed items and will expand those items to show Find Next results. As you type in your search matches are highlighted. The current match is highlighted in a brighter color.
 

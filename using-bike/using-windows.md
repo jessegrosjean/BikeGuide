@@ -1,6 +1,8 @@
 # Using Windows
 
-Bike windows work like standard macOS windows. I recommend reading [Manage app windows on Mac](https://support.apple.com/guide/mac-help/work-with-app-windows-mchlp2469/12.0/mac/12.0) to learn the basics. Even if you've been using macOS for decades you might learn something useful. Bike also adds these features:
+First read [Manage app windows on Mac](https://support.apple.com/guide/mac-help/work-with-app-windows-mchlp2469/12.0/mac/12.0) to learn the basics.
+
+In addition to standard window behavior Bike allows:
 
 #### Floating windows
 

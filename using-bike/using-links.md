@@ -1,38 +1,24 @@
 # Using Links
 
-Bike automatically highlights URL and email links in your outlines.
+Bike highlights URL and email links as you type.
 
-For example type any of the following into Bike and the link will be highlighted. Click on the highlighted link to activate it.
-
-```
-https://www.hogbaysoftware.com
-www.hogbaysoftware.com
-jesse@hogbaysoftware.com
-```
-
-When you activate a link it will be opened in the app that has been configured to open that kind of link. For example `http` links will open in your web browser.
+When you activate a link it will be opened in the app that has been configured to open that link link type. For example `http` links will open in your web browser.
 
 {% hint style="info" %}
-To activate a link without having to use the mouse:
+To activate a link without the mouse:
 
 1. Place text caret somewhere in the link
 2. Show context menu with keyboard shortcut `Control-M`
-3. Press down arrow to choose "Open Link" from context menu
+3. Press down arrow to choose Open Link from that menu
 {% endhint %}
 
 ### Bike Links
 
-Bike has its own link type. A link that starts with `bike://` is a bike link. Bike links allow you to link directly to an item in your outline.
+Bike links start with `bike://`. These links allow you to link directly to an item in your outline.
 
-Bike links are normal URLS, you can paste them into other macOS apps and they'll still work. For example you can save a Bike link into Apple's "Notes" and when you click that link it will open Bike and select the linked item.
+Bike links are normal URLs. You can paste them into other macOS apps and they'll continue to work. For example you can paste a Bike link into Apple's Notes app and when you click that link it will open Bike and select the linked to item.
 
-#### To create a Bike link:
-
-Use Edit > Copy Link `Shift-Command-C` to copy a link to the selected item.
-
-Drag an item by its triangle handle and then hold down the `Control` key before releasing the mouse. A link to the dragged item will be inserted into your outline.
-
-This is what a Bike link looks like:
+This is a Bike link:
 
 ```
 bike://dnyzqSRa#Ir
@@ -40,21 +26,29 @@ bike://dnyzqSRa#Ir
 
 Bike links are composed of three parts. The first part, `bike` identifiers the link as a Bike link. The second part, `dnyzqSRa`, is the root id of the linked to outline. The third part, `Ir`, is the id of the linked to item.
 
-A nice feature of these Bike links is that they won't break when you edit your outline or move/rename your outline file.
+A nice feature of Bike links is that they won't break when you edit your outline or rename your outline file.
+
+#### To create a Bike link:
+
+Use the menu Edit > Copy Link `Shift-Command-C` to copy a link to the selected item.
+
+Alternatively you can drag an item by its triangle handle and then hold down the `Control` key before releasing the mouse. A link to the dragged item will be inserted into your outline.
 
 ### Bike Path Links
 
-Bike links also have an alternative form. Path links use a file path to locate the associated document file instead of using the outline's root id. Bike path links look like this:
+Bike links also have an alternative form. Bike path links use a file path to locate the associated outline file instead of using the outline's root id.
+
+This is a Bike path link:
 
 ```
 bike:///Users/jessegrosjean/Documents/todo.bike#aF
 ```
 
-Path links are more likely to break then standard Bike links. If you move or rename the linked to outline then the link will stop working. On the other hand path links use simpler technology and may be preferable in some situations. I generally recommend using the standard id based Bike links.
+Path links are more likely to break then normal Bike links. If you move or rename the linked to outline then the link will break. I generally recommend using normal Bike links.
 
 #### To create a Bike path link:
 
-Use Edit > Copy Path Link to copy a path link to the selected item.
+Use the menu Edit > Copy Path Link to copy a path link to the selected item.
 
 ### What if a link stops working?
 

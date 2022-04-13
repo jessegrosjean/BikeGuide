@@ -2,8 +2,8 @@
 
 First make sure you've read [Getting Started](../).
 
-This is the reference section of the user's guide. I've tried to document everything you might want to know about Bike and how to use it in these pages.
-
+* [Text Editing](text-editing.md)
+* [Outline Editing](outline-editing.md)
 * [Using Check Panel](using-check-panel.md)
 * [Using Documents](using-documents.md)
 * [Using Find Panel](using-find-panel.md)

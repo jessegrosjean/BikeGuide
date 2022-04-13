@@ -6,12 +6,6 @@ Bike is an outliner.
 
 Items in Bike are organized into hierarchies. This is our outline. Above you can see that the Maine item is part of New England, and New England is part of the United States.
 
-Outlines are pretty simple
-
-When describing an outline it's common to use _parent_, _child_, _sibling_ terminology. For example in the outline above Maine is a child of New England. Connecticut is a sibling of Maine. New England is a parent of Maine.
-
-***
-
 #### To create an item
 
 Use the `Return` key to insert a new item into your outline.

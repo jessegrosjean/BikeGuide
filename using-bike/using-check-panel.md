@@ -34,3 +34,8 @@ Checking will check the focused branch of your outline. Checking will always che
 
 * Click the `Done` button in the checking panel
 * Or press the `Escape` key
+
+### Check Panel Options
+
+* _Check Spelling_: Use macOS spell checker to perform spell checking, highlighting problems in your outline.&#x20;
+* _Check Grammar_: Use the macOS spell checker to perform grammar checking, highlighting problems in your outline.

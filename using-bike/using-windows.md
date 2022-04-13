@@ -8,12 +8,14 @@ From macOS User Guide:
 
 In addition to this standard macOS behavior, Bike also supports:
 
-#### Floating windows
+#### To make a window float above all other windows
 
-To make the current Bike window float above all other windows check the menu item Window > Float on Top. Uncheck that same menu item to restore normal behavior.
+* Check the menu item Window > Float on Top
+* Uncheck that same menu item to restore normal behavior.
 
-#### Open a single document in multiple windows
+#### To open a single document in multiple windows
 
 ![](../.gitbook/assets/windows.png)
 
-To open a new window for a Bike document use the menu item File > New Window (`Option-Command-N`). Each window maintains its own selection, focused item, and expanded item.
+* Use the menu item File > New Window (`Option-Command-N`)
+* Each window maintains its own selection, focused item, and expanded items.

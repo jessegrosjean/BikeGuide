@@ -4,12 +4,8 @@ First read [Manage app windows on Mac](https://support.apple.com/guide/mac-help/
 
 #### Floating windows
 
-Bike allows you to "float" a window over all your other macOS windows. This can be useful if you have a "notes" style outline that you always want visible.
-
 Check the menu item Window > Float on Top to float the current Bike window over all other windows. Uncheck that menu item to restore normal overlapping window behavior.
 
 #### Multiple windows viewing a single document
 
-Bike allows you to view a single outline in multiple windows. This can be most useful if each window is focused into a different part of that outline.
-
-To open a new window on an existing outline use the menu File > New Window (`Option-Command-N`).
+To open a new window for an existing outline use the menu item File > New Window (`Option-Command-N`).

@@ -6,8 +6,6 @@ From macOS User Guide:
 * [Create and work with documents](https://support.apple.com/guide/mac-help/create-and-work-with-documents-mchldc1dd114/12.0/mac/12.0)
 * [View and restore past versions of documents](https://support.apple.com/guide/mac-help/view-and-restore-past-versions-of-documents-mh40710/12.0/mac/12.0)
 
-Bike supports three file formats: `.bike`, `.opml`, and `.txt`.
-
 ### Format Options
 
 `.bike`: This is Bike's native format and the one I would recommend using. It supports all Bike features. It is also an HTML document–you can view Bike files in your web browser.

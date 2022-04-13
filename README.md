@@ -1,7 +1,28 @@
-# Introduction
+# Getting Started
 
-Bike is a tool for thought.
+![This is Bike](.gitbook/assets/bike.png)
 
-Use Bike to record and process your ideas. Bike is a fast and fluid outliner—a simple tool that feels nice. Bike is inspired by this quote:
+Use Bike to record and process your ideas.
 
-> We were promised bicycles for the mind, but we got aircraft carriers instead – Jonathan Edwards
+Items in Bike are organized into hierarchies. These hierarchies make up your outline. Above you can see that the Maine item is part of New England, and New England is part of the United States.
+
+#### To create an item
+
+* Press the `Return` key to insert an item into your outline.
+
+#### To change an item's indentation level
+
+* Press the `Tab` key to indent an item
+* Press `Shift-Tab` to unindent an item
+
+#### To show and hide detail in your outline
+
+* Click an item's triangle handle to collapse an item, hiding it's children
+* Click that same handle to expand the item, showing it's children
+
+#### To focus into a specific part of your outline, hiding everything else
+
+* Command-Click an item's handle
+* Command-Click on a focused item's handle to unfocus it
+
+That's it, just a few commands, but once you internalize them and learn their keyboard shortcuts you've got a great place to think.

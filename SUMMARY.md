@@ -1,7 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
-* [Getting Started](getting-started.md)
+* [Getting Started](README.md)
 * [Why Bike?](why-bike.md)
 * [Using Bike](using-bike/README.md)
   * [Text Editing](using-bike/text-editing.md)

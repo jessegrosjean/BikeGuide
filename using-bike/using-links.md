@@ -7,11 +7,7 @@ Bike highlights URL and email links as you type.
 When you activate a link it will be opened in the app that has been configured to open that link link type. For example `http` links will open in your web browser.
 
 {% hint style="info" %}
-To activate a link without the mouse:
-
-1. Place text caret somewhere in the link
-2. Show context menu with keyboard shortcut `Control-M`
-3. Press down arrow to choose Open Link from that menu
+To activate a link without the mouse place the text caret somewhere in the link. Then show the context menu with the menu item View > Show Context Menu (`Control-M`). Use arrow keys to choose Open Link from that menu.
 {% endhint %}
 
 ### Bike Links
@@ -32,7 +28,7 @@ A nice feature of Bike links is that they won't break when you edit your outline
 
 #### To create a Bike link:
 
-Use the menu Edit > Copy Link `Shift-Command-C` to copy a link to the selected item.
+* Use the menu Edit > Copy Link `Shift-Command-C` to copy a link to the selected item.
 
 Alternatively you can drag an item by its triangle handle and then hold down the `Control` key before releasing the mouse. A link to the dragged item will be inserted into your outline.
 
@@ -50,7 +46,7 @@ Path links are more likely to break then normal Bike links. If you move or renam
 
 #### To create a Bike path link:
 
-Use the menu Edit > Copy Path Link to copy a path link to the selected item.
+* Use the menu Edit > Copy Path Link to copy a path link to the selected item.
 
 ### What if a link stops working?
 

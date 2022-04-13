@@ -14,4 +14,6 @@ To make the current Bike window float above all other windows check the menu ite
 
 #### Open a single document in multiple windows
 
+![](../.gitbook/assets/windows.png)
+
 To open a new window for a Bike document use the menu item File > New Window (`Option-Command-N`). Each window maintains its own selection, focused item, and expanded item.

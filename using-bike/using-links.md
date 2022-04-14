@@ -1,10 +1,10 @@
 # Using Links
 
-Bike highlights URL and email links as you type:
-
 ![Links](../.gitbook/assets/links.png)
 
-When you activate a link it will be opened in the app that has been configured to open that link link type. For example `http` links will open in your web browser.
+Bike highlights URL and email links as you type.
+
+When you activate a link by clicking on it the link will be opened in the app configured to open that link link type. For example `http` links will open in your web browser.
 
 {% hint style="info" %}
 To activate a link without the mouse place the text caret somewhere in the link. Then show the context menu with the menu item View > Show Context Menu (`Control-M`). Use arrow keys to choose Open Link from that menu.
@@ -12,9 +12,9 @@ To activate a link without the mouse place the text caret somewhere in the link.
 
 ### Bike Links
 
-Bike links start with `bike://`. These links allow you to link directly to an item in your outline.
+Bike includes its own link type that allows you to link directly to an item in your outline.
 
-Bike links are normal URLs. You can paste them into other macOS apps and they'll continue to work. For example you can paste a Bike link into Apple's Notes app and when you click that link it will open Bike and select the linked to item.
+Bike links are normal URLs. You can paste them into other apps and they'll continue to work as long as Bike is installed on your computer. For example you can paste a Bike link into Apple's Notes app and when you click that link it will open Bike and select the linked to item.
 
 This is a Bike link:
 
@@ -22,9 +22,7 @@ This is a Bike link:
 bike://dnyzqSRa#Ir
 ```
 
-Bike links are composed of three parts. The first part, `bike` identifiers the link as a Bike link. The second part, `dnyzqSRa`, is the root id of the linked to outline. The third part, `Ir`, is the id of the linked to item.
-
-A nice feature of Bike links is that they won't break when you edit your outline or rename your outline file.
+Bike links are composed of three parts. The first part, `bike` identifiers the link as a Bike link. The second part, `dnyzqSRa`, is the id of the linked to outline. The third part, `Ir`, is the id of the linked to item. A nice feature of these links is that they won't break when you edit your outline or rename your outline file.
 
 #### To create a Bike link:
 
@@ -34,7 +32,7 @@ Alternatively you can drag an item by its triangle handle and then hold down the
 
 ### Bike Path Links
 
-Bike links also have an alternative form. Bike path links use a file path to locate the associated outline file instead of using the outline's root id.
+Bike links also have an alternative form. Bike path links use a file path to locate the associated outline file instead of using the outline's id.
 
 This is a Bike path link:
 
@@ -54,6 +52,6 @@ Links can "break" for some obvious and non-obvious reasons.
 
 * Create a link to a document and then delete that document. When you activate the link the document won't be found. This is probably not surprising!
 * Create a link to an item in a document and then delete that item. When you activate the link the document will be opened, but you'll get a warning that the linked item could not be found.
-* Bike uses Spotlight searches to resolve links. It associates the root id with the document file and then searches for that id using Spotlight. This means if something is going wrong with Spotlight then you are links won't work. This is a temporary problem, they will work again once the document id is again indexed with Spotlight.
+* Bike uses Spotlight searches to resolve links. It associates the outline id with the document file and then searches for that id using Spotlight. This means if something is going wrong with Spotlight then you are links won't work. This is a temporary problem, they will work again once the document id is again indexed with Spotlight.
 * This association between a document file and root id is done by setting the `com.apple.metadata:kMDItemIdentifier` extended file attribute each time Bike saves a file. This means if a file's extended attributes are somehow lost then links to that file will break until next time the file is opened and saved through Bike.
-* If you have two outline documents with the same root id (for example if you duplicate an outline file) then links to that root id will open both documents.
+* If you have two outline documents with the same outline id (for example if you duplicate an outline file) then links to that root id will open both documents.

@@ -21,8 +21,8 @@ This United States outline is good to demonstrate outline structure. Your own ou
 
 #### To show and hide detail in your outline
 
-* Click an item's triangle handle to collapse an item, hiding it's children
-* Click that same handle to expand the item, showing it's children
+* Click an item's triangle handle to collapse an item, hiding its children
+* Click that same handle to expand the item, showing its children
 
 #### To focus into a specific part of your outline, hiding everything else
 

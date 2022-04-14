@@ -2,12 +2,16 @@
 
 #### To focus in and focus out in your outline
 
+![Focus In](../.gitbook/assets/focus-in.png)
+
 * Focus In (`Option-Command-Right`)
 * Focus Out (`Option-Command-Left`)
 * Home (`Shift-Command-H`)\
   Focus all the way out to the root level of your outline.
 
 #### To expand and collapse items in your outline
+
+![Expand](../.gitbook/assets/expand.png)
 
 * Expand Row (`Command-0`)
 * Collapse Row (`Command-9`)

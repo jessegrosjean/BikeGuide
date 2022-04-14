@@ -8,7 +8,7 @@ Text editing should work as you expect. This is a nice feature of Bike. Often ou
 
 Bike also adds a few new text editing commands.
 
-#### Edit > Selection menu additions
+Selection commands:
 
 * Selection > Select World (`Control-W`)\
   Expand selection to word boundaries.
@@ -23,8 +23,10 @@ Bike also adds a few new text editing commands.
 * Selection > Contract Selection (`Option-Command-Down`)\
   Undo previous Expand Selection command.
 
-#### Item menu
+Item commands:
 
+* Item > Insert Item (`Command-Return`)\
+  This is similar to pressing `Return`. The difference is that it will always just insert a new item. Pressing `Return` will replace the selection with a newline to create the new item.&#x20;
 * Item > Duplicate (`Command-D`)
 * Item > Indent (`Control-Command-Right`)
 * Item > Outdent (`Control-Command-Left`)

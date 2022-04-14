@@ -9,7 +9,7 @@
 * Move Item Up: `Control-Command-Up`
 * Move Item Down: `Control-Command-Down`
 
-### Outline View
+### Outline
 
 * Focus In: `Option-Command-Right`
 * Focus Out: `Option-Command-Left`

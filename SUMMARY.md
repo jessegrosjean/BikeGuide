@@ -12,4 +12,4 @@
   * [Using Links](using-bike/using-links.md)
   * [Using Shortcuts](using-bike/using-shortcuts.md)
   * [Using Windows](using-bike/using-windows.md)
-* [Glossary](glossary.md)
+* [Glossary](terms.md)

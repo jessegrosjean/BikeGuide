@@ -1,5 +1,9 @@
 # Getting Started
 
+{% hint style="info" %}
+This is a first draft of the User Guide. Please let me know where I can improve things. Thanks and good luck with Bike.
+{% endhint %}
+
 ![This is Bike](.gitbook/assets/bike.png)
 
 Bike is an outliner. Items in Bike are organized into hierarchies. These hierarchies make up your outline. Above you can see that the Maine item is part of New England, and New England is part of the United States.

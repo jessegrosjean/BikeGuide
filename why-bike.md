@@ -11,4 +11,4 @@ Why Bike?
 
 Bike is also _fluid_. Outliners can get confusing when they make big changes to your view. I custom build Bike's text editor too smoothly animate these changes. Your ideas flow across the screen instead of jumping from position to position. This makes Bike easier to use, and in my experience just more fun too.
 
-Bike is just getting started. I've been building on the outliner idea for a long time, Bike's the next chapter and I'm excited to see what comes of it.
+Bike is just getting started. I've been building on the outliner idea for a long time, Bike is the next chapter.

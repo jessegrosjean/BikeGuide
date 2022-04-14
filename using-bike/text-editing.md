@@ -34,7 +34,7 @@ Item commands:
 * Item > Move Down (`Control-Command-Down`)
 
 {% hint style="info" %}
-Indent and Outdent are important and used frequently. There are multiple keyboard shortcuts to perform these two commands. First you can use `Tab` and `Shift-Tab`as described in [Getting Started](../). Second you can use the above arrow key based shortcuts. Third you can use `Command-]` and `Command-[`.
+Indent and Outdent are important and used frequently. There are multiple keyboard shortcuts to perform these two commands. First you can use `Tab` and `Shift-Tab`as described in [Getting Started](<../README (1).md>). Second you can use the above arrow key based shortcuts. Third you can use `Command-]` and `Command-[`.
 {% endhint %}
 
 {% hint style="info" %}

@@ -2,7 +2,7 @@
 
 For the last few years I worked on my version of the "next big thing". Unfortunately it was so big that I could never quite finish it. And then I started having doubts about the core idea.
 
-I finally changed course last summer (2021). That's when I decided to build Bike–a fast and fluid outliner. I've already built a number of outliner like apps: TaskPaper–outline of projects and tasks, FoldingText–outline of markdown, Hog Bay Notebook–outline of folders and files.
+I finally changed course last summer (2021). That's when I decided to build Bike–a fast and fluid outliner. I've already built a number of outliner like apps: TaskPaper – outline of projects and tasks, FoldingText – outline of markdown, Hog Bay Notebook – outline of folders and files.
 
 Why Bike?
 

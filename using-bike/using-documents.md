@@ -10,7 +10,7 @@ From macOS User Guide:
 
 ![Format Options](../.gitbook/assets/formats.png)
 
-`.bike`: This is Bike's native format and the one I would recommend using. It supports all Bike features. It is also an HTML document–you can view Bike files in your web browser.
+`.bike`: This is Bike's native format and the one I would recommend using. It supports all Bike features. It is also an HTML document – you can view Bike files in your web browser.
 
 `.opml`: This is a standard format for saving outlines. Use `.opml` if you wish to edit your outline with Bike and another OPML compatible outliner.
 

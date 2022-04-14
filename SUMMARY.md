@@ -4,6 +4,7 @@
 * [Using Bike](using-bike/README.md)
   * [Text Editing](using-bike/text-editing.md)
   * [Outline Editing](using-bike/outline-editing.md)
+  * [Outline Viewing](using-bike/outline-viewing.md)
   * [Using Check Panel](using-bike/using-check-panel.md)
   * [Using Documents](using-bike/using-documents.md)
   * [Using Find Panel](using-bike/using-find-panel.md)

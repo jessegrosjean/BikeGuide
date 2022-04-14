@@ -1,6 +1,6 @@
 # Using Bike
 
-First make sure you've read [Getting Started](../).
+First get oriented by reading [Getting Started](../).
 
 * [Text Editing](text-editing.md)
 * [Outline Editing](outline-editing.md)

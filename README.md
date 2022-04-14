@@ -1,10 +1,10 @@
 # Getting Started
 
+Bike is an outliner:
+
 ![This is Bike](.gitbook/assets/bike.png)
 
-Bike is an outliner. Items in Bike are organized into hierarchies. These hierarchies make up your outline. Above you can see that the Maine item is part of New England, and New England is part of the United States.
-
-This United States outline is good to demonstrate outline structure. Your own outlines will likely look a bit messier. Use outlines to track ideas, projects, writing, to-do lists. More generally outliners are a great _tool for thought_.
+Items in Bike are organized into hierarchies. These hierarchies make up your outline. Above you can see that the Maine item is part of New England, and New England is part of the United States.
 
 #### To create an item
 
@@ -25,4 +25,4 @@ This United States outline is good to demonstrate outline structure. Your own ou
 * Command-Click an item's handle
 * Command-Click on a focused item's handle to unfocus it
 
-That's it, just a few commands. Internalize these commands. _Learn the keyboard shortcuts_. Once you've done that Bike will be a great place for you to think.
+That's it, just a few commands. Once you internalize these commands and learn their keyboard shortcuts you've got a great place to think. Learning the core keyboard shortcuts is important to get the most value out of Bike.

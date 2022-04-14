@@ -4,7 +4,7 @@
 
 Bike highlights links as you type.
 
-When you activate a link by clicking on it the link will be opened in the app configured to open that link link type. For example `http` links will open in your web browser.
+When you activate a link by clicking on it the link will be opened the appropriate app. For example web links will open in your browser.
 
 {% hint style="info" %}
 To activate a link without the mouse place the text caret somewhere in the link. Then show the context menu with the menu item View > Show Context Menu (`Control-M`). Use arrow keys to choose Open Link from that menu.
@@ -40,7 +40,7 @@ This is a Bike path link:
 bike:///Users/jessegrosjean/Documents/todo.bike#aF
 ```
 
-Path links are more likely to break then normal Bike links. If you move or rename the linked to outline then the link will break. I generally recommend using normal Bike links.
+Path links are more likely to break than normal Bike links. If you move or rename the linked to outline then the link will break. I generally recommend using normal Bike links.
 
 #### To create a Bike path link:
 

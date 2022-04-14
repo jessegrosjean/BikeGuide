@@ -42,4 +42,4 @@ Some command work the same in both modes:
 * Item > Insert Item (`Command-Return`)\
   Insert a new item
 * Item > Group (`Option-Command-G`)\
-  Inserts a new item above the selection. And then move the selection into that new item.
+  Inserts a new item above the selection. And then moves the selection into that new item.

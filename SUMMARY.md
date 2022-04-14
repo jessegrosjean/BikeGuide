@@ -12,5 +12,5 @@
   * [Using Find Panel](using-bike/using-find-panel.md)
   * [Using Links](using-bike/using-links.md)
   * [Using Windows](using-bike/using-windows.md)
-* [Keyboard Shortcuts](using-shortcuts.md)
+* [Keyboard Shortcuts](using-bike/using-shortcuts.md)
 * [Glossary](terms.md)

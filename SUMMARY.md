@@ -13,4 +13,5 @@
   * [Using Links](using-bike/using-links.md)
   * [Using Windows](using-bike/using-windows.md)
 * [Keyboard Shortcuts](using-bike/using-shortcuts.md)
+* [Software](software.md)
 * [Glossary](terms.md)

@@ -2,7 +2,7 @@
 
 ![Outline Editing](../.gitbook/assets/outline-editing.png)
 
-In addition to [Text Editing](text-editing.md) Bike supports outline editing mode. When in outline editing mode items are block selected as shown in the images above.
+In addition to [Text Editing](text-editing.md) Bike supports outline editing mode. When in outline editing mode items are always fully selected as shown above. You don't select individual text characters when in outline editing mode.
 
 #### To enter and exit outline editing mode
 

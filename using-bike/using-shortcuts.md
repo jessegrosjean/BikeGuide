@@ -1,6 +1,6 @@
 # Keyboard Shortcuts
 
-### Items
+### Item
 
 * Create Item: `Return`
 * Delete Item: `Escape` to outline mode, then `Delete`
@@ -16,7 +16,7 @@
 * Expand Item: `Command-0` or `Escape` to outline mode, then `Right`
 * Collapse Item: `Command-9` or `Escape` to outline mode, then `Left`
 
-### Others
+### More
 
 * Toggle text/outline mode: `Escape`
 * Close Find Panel: `Escape`

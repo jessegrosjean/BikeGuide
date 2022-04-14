@@ -2,9 +2,7 @@
 
 ![Links](../.gitbook/assets/links.png)
 
-Bike highlights links as you type.
-
-When you activate a link by clicking on it the link will be opened the appropriate app. For example web links will open in your browser.
+Bike highlights links as you type. When you activate a link by clicking on it the link will be opened the appropriate app. For example web links will open in your browser.
 
 {% hint style="info" %}
 To activate a link without the mouse place the text caret somewhere in the link. Then show the context menu with the menu item View > Show Context Menu (`Control-M`). Use arrow keys to choose Open Link from that menu.

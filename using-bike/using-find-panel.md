@@ -1,10 +1,8 @@
 # Using Find Panel
 
-Use the find panel to find text in your outline:
-
 ![Find Panel](../.gitbook/assets/find.png)
 
-Find will search the focused branch of your outline. Find will always search into collapsed items and will expand those items to show Find Next results. As you type in your search matches are highlighted. The current match is highlighted in a brighter color.
+Use the find panel to find text in your outline.
 
 #### To show the find panel
 
@@ -14,6 +12,8 @@ Find will search the focused branch of your outline. Find will always search int
 
 * Click the Next button in the find panel
 * Or use Edit > Find > Find Next (`Command-G`)
+
+The current match is highlighted brighter then other matches.
 
 #### To go back to the previous match
 
@@ -34,6 +34,10 @@ Find will search the focused branch of your outline. Find will always search int
 * Click the `Done` button in the find panel
 * Or press the `Escape` key
 
+### What is Searched?
+
+Find will search the focused branch of your outline including collapsed items. Find Next will expand collapsed items to reveal and select the text that matches.
+
 ### Find Panel Options
 
 Find options show to the left of the search text field:
@@ -42,4 +46,4 @@ Find options show to the left of the search text field:
 
 `""` - Your search will match whole words.
 
-`.*` - Your search will be interperted as a regular expression
+`.*` - Your search will be interperted as a [regular expression](https://www.quora.com/What-are-the-best-resources-for-learning-regular-expressions).

@@ -1,10 +1,8 @@
 # Using Check Panel
 
-Use the checking panel to find potential problems in your outline:
-
 ![Checking Panel](../.gitbook/assets/check.png)
 
-Checking will check the focused branch of your outline. Checking will always check into collapsed items and will expand those items to show Check Next results.
+Use the checking panel to find potential problems in your outline.
 
 #### To show the checking panel and advance to the next suggestion
 
@@ -34,6 +32,10 @@ Checking will check the focused branch of your outline. Checking will always che
 
 * Click the `Done` button in the checking panel
 * Or press the `Escape` key
+
+### What is checked?
+
+Checking will check the focused branch of your outline including collapsed items. Check Next will expand collapsed items to reveal and select the text that needs checking.
 
 ### Check Panel Options
 

@@ -6,7 +6,7 @@ From macOS User Guide:
 * [Create and work with documents](https://support.apple.com/guide/mac-help/create-and-work-with-documents-mchldc1dd114/12.0/mac/12.0)
 * [View and restore past versions of documents](https://support.apple.com/guide/mac-help/view-and-restore-past-versions-of-documents-mh40710/12.0/mac/12.0)
 
-### Format Options
+### Bike Format Options
 
 ![Format Options](../.gitbook/assets/formats.png)
 

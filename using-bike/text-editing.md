@@ -38,5 +38,5 @@ Indent and Outdent are important and used frequently. There are multiple keyboar
 {% endhint %}
 
 {% hint style="info" %}
-In text editing mode, these commands all work on individual items, unconstrained by the outline structure. This is as you would expect in a text editor, but maybe different then you would expect if you are used to outliners. See [outline editing](outline-editing.md) for outline editing behavior.
+In text editing mode, these commands all work on individual items, unconstrained by the outline structure. This is as you would expect in a text editor, but maybe different than you would expect if you are used to outliners. See [outline editing](outline-editing.md) for outline editing behavior.
 {% endhint %}

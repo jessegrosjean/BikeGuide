@@ -6,7 +6,7 @@ From macOS User Guide:
 * [Use tabs in windows](https://support.apple.com/guide/mac-help/use-tabs-in-windows-mchla4695cce/12.0/mac/12.0)
 * [See open windows and spaces in Mission Control](https://support.apple.com/guide/mac-help/open-windows-spaces-mission-control-mh35798/12.0/mac/12.0)
 
-### Bike Additions
+### Bike Window Options
 
 #### To make a window float above all other windows
 

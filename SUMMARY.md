@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Bike](README.md)
-* [Getting Started](<README (1).md>)
+* [Getting Started](getting-started.md)
 * [Why Bike?](why-bike.md)
 * [Using Bike](using-bike/README.md)
   * [Text Editing](using-bike/text-editing.md)
@@ -12,6 +12,6 @@
   * [Using Find Panel](using-bike/using-find-panel.md)
   * [Using Links](using-bike/using-links.md)
   * [Using Windows](using-bike/using-windows.md)
-* [Keyboard Shortcuts](using-bike/using-shortcuts.md)
+* [Keyboard Shortcuts](keyboard-shortcuts.md)
 * [Software](software.md)
-* [Glossary](terms.md)
+* [Glossary](glossary.md)

@@ -1,6 +1,6 @@
 # Using Bike
 
-First get oriented by reading [Getting Started](<../README (1).md>).
+First get oriented by reading [Getting Started](broken-reference).
 
 * [Text Editing](text-editing.md)
 * [Outline Editing](outline-editing.md)
@@ -9,5 +9,5 @@ First get oriented by reading [Getting Started](<../README (1).md>).
 * [Using Documents](using-documents.md)
 * [Using Find Panel](using-find-panel.md)
 * [Using Links](using-links.md)
-* [Using Shortcuts](using-shortcuts.md)
+* [Using Shortcuts](../keyboard-shortcuts.md)
 * [Using Windows](using-windows.md)

@@ -35,4 +35,4 @@ Next I suggest you read:
 
 * [Text Editing](using-bike/text-editing.md)
 * [Outline Editing](using-bike/outline-editing.md)
-* [Keyboard Shortcuts](using-bike/using-shortcuts.md)
+* [Keyboard Shortcuts](keyboard-shortcuts.md)

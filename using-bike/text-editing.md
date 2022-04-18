@@ -26,7 +26,7 @@ Selection commands:
 Item commands:
 
 * Item > Insert Item (`Command-Return`)\
-  This is similar to pressing `Return`. The difference is that it will always just insert a new item. Pressing `Return` will replace the selection with a newline to create the new item.&#x20;
+  This is similar to pressing `Return`. The difference is that it will always just insert a new item. Pressing `Return` will replace the selection with a newline to create the new item.
 * Item > Duplicate (`Command-D`)
 * Item > Indent (`Control-Command-Right`)
 * Item > Outdent (`Control-Command-Left`)
@@ -34,7 +34,7 @@ Item commands:
 * Item > Move Down (`Control-Command-Down`)
 
 {% hint style="info" %}
-Indent and Outdent are important and used frequently. There are multiple keyboard shortcuts to perform these two commands. First you can use `Tab` and `Shift-Tab`as described in [Getting Started](<../README (1).md>). Second you can use the above arrow key based shortcuts. Third you can use `Command-]` and `Command-[`.
+Indent and Outdent are important and used frequently. There are multiple keyboard shortcuts to perform these two commands. First you can use `Tab` and `Shift-Tab`as described in [Getting Started](../getting-started.md). Second you can use the above arrow key based shortcuts. Third you can use `Command-]` and `Command-[`.
 {% endhint %}
 
 {% hint style="info" %}

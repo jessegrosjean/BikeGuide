@@ -10,7 +10,7 @@ Bike also adds a few new text editing commands.
 
 Selection commands:
 
-* Selection > Select World (`Control-W`)\
+* Selection > Select Word (`Control-W`)\
   Expand selection to word boundaries.
 * Selection > Select Sentence (`Control-S`)\
   Expand selection to sentence boundaries.

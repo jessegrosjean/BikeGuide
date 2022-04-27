@@ -11,9 +11,9 @@ Bike has two great ways to view big outlines:
 
 * Collapse Row (`Command-9`)
 * Expand Row (`Command-0`)
-* Collapse All (`Option-Command-9`)\
+* Collapse All (`Control-Command-9`)\
   Collapse the selected item and all items that it contains. This is a nice way to clean up a view, when you next expand the item its children will still be collapsed.
-* Expand All (`Option-Command-0`)\
+* Expand All (`Control-Command-0`)\
   Expand the selected item and all items that it contains. See the entire branch.
 
 #### To focus into your outline

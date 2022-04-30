@@ -15,8 +15,8 @@
 * Focus Out: `Option-Command-Left`
 * Expand Item: `Command-0` or `Escape` to outline mode, then `Right`
 * Collapse Item: `Command-9` or `Escape` to outline mode, then `Left`
-* Expand All Items: `Ctrl-Command-0`
-* Collapse All Items: `Ctrl-Command-9`
+* Expand All Items: `Control-Command-0`
+* Collapse All Items: `Control-Command-9`
 
 ### More
 

@@ -1,6 +1,6 @@
 # AppleScript
 
-Bike can be controlled and automated through the AppleScript scripting language. This is a work in progress. Here are a few sample scripts:
+Bike can be controlled and automated with AppleScript.
 
 #### Home Script
 

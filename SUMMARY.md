@@ -13,5 +13,6 @@
   * [Using Links](using-bike/using-links.md)
   * [Using Windows](using-bike/using-windows.md)
 * [Keyboard Shortcuts](keyboard-shortcuts.md)
+* [AppleScript](applescript.md)
 * [Software](software.md)
 * [Glossary](glossary.md)

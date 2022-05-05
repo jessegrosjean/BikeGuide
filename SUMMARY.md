@@ -12,6 +12,7 @@
   * [Using Find Panel](using-bike/using-find-panel.md)
   * [Using Links](using-bike/using-links.md)
   * [Using Windows](using-bike/using-windows.md)
+  * [Using Scripts](using-bike/using-scripts.md)
 * [Keyboard Shortcuts](keyboard-shortcuts.md)
 * [AppleScript](applescript.md)
 * [Software](software.md)

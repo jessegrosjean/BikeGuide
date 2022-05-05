@@ -7,7 +7,7 @@ Use scripts to automate Bike and integrate with other apps.
 1. Create a new test document in Bike
 2. Open the "Script Editor" app that comes with your mac and paste the script into a new "Script Editor" document
 3. Scripts are in either JavaScript or AppleScript. There's a pop up in the upper left of the Script Editor allowing you to choose the scripts format.
-4. Press the green "Run" button to run the script
+4. Press the "Play" button to run the script and test it out in your document.
 
 **To install a script in the system script menu:**
 

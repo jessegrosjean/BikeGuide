@@ -11,3 +11,4 @@ First get oriented by reading [Getting Started](broken-reference).
 * [Using Links](using-links.md)
 * [Using Shortcuts](../keyboard-shortcuts.md)
 * [Using Windows](using-windows.md)
+* [Using Scripts](using-scripts.md)

@@ -41,8 +41,6 @@ You'll get the most out of this script by using [Script Debugger](https://lateni
 
 ### Example scripts
 
-These are some small example/demo scripts.
-
 #### Home Script
 
 This script resets your view state to "Home"

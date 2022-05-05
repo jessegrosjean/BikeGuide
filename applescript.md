@@ -2,16 +2,18 @@
 
 Bike can be controlled and automated with AppleScript.
 
+UPDATES IN PROGRESS, SCRIPTS MAY NOT WORK UNTIL BIKE (45)
+
 #### Home Script
 
 This script resets your view state to "Home"
 
 ```
 tell front document of application "Bike"
-    set hoisted row to root row
-    if exists first child row then
-        select at first child row
-    end if
+  set hoisted row to root row
+  if exists first row then
+    select at first row
+  end if
 end tell
 ```
 
@@ -21,9 +23,9 @@ This script saves the current selected row, then collapses all rows, then restor
 
 ```
 tell front document of application "Bike"
-    set savedSelection to selection row
-    collapse at every child row with completely
-    select at savedSelection
+  set saved to selection row
+  collapse at root row with completely
+  select at saved
 end tell
 ```
 
@@ -40,28 +42,26 @@ set dayName to do shell script "date +'%B %d, %Y'"
 set dayId to do shell script "date +'%Y/%m/%d'"
 
 tell application "Bike"
-    set doc to front document
-    tell my makePath(doc, {{yearId, yearName}, {monthId, monthName}, {dayId, dayName}})
-        set inserted to make child row at front
-        tell doc to select at inserted
-    end tell
+  tell front document
+    set y to my getOrMake(yearId, yearName, root row)
+    set m to my getOrMake(monthId, monthName, y)
+    set d to my getOrMake(dayId, dayName, m)
+    select at make row at front of rows of d
+  end tell
 end tell
 
-to makePath(doc, pathItems)
-    tell application "Bike"
-        set current to doc
-        repeat with segment in pathItems
-            set segId to item 1 of segment
-            set segName to item 2 of segment
-            if exists row id segId of doc then
-                set current to row id segId of doc
-            else
-                tell current
-                    set current to make child row at front with properties {id:segId, name:segName}
-                end tell
-            end if
-        end repeat
-        return current
+to getOrMake(getId, getName, rowContainer)
+  tell application "Bike"
+    tell container document of rowContainer
+      if exists row id getId then
+        return row id getId
+      else
+        tell rowContainer
+          return make row at front with properties {id:getId, name:getName}
+        end tell
+      end if
     end tell
-end makePath
+  end tell
+end getOrMake
+
 ```

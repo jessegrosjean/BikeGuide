@@ -14,7 +14,7 @@ Use scripts to automate Bike and integrate with other apps.
 ```
 tell application "Bike"
   tell (make document with properties {name:"Testing!"})
-    delete every row
+    delete every row -- remove any welcome text
     tell (make row with properties {name:"Hello"})
       make row with properties {name:"World"}
     end tell

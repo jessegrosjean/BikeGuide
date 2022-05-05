@@ -18,4 +18,4 @@ From macOS User Guide:
 ![](../.gitbook/assets/windows.png)
 
 * Use the menu item File > New Window (`Option-Command-N`)
-* Each window maintains its own selection, focused row, and expanded row.
+* Each window maintains its own selection, focused item, and expanded items.

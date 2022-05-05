@@ -4,7 +4,7 @@ Use scripts to automate Bike and integrate with other apps.
 
 #### To run a script:
 
-![](../.gitbook/assets/run-script.png)
+![](<../.gitbook/assets/Screen Shot 2022-05-05 at 12.25.09 PM.png>)
 
 1. Open the "Script Editor" application that comes with your Mac.
 2. Paste the following script into a new editor window.

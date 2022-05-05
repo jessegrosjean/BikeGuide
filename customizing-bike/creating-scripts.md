@@ -13,33 +13,35 @@ The first step when creating your own scripts is to learn what parts of Bike are
 * &#x20;Drag and drop Bike's application icon onto Script Editor's application icon.
 * Or from Script Editor use the menu File > Open Dictionary.
 
-![](../.gitbook/assets/bike-dictionary.png)
+![](<../.gitbook/assets/Screen Shot 2022-05-05 at 12.20.00 PM.png>)
 
 ### Bike Scripting Overview
 
 When scripting Bike you are dealing with `documents`, `windows`, and `rows`. Documents and windows are common scripting objects, rows are specific to Bike.
 
-Each row represents a row in your outline. Rows have a `name` taken from the rows text. Rows also have an `id` and other attributes. Rows can also contain other rows. When you move or delete a row those contained rows are also moved or deleted.
+Each row represents a row in your outline. Rows have a `name` for accessing the row's text. Rows also have an `id` and other attributes. Rows can contain other rows. When you move or delete a row those contained rows are moved or deleted with it.
 
 You access rows in a few different ways:
 
-1. From properties of document such as `root row`, `selected row`, `focused row`, etc.
+1. From properties of a document such as `root row`, `selected row`, `focused row`, etc.
 2. From the `rows` collection belonging to each document. This collection contains all rows in the document. This collection is a good place to quickly find existing rows.
-3. From the `rows` collection belonging to each `row.` This collection contains only the rows that are directly contained by the  row. This collection is a good place for making new rows and moving existing rows too.
+3. From the `rows` collection belonging to each `row.` This collection contains only the rows that are directly contained by the  row (children). This collection is a good place for making new rows and a target to moving existing rows into.
 
-Generally when scripting you are working with the "Model" layer of Bike. That is the state that will be saved to disk. But you can also script some view state such as `focused row`,  `selected row`, and collapse/expand state.
+Generally when scripting you are working with the "model" layer of Bike. You can also script some view state such as `focused row`,  `selected row`, and collapsed state.
 
-These view properties are accessible through the document for convience, but Bike allows you to open mutliple windows to view a single document. If this is the case then those view properties will effect the `frontmost window`.
+These view properties are accessible through the document for convenience, but Bike allows you to open multiple windows to view a single document. If you have multiple windows viewing a single document than those view properties refer to the `frontmost window` of the documents windows.
 
 ### Demo Script
 
-This is a nonsense script demonstrates many of Bike's scripting abilities. It shows how to make rows, move rows, copy rows, etc. I've tried to comment each section that does something interesting.
+It's hard to know where to start.
 
-You get the most out of this script by using [Script Debugger](https://latenightsw.com). It's a bit expensive, but you should be able to run the trial on this script. The nice thing about Script Debugger is that it lets you step through the script line by line, so you can see how each command effects the Bike outline separately.
+This is a nonsense script to help you get started. It demonstrates many of Bike's scripting abilities and is a good place to see how basic things are done. It shows how to make rows, move rows, copy rows, etc.
 
-
+You'll get the most out of this script by using [Script Debugger](https://latenightsw.com). It's a bit expensive, but you should be able to run the trial on this script. The nice thing about Script Debugger is that it lets you step through the script line by line, so you can see how each command effects the Bike outline separately.
 
 ### Example scripts
+
+These are some small example/demo scripts.
 
 #### Home Script
 

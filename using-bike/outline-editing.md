@@ -2,7 +2,7 @@
 
 ![Outline Editing](../.gitbook/assets/outline-editing.png)
 
-In addition to [Text Editing](text-editing.md) Bike supports outline editing mode. When in outline editing mode items are always fully selected as shown above. You don't select individual text characters when in outline editing mode.
+In addition to [Text Editing](text-editing.md) Bike supports outline editing mode. When in outline editing mode rows are always fully selected as shown above. You don't select individual text characters when in outline editing mode.
 
 #### To enter and exit outline editing mode
 
@@ -17,21 +17,21 @@ In addition to [Text Editing](text-editing.md) Bike supports outline editing mod
 In Outline Editing mode the arrow keys have different behavior:
 
 * `Left` Key\
-  Collapse expanded items
+  Collapse expanded rows
 * `Right` Key\
-  Expand collapsed items
+  Expand collapsed rows
 * `Up` Key\
-  Move up by item
+  Move up by row
 * `Down` Key\
-  Move down by item
+  Move down by row
 
-The item commands described in the [Text Editing](text-editing.md) section work differently too. They work on branches, not individual items. Movements are also restricted to the outline structure.
+The row commands described in the [Text Editing](text-editing.md) section work differently too. They work on a row and all contained rows, not just individual rows. Movements are also restricted to the outline structure.
 
-* Item > Duplicate (`Command-D`)
-* Item > Indent (`Control-Command-Right`)
-* Item > Outdent (`Control-Command-Left`)
-* Item > Move Up (`Control-Command-Up`)
-* Item > Move Down (`Control-Command-Down`)
+* Row > Duplicate (`Command-D`)
+* Row > Indent (`Control-Command-Right`)
+* Row > Outdent (`Control-Command-Left`)
+* Row > Move Up (`Control-Command-Up`)
+* Row > Move Down (`Control-Command-Down`)
 
 Give it a try. Create a small outline and then try the above commands. First in text editing mode, second in outline editing mode. You'll soon see and understand the differences. Outline Editing mode can save a lot of time.
 
@@ -39,7 +39,7 @@ Give it a try. Create a small outline and then try the above commands. First in 
 
 Some command work the same in both modes:
 
-* Item > Insert Item (`Command-Return`)\
-  Insert a new item
-* Item > Group (`Option-Command-G`)\
-  Inserts a new item above the selection. And then moves the selection into that new item.
+* Row > Insert Row (`Command-Return`)\
+  Insert a new row
+* Row > Group (`Option-Command-G`)\
+  Inserts a new row above the selection. And then moves the selection into that new row.

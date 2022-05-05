@@ -6,7 +6,7 @@ Use the checking panel to find potential problems in your outline.
 
 #### To show the checking panel and advance to the next suggestion
 
-* Use the menu item Edit > Checking > Check Next (`Command-;`)
+* Use the menu Edit > Checking > Check Next (`Command-;`)
 
 #### To advance to the next suggestion
 
@@ -35,7 +35,7 @@ Use the checking panel to find potential problems in your outline.
 
 ### What is checked?
 
-Checking will check the focused branch of your outline including collapsed items. Check Next will expand collapsed items to reveal and select the text that needs checking.
+Checking will check the focused rows of your outline including collapsed rows. Check Next will expand collapsed rows to reveal and select the text that needs checking.
 
 ### Check Panel Options
 

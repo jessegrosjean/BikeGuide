@@ -14,4 +14,4 @@ From macOS User Guide:
 
 `.opml`: This is a standard format for saving outlines. Use `.opml` if you wish to edit your outline with Bike and another OPML compatible outliner.
 
-`.txt`: Bike can also work with plain text files. The outline structure is determined by the leading tab indentation. Text files don't offer any good place to store metadata (such as item ids). For this reason some features (such as links to items) will break when you close and then reopen a `.txt` based outline.
+`.txt`: Bike can also work with plain text files. The outline structure is determined by the leading tab indentation. Text files don't offer any good place to store metadata (such as item ids). For this reason some features (such as links to rows) will break when you close and then reopen a `.txt` based outline.

@@ -6,7 +6,7 @@ Use the find panel to find text in your outline.
 
 #### To show the find panel
 
-* Use the menu item Edit > Find > Find... (`Command-F`)
+* Use the menu Edit > Find > Find... (`Command-F`)
 
 #### To advance to the next match
 
@@ -36,7 +36,7 @@ The current match is highlighted brighter then other matches.
 
 ### What is Searched?
 
-Find will search the focused branch of your outline including collapsed items. Find Next will expand collapsed items to reveal and select the text that matches.
+Find will search the focused rows of your outline including collapsed rows. Find Next will expand collapsed rows to reveal and select the text that matches.
 
 ### Find Panel Options
 

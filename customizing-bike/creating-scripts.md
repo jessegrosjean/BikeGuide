@@ -13,38 +13,31 @@ The first step when creating your own scripts is to learn what parts of Bike are
 * &#x20;Drag and drop Bike's application icon onto Script Editor's application icon.
 * Or from Script Editor use the menu File > Open Dictionary.
 
-![](<../.gitbook/assets/Screen Shot 2022-05-05 at 12.20.00 PM.png>)
+![](../.gitbook/assets/bike-dictionary.png)
 
-### A quick scripting tour
+### Bike Scripting Overview
 
-When scripting Bike you are mainly dealing with `documents`, `windows`, and `rows`.
+When scripting Bike you are dealing with `documents`, `windows`, and `rows`. Documents and windows are common scripting objects, rows are specific to Bike.
 
-Documents and windows are common scripting objects common to many applications. Rows are specific to Bike.
+Each row represents a row in your outline. Rows have a `name` taken from the rows text. Rows also have an `id` and other attributes. Rows can also contain other rows. When you move or delete a row those contained rows are also moved or deleted.
 
-Each row represents a row in your outline. Rows have a `name` that is the same as the text shown for the row. Rows also have an `id` and other attributes. Rows can also contain other rows. When you move or delete a row those contained rows are also moved or deleted.
+You access rows in a few different ways:
 
-You get rows in a few different ways.
+1. From properties of document such as `root row`, `selected row`, `focused row`, etc.
+2. From the `rows` collection belonging to each document. This collection contains all rows in the document. This collection is a good place to quickly find existing rows.
+3. From the `rows` collection belonging to each `row.` This collection contains only the rows that are directly contained by the  row. This collection is a good place for making new rows and moving existing rows too.
 
-#### There are two important collections of rows in Bike:
+Generally when scripting you are working with the "Model" layer of Bike. That is the state that will be saved to disk. But you can also script some view state such as `focused row`,  `selected row`, and collapse/expand state.
 
-First, each document maintains a collection of all rows that are in the document. This collection is a good for when you are looking for a row anywhere in your document, or when you want to process each row in your document.
+These view properties are accessible through the document for convience, but Bike allows you to open mutliple windows to view a single document. If this is the case then those view properties will effect the `frontmost window`.
 
-```
-tell front document of application "Bike"
-  get row named "Projects" -- returns first row found in your document with name "Projects"
-  get row id "todo" -- returns row with id "todo" searching all rows in your document
-  get name of every row -- returns a list containing the name of each row
-end tell
-```
+### Demo Script
 
-Second, each row also maintains a list of the rows that it directly contains. This collection is good for when you are creating new rows or moving rows around in your outline. It's easier to control exactly where something goes if you add it directly to another row.
+This is a nonsense script demonstrates many of Bike's scripting abilities. It shows how to make rows, move rows, copy rows, etc. I've tried to comment each section that does something interesting.
 
-```
-tell front document of application "Bike"
-  get rows of root row -- returns only the top level rows in your outline, not all rows
-  move first row of row named "Backlog" to row named "Today" -- move row from "Backlog" to "Today"
-end tell
-```
+You get the most out of this script by using [Script Debugger](https://latenightsw.com). It's a bit expensive, but you should be able to run the trial on this script. The nice thing about Script Debugger is that it lets you step through the script line by line, so you can see how each command effects the Bike outline separately.
+
+
 
 ### Example scripts
 

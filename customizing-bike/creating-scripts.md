@@ -1,6 +1,6 @@
 # Creating Scripts
 
-Create scripts to automate Bike and integrate with other apps.
+Create scripts to automate Bike and integrate with other apps. If you are just interested to run a script that someone else has written please see the [Using Scripts](../using-bike/using-scripts.md) section.
 
 ### Overview
 
@@ -8,7 +8,7 @@ When scripting Bike you are dealing with `documents`, `windows`, and `rows`. Doc
 
 Each row represents a row in your outline. Rows have a `name` for accessing the row's text. Rows also have an `id` and other attributes. Rows can contain other rows. When you move or delete a row those contained rows are moved or deleted with it.
 
-You gain access to rows in a few different ways:
+You gain access to rows in a few ways:
 
 1. From properties of a document such as `root row`, `selected row`, `focused row`.
 2. From the `rows` collection belonging to each document. This collection contains all rows in the document (except for the root). This collection is a good place to quickly find existing rows.
@@ -25,13 +25,17 @@ Use Bike's scripting dictionary to learn what parts of Bike are scriptable.
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-05 at 12.20.00 PM.png>)
 
-### Demo Script
+### Getting Started
 
-It's hard to know where to start.
+Here's the official AppleScript starting point:
 
-This is a nonsense script to help you get started. It demonstrates many of Bike's scripting abilities and is a good place to learn how basic things are done. It shows how to make rows, move rows, copy rows, etc.
+* [Introduction to AppleScript Language Guide](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR\_intro.html)
 
-You'll get the most out of this script by using [Script Debugger](https://latenightsw.com). It's a bit expensive, but you should be able to run the trial for this script. The nice thing about Script Debugger is that it lets you step through the script line by line, so you can see how each command effects the Bike outline separately.
+If you read through that you'll be off to a great start. Many people just wing it, find an existing script that works and then modify it to do what you want. It can be painful, I recommend reading the guide so that you understand what is really going on. With that said I haven't ready the guide myself. Oops!
+
+The starting point for lesser people, such as myself, is to find example scripts and then randomly change them until they do what you want. That's what I have for you here.
+
+You'll get the most out of these scripts by using [Script Debugger](https://latenightsw.com) instead of Script Editor that comes with your Mac. Among other things Script Debugger allows you to step through the script line by line so you can see the effect of each command on you document.
 
 ```
 tell application "Bike"

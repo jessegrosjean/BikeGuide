@@ -4,7 +4,7 @@ Create scripts to automate Bike and integrate with other apps.
 
 ### Bike's Scripting Dictionary
 
-The first step when creating your own scripts is to learn what parts of Bike are scriptable. To do that you need to open Bike's scripting dictionary in the "Script Editor" application that comes your your Mac. The scripting dictionary shows all the commands and objects that you can use when scripting Bike.
+The first step when creating your own scripts is to learn what parts of Bike are scriptable. To do that you need to open Bike's scripting dictionary in the "Script Editor" application that comes with your Mac. The scripting dictionary shows all the commands and objects that you can use when scripting Bike.
 
 #### To open Bike's scripting dictionary:
 

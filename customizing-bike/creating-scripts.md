@@ -2,18 +2,7 @@
 
 Create scripts to automate Bike and integrate with other apps.
 
-### Bike's Scripting Dictionary
-
-The first step when creating your own scripts is to learn what parts of Bike are scriptable. To do that you need to open Bike's scripting dictionary in the "Script Editor" application that comes with your Mac. The scripting dictionary shows all the commands and objects that you can use when scripting Bike.
-
-#### To open Bike's scripting dictionary:
-
-* Drag and drop Bike's application icon onto Script Editor's application icon.
-* Or from Script Editor use the menu File > Open Dictionary.
-
-![](<../.gitbook/assets/Screen Shot 2022-05-05 at 12.20.00 PM.png>)
-
-### Bike Scripting Overview
+### Overview
 
 When scripting Bike you are dealing with `documents`, `windows`, and `rows`. Documents and windows are common scripting objects with a few Bike extensions–rows are specific to Bike.
 
@@ -21,13 +10,20 @@ Each row represents a row in your outline. Rows have a `name` for accessing the 
 
 You gain access to rows in a few different ways:
 
-1. From properties of a document such as `root row`, `selected row`, `focused row`, etc.
+1. From properties of a document such as `root row`, `selected row`, `focused row`.
 2. From the `rows` collection belonging to each document. This collection contains all rows in the document (except for the root). This collection is a good place to quickly find existing rows.
-3. From the `rows` collection belonging to each `row.` This collection contains only the rows that are directly contained by the row (the children). This collection is a good place for making new rows and a target to moving existing rows into.
+3. From the `rows` collection belonging to each `row.` This collection contains only the rows that are directly contained by the row (the children). This collection is a good place for making new rows and to use as a target to moving existing rows into.
 
-Generally when scripting you are working with the "model" layer of Bike. You can also script some view state such as `focused row`,  `selected row`, and collapsed state. These view properties are accessible through the document for convenience, but they are really effecting the document's window.&#x20;
+### Dictionary
 
-Bike allows you to open multiple windows to view a single document. If you have multiple windows viewing a single document than the document's view properties refer to the frontmost of the documents windows.
+Use Bike's scripting dictionary to learn what parts of Bike are scriptable.
+
+#### To open Bike's scripting dictionary:
+
+* Drag and drop Bike onto Script Editor's application icon.
+* Or from Script Editor use File > Open Dictionary and choose Bike's dictionary.
+
+![](<../.gitbook/assets/Screen Shot 2022-05-05 at 12.20.00 PM.png>)
 
 ### Demo Script
 

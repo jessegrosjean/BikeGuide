@@ -1,8 +1,8 @@
 # Using Scripts
 
-Use scripts to automate Bike and integrate with other apps.
+Use scripts to automate Bike and integrate with other apps. You can find existing Bike scripts on Bike's [extension wiki](https://support.hogbaysoftware.com/t/bike-extensions-wiki/4810). This section shows how to run existing scripts that someone else has written. If you want to create your own scripts please see the [Creating Scripts](../customizing-bike/creating-scripts.md) section.
 
-#### To run a script:
+#### To try a script:
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-05 at 12.25.09 PM.png>)
 
@@ -14,7 +14,7 @@ Use scripts to automate Bike and integrate with other apps.
 ```
 tell application "Bike"
   tell (make document with properties {name:"Testing!"})
-    delete every row
+    delete every row -- remove any welcome text
     tell (make row with properties {name:"Hello"})
       make row with properties {name:"World"}
     end tell

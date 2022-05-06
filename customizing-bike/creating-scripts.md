@@ -27,15 +27,21 @@ Use Bike's scripting dictionary to learn what parts of Bike are scriptable.
 
 ### Getting Started
 
-Here's the official AppleScript starting point:
+Here's the official starting point for learning AppleScript:
 
 * [Introduction to AppleScript Language Guide](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR\_intro.html)
 
-If you read through that you'll be off to a great start. Many people just wing it, find an existing script that works and then modify it to do what you want. It can be painful, I recommend reading the guide so that you understand what is really going on. With that said I haven't ready the guide myself. Oops!
+The starting point for lesser people, such as myself, is to find example scripts and then randomly change them until they do what you want. I've included some for you below. You can also find scripts in the Bike user form and ask scripting questions.
 
-The starting point for lesser people, such as myself, is to find example scripts and then randomly change them until they do what you want. That's what I have for you here.
+* [Bike Support Forum](https://support.hogbaysoftware.com/c/bike/22)
+
+### Example scripts
 
 You'll get the most out of these scripts by using [Script Debugger](https://latenightsw.com) instead of Script Editor that comes with your Mac. Among other things Script Debugger allows you to step through the script line by line so you can see the effect of each command on you document.
+
+#### Kitchen Sink
+
+This is a nonsense script that demonstrates many of Bike's scripting abilities. It's a good place to learn how basic things are done like making and moving rows.
 
 ```
 tell application "Bike"
@@ -108,8 +114,6 @@ tell application "Bike"
   
 end tell
 ```
-
-### Example scripts
 
 #### Home Script
 

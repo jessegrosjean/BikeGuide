@@ -1,6 +1,6 @@
 # Using Bike
 
-First get oriented by reading [Getting Started](broken-reference).
+First get oriented by reading [Getting Started](../getting-started.md).
 
 * [Text Editing](text-editing.md)
 * [Outline Editing](outline-editing.md)

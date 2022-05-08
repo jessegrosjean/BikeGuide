@@ -89,8 +89,8 @@ tell application "Bike"
     move row named "Hello World" to row id "boom"
     move row named "one" to before row named "two"
     
-    collapse at row named "Hello World" with completely
-    expand at row named "Hello World"
+    collapse row named "Hello World" with completely
+    expand row named "Hello World"
     select at row id "boom"
     
     -- Now just show "Hello World" and contained rows
@@ -135,7 +135,7 @@ This script saves the current selected row. Collapses all rows. Then restores yo
 ```
 tell front document of application "Bike"
   set saved to selection row
-  collapse at root row with completely
+  collapse root row with completely
   select at saved
 end tell
 ```
@@ -162,7 +162,7 @@ tell application "Bike"
 end tell
 
 to getOrMake(getId, getName, rowContainer)
-  tell application "Bike"
+  using terms from application "Bike"
     tell container document of rowContainer
       if exists row id getId then
         return row id getId
@@ -172,7 +172,6 @@ to getOrMake(getId, getName, rowContainer)
         end tell
       end if
     end tell
-  end tell
+  end using terms from
 end getOrMake
-
 ```

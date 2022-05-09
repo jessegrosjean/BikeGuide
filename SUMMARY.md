@@ -16,5 +16,5 @@
 * [Customizing Bike](customizing-bike/README.md)
   * [Creating Scripts](customizing-bike/creating-scripts.md)
 * [Keyboard Shortcuts](keyboard-shortcuts.md)
-* [Software](software.md)
+* [Software Credits](software.md)
 * [Glossary](glossary.md)

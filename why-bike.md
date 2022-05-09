@@ -12,7 +12,7 @@ Bike is _fluid_.
 
 Outlines can be confusing to work with. Bike smoothly animates your outline so making changes easier to see. Even simple typing is smoother than you’ve seen before. Your ideas flow across the screen instead of jumping from position to position.
 
-Bike is small, but designed for real work. It's [fast](posts/moby-dick-workout/). It can handle big outlines that freeze other outliners. Fluid animations don't slow it down, Bike is also fast at basic things like scrolling and resizing. Bike is also scriptable, automate and extend it with your own workflows.
+Bike is small, but designed for real work. It's [fast](https://www.hogbaysoftware.com/posts/moby-dick-workout/). It can handle big outlines that freeze other outliners. Fluid animations don't slow it down, Bike is also fast at basic things like scrolling and resizing. Bike is also scriptable, automate and extend it with your own workflows.
 
 Bike is just getting started.
 

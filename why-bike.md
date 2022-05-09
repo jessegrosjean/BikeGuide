@@ -1,16 +1,15 @@
-# Why Bike?
+## Why Bike?
 
-For the last few years I worked on my version of the "next big thing". Unfortunately it was so big that I could never quite finish it. And then I started having doubts about the core idea.
+I got stuck. For the last few years I’ve worked on my version of the “next big thing”. Unfortunately it was so big that I could quite finish it. Then I saw this quote:
 
-I finally changed course last summer (2021). That's when I decided to build Bike–a fast and fluid outliner. I've already built a number of outliner like apps: TaskPaper – outline of projects and tasks, FoldingText – outline of markdown, Hog Bay Notebook – outline of folders and files.
+> We were promised bicycles for the mind, but we got aircraft carriers instead -- Jonathan Edwards
 
-Why Bike?
+I realized that I was stuck building an aircraft carrier. I decided to start over and build Bike instead. Bike’s a simple tool. It's small enough to fully understand and then use as you see fit.
 
-* Pure and simple outliner, nothing extra
-* Small macOS native app with good performance on big files
+I’ve build a lot of outliners _like_ apps over the years. Bike is the first pure outliner that I’ve made. There’s no extra concepts, it’s just a hierarchy of text and some commands to navigate.
 
-Bike is also _fluid_.
+Bike is small, but designed for real work. It's [fast](/posts/moby-dick-workout/). It can handle big outlines that freeze other outliners. It’s has fluid animations, but it’s also fast at basic things like scrolling and resizing. Bike is also scriptable, automate and extend it with your own workflows.
 
-Outliners can get confusing when they make big changes to your view. I custom built Bike's text editor to smoothly animate these changes. Your ideas flow across the screen instead of jumping from position to position. This makes Bike easier to use, and in my experience just more fun too.
+Bike is just getting started.
 
-I've been building on the outliner idea for a long time, Bike is the next chapter.
+I’ve been building on the outliner idea for a long time, Bike is the next chapter. I hope you’ll give it a try, get a license, and let me know what to improve for the next release.

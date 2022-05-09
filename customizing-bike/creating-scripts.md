@@ -89,7 +89,7 @@ tell application "Bike"
     move row named "Hello World" to row id "boom"
     move row named "one" to before row named "two"
     
-    collapse row named "Hello World" with completely
+    collapse row named "Hello World" with all
     expand row named "Hello World"
     select at row id "boom"
     
@@ -135,7 +135,7 @@ This script saves the current selected row. Collapses all rows. Then restores yo
 ```
 tell front document of application "Bike"
   set saved to selection row
-  collapse root row with completely
+  collapse root row with all
   select at saved
 end tell
 ```

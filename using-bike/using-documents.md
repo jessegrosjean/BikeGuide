@@ -6,6 +6,14 @@ From macOS User Guide:
 * [Create and work with documents](https://support.apple.com/guide/mac-help/create-and-work-with-documents-mchldc1dd114/12.0/mac/12.0)
 * [View and restore past versions of documents](https://support.apple.com/guide/mac-help/view-and-restore-past-versions-of-documents-mh40710/12.0/mac/12.0)
 
+### Own Your Data
+
+Bike is a document based app that uses open file formats.
+
+This combination gives you full ownership of your data. Your notes and thoughts aren't locked behind a proprietary web-service. They aren't hidden away in a database available for [export only](https://twitter.com/andy\_matuschak/status/1452438176996347907).
+
+In Bike your data is fully within your control, stored in normal document files right on your computer. These files use open file formats. Even if you delete Bike from your computer you should still be able to view and edit your outlines.
+
 ### Bike Format Options
 
 ![Format Options](../.gitbook/assets/formats.png)

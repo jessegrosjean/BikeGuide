@@ -2,7 +2,7 @@
 
 > We were promised bicycles for the mind, but we got aircraft carriers instead – Jonathan Edwards
 
-That's why I'm building Bike. I think macOS needs more bicycles.
+That's why I'm building Bike. I think macOS needs more bicycles for the mind.
 
 Bike is small enough to fully understand. Once understood it's flexible enough to be used in many different ways. It's a macOS native app using resources similar to TextEdit.
 

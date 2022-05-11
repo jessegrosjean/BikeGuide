@@ -4,7 +4,7 @@
 
 That's why I'm building Bike. I think macOS needs more bicycles for the mind.
 
-Bike is small enough to fully understand. Once understood it's flexible enough to be used in many different ways. It's a macOS native app using resources similar to TextEdit.
+Bike is small enough to fully understand. Once understood it's flexible enough to be used for many purposes. It's a macOS native app using resources similar to TextEdit.
 
 Bike is small, but designed for real work. It’s fast. It can handle big outlines that break other outliners. Bike’s also fast at the basics–opening files, scrolling views, and resizing windows. Bike won’t slow your Mac down.
 

@@ -12,3 +12,4 @@ First get oriented by reading [Getting Started](../getting-started.md).
 * [Using Shortcuts](../keyboard-shortcuts.md)
 * [Using Windows](using-windows.md)
 * [Using Scripts](using-scripts.md)
+* [Using Software Update](using-software-update.md)

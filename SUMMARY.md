@@ -13,6 +13,7 @@
   * [Using Links](using-bike/using-links.md)
   * [Using Windows](using-bike/using-windows.md)
   * [Using Scripts](using-bike/using-scripts.md)
+  * [Using Software Update](using-bike/using-software-update.md)
 * [Customizing Bike](customizing-bike/README.md)
   * [Creating Scripts](customizing-bike/creating-scripts.md)
 * [Keyboard Shortcuts](keyboard-shortcuts.md)

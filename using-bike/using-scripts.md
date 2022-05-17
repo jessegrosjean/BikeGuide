@@ -19,7 +19,7 @@ tell application "Bike"
       make row with properties {name:"World"}
     end tell
   end tell
-end tellScripting Overview
+end tell
 ```
 
 #### **To test a script given to you by someone else:**

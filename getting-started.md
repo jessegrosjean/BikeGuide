@@ -10,7 +10,7 @@ This United States outline is good to demonstrate outline structure. Your own ou
 
 * Press the `Return` key to create a row
 
-#### To change an row's indentation level
+#### To change a row's indentation level
 
 * Press the `Tab` key to indent a row
 * Press `Shift-Tab` key to unindent a row

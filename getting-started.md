@@ -17,12 +17,12 @@ This United States outline is good to demonstrate outline structure. Your own ou
 
 #### To show and hide detail in your outline
 
-* Click an row's triangle handle to collapse the row, hiding its contained rows
+* Click a row's triangle handle to collapse the row, hiding its contained rows
 * Click that same handle to expand the row, showing its contained rows
 
 #### To focus into a specific part of your outline, hiding everything else
 
-* Command-Click an rows's handle
+* Command-Click a rows's handle
 * Command-Click on a focused rows's handle to unfocus it
 
 That's it, just a few commands. Internalize these commands. _Learn the keyboard shortcuts_. Once you've done that Bike will be a great place for you to think.

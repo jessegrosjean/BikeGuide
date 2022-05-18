@@ -3,6 +3,7 @@
 * [Bike](README.md)
 * [Getting Started](getting-started.md)
 * [Why Bike?](why-bike.md)
+* [Bike on iOS](bike-on-ios.md)
 * [Using Bike](using-bike/README.md)
   * [Text Editing](using-bike/text-editing.md)
   * [Outline Editing](using-bike/outline-editing.md)

@@ -1,6 +1,6 @@
 # Bike on iOS
 
-_Preliminary documentation: Please report back if you run into problems_
+_Preliminary documentation: Please_ [_report back_](https://support.hogbaysoftware.com/c/bike/22) _if you run into problems or have tips on how best to work with Bike outlines on iOS._
 
 Bike doesn't run on iOS. To view and edit your Bike outlines on iOS you need to save to your iDrive using the OPML file format. You then need to access that outline on iOS with an outliner that supports OPML.
 

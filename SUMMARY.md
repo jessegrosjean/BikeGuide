@@ -17,6 +17,6 @@
 * [Customizing Bike](customizing-bike/README.md)
   * [Creating Scripts](customizing-bike/creating-scripts.md)
 * [Keyboard Shortcuts](keyboard-shortcuts.md)
-* [OPML Compatible Apps](opml-compatible-apps.md)
+* [Bike Compatible Apps](bike-compatible-apps.md)
 * [Software Credits](software.md)
 * [Glossary](glossary.md)

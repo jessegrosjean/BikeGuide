@@ -20,6 +20,6 @@ In Bike your data is fully within your control, stored in normal document files 
 
 `.bike`: This is Bike's native format and the one I would recommend using. It supports all Bike features. It is also an HTML document – you can view Bike files in your web browser.
 
-`.opml`: This is a standard format for saving outlines. Use `.opml` if you wish to edit your outline with Bike and another [OPML compatible application](../opml-compatible-apps.md).
+`.opml`: This is a standard format for saving outlines. Use `.opml` if you wish to edit your outline with Bike and another [OPML compatible application](../bike-compatible-apps.md).
 
 `.txt`: Bike can also work with plain text files. The outline structure is determined by the leading tab indentation. Text files don't offer any good place to store metadata (such as item ids). For this reason some features (such as links to rows) will break when you close and then reopen a `.txt` based outline.

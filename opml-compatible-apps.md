@@ -1,10 +1,8 @@
 # OPML Compatible Apps
 
-Do you want to access your Bike outline on iOS, on the web, on windows? Do you want to view your Bike oultine using another visualization such as a mindmap? The apps listed on this page can help.
+Bike supports three file formats \`bike\`, \`opml\`, and \`txt\` as described in [Using Documents](using-bike/using-documents.md). The `opml` format is a common standard and supported by many other apps. This pages lists the supporting apps that I'm aware of.
 
-Bike supports three file formats \`bike\`, \`opml\`, and \`txt\` as described in [Using Documents](using-bike/using-documents.md). The `opml` format is a common standard and supported by many other apps. This page lists other OPML compatible apps and the support they offer.
-
-This page needs your input. Do you have an OPML app that you like? Please add a link (or links depending on level of support) to this page. The sources for this guide are [available here](https://github.com/jessegrosjean/BikeGuide), please make a pull request with your additions. If you don't know how to do that you can just email [jesse@hogbaysoftware.com](https://app.gitbook.com/u/547e71f6f4dc4e020053185d) your suggestions.
+This page needs your input. The sources for this guide are [available here](https://github.com/jessegrosjean/BikeGuide). Please make a pull request with your own OPTML compatible app additions. If you don't know how to make a pull request you can email [jesse@hogbaysoftware.com](https://app.gitbook.com/u/547e71f6f4dc4e020053185d) your suggestions. Thanks!
 
 #### Read / Write Compatible
 

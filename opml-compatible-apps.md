@@ -24,7 +24,8 @@ These applications place OPML on the clipboard when you copy and paste. This mak
 These applications can import/export OPML into a proprietary outline format. Every applications listed in the Read / Write compatible section could also be listed here... but let's not do that and avoid some duplication.
 
 * [Checkvist (Web)](https://checkvist.com)
-* [Drummer (Web)](http://drummer.scripting.com)
+* [Drummer (Web + Electron)](http://drummer.scripting.com)
+* [LittleOutliner (Web)](http://littleoutliner.com)
 * [Logseq (Electron)](https://logseq.com)
 * [MindNode (macOS + iOS)](https://www.mindnode.com)
 * [WorkFlowy (Web + iOS + Electron)](https://workflowy.com)

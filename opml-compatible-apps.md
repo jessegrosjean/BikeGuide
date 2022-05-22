@@ -6,7 +6,7 @@ This page needs your input. The sources for this guide are [available here](http
 
 #### Read / Write Compatible
 
-These applications can read and write OPML files directly. This is the best level of support because it means you can share the same outline file between applications without needing to import/export.
+These applications can read and write OPML files directly withing requiring any import/export. This makes it possible to share the same file between two applications.
 
 * [Bike (macOS)](https://www.hogbaysoftware.com/bike/)
 * [OmniOutliner (macOS + iOS)](https://www.omnigroup.com/omnioutliner)
@@ -21,7 +21,7 @@ These applications place OPML on the clipboard when you copy and paste. This mak
 
 #### Import / Export Compatible
 
-These applications can import/export OPML into a proprietary outline format. Every applications listed in the Read / Write compatible section could also be listed here... but let's not do that and avoid some duplication.
+These applications can import/export OPML. Every applications listed in the Read / Write compatible section could also be listed here, but I want to avoid that duplication.
 
 * [Checkvist (Web)](https://checkvist.com)
 * [Drummer (Web + Electron)](http://drummer.scripting.com)

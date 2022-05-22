@@ -27,4 +27,5 @@ These applications can import/export OPML into a proprietary outline format. Eve
 * [Drummer (Web)](http://drummer.scripting.com)
 * [Logseq (Electron)](https://logseq.com)
 * [MindNode (macOS + iOS)](https://www.mindnode.com)
+* [WorkFlowy (Web + iOS + Electron)](https://workflowy.com)
 * [Zavala (macOS + iOS)](https://zavala.vincode.io)

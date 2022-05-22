@@ -1,6 +1,6 @@
 # OPML Compatible Apps
 
-Bike supports three file formats \`bike\`, \`opml\`, and \`txt\` as described in [Using Documents](using-bike/using-documents.md). The `opml` format is a [common standard](http://opml.org) and supported by many other apps. This pages lists the supporting apps that I'm aware of.
+Bike supports three file formats \`bike\`, \`opml\`, and \`txt\` as described in [Using Documents](using-bike/using-documents.md). The `opml` format is a [common standard](http://opml.org) and supported by many other apps, including those listed here.
 
 This page needs your input. The sources for this guide are [available here](https://github.com/jessegrosjean/BikeGuide). Please make a pull request with your own OPTML compatible app additions. If you don't know how to make a pull request you can email [jesse@hogbaysoftware.com](https://app.gitbook.com/u/547e71f6f4dc4e020053185d) your suggestions. Thanks!
 

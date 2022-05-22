@@ -19,6 +19,7 @@ These applications can read and write OPML files directly. This is the best leve
 These applications place OPML on the clipboard when you copy and paste. This makes it easy to move data between two compatible applications that are open on your computer.
 
 * [Bike (macOS)](https://www.hogbaysoftware.com/bike/)
+* [MindNode (macOS + iOS)](https://www.mindnode.com)
 
 #### Import / Export Compatible
 
@@ -26,4 +27,5 @@ These applications can import/export OPML into a proprietary outline format. Eve
 
 * [Checkvist (Web)](https://checkvist.com)
 * [Drummer (Web)](http://drummer.scripting.com)
+* [MindNode (macOS + iOS)](https://www.mindnode.com)
 * [Zavala (macOS + iOS)](https://zavala.vincode.io)

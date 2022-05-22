@@ -27,7 +27,7 @@ Row commands:
 
 * Row > Insert Row (`Command-Return`)\
   This is similar to pressing `Return`. The difference is that it will always just insert a new row. Pressing `Return` will replace the selection with a newline to create the new row.
-* Row > Duplicate (`Command-D`)
+* Row > Duplicate (`Command-Shift-D`)
 * Row > Indent (`Control-Command-Right`)
 * Row > Outdent (`Control-Command-Left`)
 * Row > Move Up (`Control-Command-Up`)

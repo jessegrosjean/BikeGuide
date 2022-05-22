@@ -25,6 +25,7 @@ These applications can import/export OPML. Every applications listed in the Read
 
 * [Checkvist (Web)](https://checkvist.com)
 * [Drummer (Web + Electron)](http://drummer.scripting.com)
+* [Dynalist (Web)](https://dynalist.io)
 * [LittleOutliner (Web)](http://littleoutliner.com)
 * [Logseq (Electron)](https://logseq.com)
 * [MindNode (macOS + iOS)](https://www.mindnode.com)

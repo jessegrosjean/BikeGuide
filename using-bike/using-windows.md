@@ -22,9 +22,11 @@ From macOS User Guide:
 
 ### Bike Window Restoration
 
-macOS has a standard feature that saves window "state" when you quit an application and restores that state when you next open the application. Bike uses this feature to save and restore the focused row, collapsed rows, and the selection.
+macOS has a standard feature that saves windows when you quit an application and restores them next time you open the application.
 
-To have your Bike windows restore state you need to do two things:
+To have your Bike save and restore your windows you need to do two things:
 
 1. In macOS System Preferences > General make sure that the "Close windows when quitting an app" checkbox is _not_ checked. The setting should look like this: <img src="../.gitbook/assets/close-windows-when-quitting-app.png" alt="" data-size="line">
 2. When you quit Bike you need to leave windows open that you want to be restored next time. If you close the windows before quitting Bike then no windows will be restored.
+
+If you do those two things then Bike should save and restore windows and the focused row, collapsed rows, and the selection.

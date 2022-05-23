@@ -26,5 +26,5 @@ macOS has a standard feature that saves window "state" when you quit an applicat
 
 To have your Bike windows restore state you need to do two things:
 
-1. In macOS System Preferences > General make sure that the "Close windows when quitting an app" checkbox is _not_ checked. It should look like this: <img src="../.gitbook/assets/close-windows-when-quitting-app.png" alt="" data-size="line">
+1. In macOS System Preferences > General make sure that the "Close windows when quitting an app" checkbox is _not_ checked. The setting should look like this: <img src="../.gitbook/assets/close-windows-when-quitting-app.png" alt="" data-size="line">
 2. When you quit Bike you need to leave windows open that you want to be restored next time. If you close the windows before quitting Bike then no windows will be restored.

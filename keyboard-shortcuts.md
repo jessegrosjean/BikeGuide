@@ -3,9 +3,9 @@
 ### Row
 
 * Create Row: `Return`
-* Delete Row: `Escape` to outline mode, then `Delete`
+* Delete Row: `Escape` to outline mode, then `Delete` or `Command-Shift-K`
 * Indent Row: `Tab` or `Control-Command-Right`
-* Unindent Row: `Shift-Tab` or or `Control-Command-Left`
+* Unindent Row: `Shift-Tab` or `Control-Command-Left`
 * Move Row Up: `Control-Command-Up`
 * Move Row Down: `Control-Command-Down`
 

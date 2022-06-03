@@ -28,6 +28,7 @@ In Outline Editing mode the arrow keys have different behavior:
 The row commands described in the [Text Editing](text-editing.md) section work differently too. They work on a row and all contained rows, not just individual rows. Movements are also restricted to the outline structure.
 
 * Row > Duplicate (`Command-Shift-D`)
+* Row > Delete (`Command-Shift-K`)
 * Row > Indent (`Control-Command-Right`)
 * Row > Outdent (`Control-Command-Left`)
 * Row > Move Up (`Control-Command-Up`)

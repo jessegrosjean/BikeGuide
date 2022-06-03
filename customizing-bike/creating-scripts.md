@@ -31,9 +31,9 @@ Here's the official starting point for learning AppleScript:
 
 * [Introduction to AppleScript Language Guide](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR\_intro.html)
 
-The starting point for lesser people, such as myself, is to find example scripts and then randomly change them until they do what you want. I've included some for you below. You can also find scripts in the Bike user form and ask scripting questions.
+The starting point for lesser people, such as myself, is to find example scripts and then randomly change them until they do what you want. I've included some for you below. You can also find scripts in the Bike support form and ask scripting questions.
 
-* [Bike Support Forum](https://support.hogbaysoftware.com/c/bike/22)
+* [ ](https://support.hogbaysoftware.com/c/bike/22)[Bike Support Forum – Extensions Wiki](https://support.hogbaysoftware.com/t/bike-extensions-wiki/4810)
 
 ### Example scripts
 

@@ -8,7 +8,7 @@ Use scripts to automate Bike and integrate with other apps. You can find existin
 
 1. Open the "Script Editor" application that comes with your Mac.
 2. Paste the following script into a new editor window.
-3. Make sure that the scripting language is set to "AppleScript".
+3. Make sure that the scripting language is set to "AppleScript". (Use `View > Show Navigation Bar` if no language selector is displayed at the top left of the document).
 4. Press the "Play" button to run the script. This script will create a new document named "Testing!". It deletes any welcome text that may be inserted into the document. Then it adds a "Hello" row to the document that contains a "World" row.
 
 ```

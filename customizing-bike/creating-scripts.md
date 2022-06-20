@@ -45,10 +45,10 @@ This is a nonsense script that demonstrates many of Bike's scripting abilities. 
 
 ```
 tell application "Bike"
-  
+
   -- This script makes a new demo document so that it won't mess up any documents that you have open.
   set demo to make document with properties {name:"Demo"}
-  
+
   tell demo
     -- Bike shows welcome text in new documents, this line deletes that text
     delete every row
@@ -84,6 +84,16 @@ tell application "Bike"
     if exists row id "boom" then
       log "Yes! row id boom exists"
     end if
+    
+    tell row id "boom"
+      -- Read/Write row level attributes
+      exists (attribute named "test") -- false
+      make attribute with properties {name:"test", value:"value"}
+      value of attribute named "test" -- value
+      set value of attribute named "test" to "new value"
+      value of attribute named "test" -- new value
+      delete attribute named "test"
+    end tell
     
     -- When "Hello World" moves it brings all containing rows with it.
     move row named "Hello World" to row id "boom"

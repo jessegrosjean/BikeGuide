@@ -15,7 +15,7 @@ This list welcome your feedback, additions, results, and notes. I have made this
 * [iThoughtsX (macOS, iOS, Windows)](https://www.toketaware.com) – Import and export OPML. Copy and paste outlines with Bike, may need formatting cleanup.
 * [LittleOutliner (Web)](http://littleoutliner.com) – Uses OPML as native format. Import and export OPML. Copy and paste outlines with Bike.
 * [Logseq (Electron)](https://logseq.com) – Import and export OPML. Copy and paste outlines with Bike, may need formatting cleanup.
-* [Mellel (macOS + iOS)](https://www.mellel.com/) Import and export OPML. A multilingual word processor which assigns different formatting styles to each outline level.
+* [Mellel (macOS + iOS)](https://www.mellel.com/) – Import and export OPML. A multilingual word processor which assigns different formatting styles to each outline level.
 * [MindNode (macOS + iOS)](https://www.mindnode.com) – Import and export OPML. Copy and paste outlines with Bike.
 * [OmniOutliner (macOS + iOS)](https://www.omnigroup.com/omnioutliner) – Import and export OPML. I think it can also use OPML as a standard document format (meaning no import export required). I think you can share an OPML document on iCloud and edit on iOS with OmniOutliner and on macOS with Bike. I have not tested this.
 * [OutlineEdit (macOS)](https://outlineedit.com/index.html) – Import and export OPML. Copy and paste outlines with Bike, may need formatting cleanup

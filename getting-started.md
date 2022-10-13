@@ -1,10 +1,12 @@
 # Getting Started
 
-![This is Bike](.gitbook/assets/bike.png)
+{% embed url="https://vimeo.com/698171831" %}
+Bike: Tool for thought
+{% endembed %}
 
-Bike is an outliner. Rows in Bike are organized into hierarchies. These hierarchies make up your outline. Above you can see that the Maine row is part of New England, and New England is part of the United States.
+Bike is an outliner.&#x20;
 
-This United States outline is good to demonstrate outline structure. Your own outlines will likely look a bit messier. Use outlines to track ideas, projects, writing, to-do lists. More generally outliners are a great _tool for thought_.
+Indent to create a structured outline. Fold this outline to hide details. Focus your outline to see specifics. Use your outline to track ideas, projects, writing, to-do lists. More generally outliners are great _tools for thought_.
 
 #### To create a row
 
@@ -22,13 +24,19 @@ This United States outline is good to demonstrate outline structure. Your own ou
 
 #### To focus into a specific part of your outline, hiding everything else
 
-* Command-Click a rows's handle
-* Command-Click on a focused rows's handle to unfocus it
+* Command-Click a rows's handle or (`Option-Command-Right`)
+* Command-Click on a focused rows's handle to unfocus it or (`Option-Command-Left`)
+
+**To format text in your outline**
+
+* Show the formatting popover with `Command-K`
+* Select formatting options from the popover with your mouse or with the single letter keyboard shortcuts displayed on the panel.
 
 That's it, just a few commands. Internalize these commands. _Learn the keyboard shortcuts_. Once you've done that Bike will be a great place for you to think.
 
 Next I suggest you read:
 
 * [Text Editing](using-bike/text-editing.md)
+* [Text Formatting](using-bike/text-formatting.md)
 * [Outline Editing](using-bike/outline-editing.md)
 * [Keyboard Shortcuts](keyboard-shortcuts.md)

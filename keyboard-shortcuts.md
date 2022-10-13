@@ -1,5 +1,15 @@
 # Keyboard Shortcuts
 
+### Format
+
+* Formatting: `Command-K`
+* Bold: `Command-B`
+* Italic: `Command-I`
+* Code: `` Shift-Command-` ``
+* Highlight: `Shift-Command-H`
+* Strikethrough: `Shift-Command--`
+* Clear Formatting: `Option-Command-Delete`
+
 ### Row
 
 * Create Row: `Return`

@@ -2,19 +2,25 @@
 
 ![Links](../.gitbook/assets/links.png)
 
-Bike highlights links as you type. When you activate a link by clicking on it the link will be opened the appropriate app. For example web links will open in your browser.
+Bike allows you to insert links into your outline.
 
-{% hint style="info" %}
-To activate a link without the mouse place the text caret somewhere in the link. Then show the context menu with the menu item View > Show Context Menu (`Control-M`). Use arrow keys to choose Open Link from that menu.
-{% endhint %}
+Bike also automatically detects URLs that you type.
 
-### Bike Links
+Anytime there is a link in your document Bike will insert a "link button" after that link.
+
+* Click the link button to activate the link.
+* Click and edit the link text without fear that you'll activate the link.
+* To edit the URL associated with a link right click on the link text or link button and choose "Edit Link" from the popup menu.
+
+More information on formatting and activating links can be found in the [text-formatting.md](text-formatting.md "mention") section.
+
+### Bike Specific Links
 
 Bike includes its own link type that allows you to link directly to a row in your outline.
 
-Bike links are normal URLs. You can paste them into other apps and they'll continue to work as long as Bike is installed on your computer. For example you can paste a Bike link into Apple's Notes app and when you click that link it will open Bike and select the linked to row.
+Bike links are normal URLs. You can paste them into other apps and they'll continue to work as long as Bike is installed on your computer. For example you can paste a Bike link into Apple's Notes app and when you click that link it will open Bike and select the linked row.
 
-This is a Bike link:
+This is a Bike link URL:
 
 ```
 bike://dnyzqSRa#Ir

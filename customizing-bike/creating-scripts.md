@@ -45,10 +45,10 @@ This is a nonsense script that demonstrates many of Bike's scripting abilities. 
 
 ```
 tell application "Bike"
-
+  
   -- This script makes a new demo document so that it won't mess up any documents that you have open.
   set demo to make document with properties {name:"Demo"}
-
+  
   tell demo
     -- Bike shows welcome text in new documents, this line deletes that text
     delete every row
@@ -60,6 +60,12 @@ tell application "Bike"
     tell helloWorld
       make row with properties {name:"one"}
       make row with properties {name:"two"}
+      make row with properties {name:"rich text"}
+    end tell
+    
+    tell row named "rich text"
+      set bold of first word of text content to true
+      set italic of second word of text content to true
     end tell
     
     -- Insert a new child in into the middle

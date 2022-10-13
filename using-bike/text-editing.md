@@ -6,7 +6,7 @@ Text editing should work as you expect. This is a nice feature of Bike. Often ou
 
 ### Bike Text Editing
 
-Bike also adds a few new text editing commands.
+In addition to expected text editing commands Bike also adds a few new ones.
 
 Selection commands:
 

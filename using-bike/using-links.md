@@ -16,7 +16,10 @@ More information on formatting and activating links can be found in the [text-fo
 
 ### Bike Specific Links
 
-Bike includes its own link type that allows you to link directly to a row in your outline.
+Bike includes its own link type that allows you to link directly to a row in your outline. When activating a Bike link you can:
+
+* `Command-Click` to open a Bike link in a new tab
+* `Command-Option-Click` to open a Bike link in a new window
 
 Bike links are normal URLs. You can paste them into other apps and they'll continue to work as long as Bike is installed on your computer. For example you can paste a Bike link into Apple's Notes app and when you click that link it will open Bike and select the linked row.
 

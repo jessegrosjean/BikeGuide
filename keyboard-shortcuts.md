@@ -1,6 +1,6 @@
 # Keyboard Shortcuts
 
-### Format
+### Text
 
 * Formatting: `Command-K`
 * Bold: `Command-B`
@@ -9,6 +9,7 @@
 * Highlight: `Shift-Command-H`
 * Strikethrough: `Shift-Command--`
 * Clear Formatting: `Option-Command-Delete`
+* Check Next: `Command-;`
 
 ### Row
 

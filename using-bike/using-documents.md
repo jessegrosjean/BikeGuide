@@ -14,7 +14,7 @@ This combination gives you full ownership of your data. Your notes and thoughts 
 
 In Bike your data is fully within your control, stored in normal document files right on your computer. These files use open file formats. Even if you delete Bike from your computer you should still be able to view and edit your outlines.
 
-### Bike Format Options
+### Format Options
 
 ![Format Options](../.gitbook/assets/formats.png)
 
@@ -24,7 +24,13 @@ In Bike your data is fully within your control, stored in normal document files 
 
 `.txt`: Bike can also work with plain text files. The outline structure is determined by the leading tab indentation. Text files don't offer any good place to store metadata (such as item ids). For this reason some features (such as links to rows) will break when you close and then reopen a `.txt` based outline.
 
-### Bike Document Loading + File Extensions
+### Open Options
+
+When you open a document Bike can expand rows (or not) for you. To set which rows are expanded when you open a document use Settings > Document > When Open...
+
+This setting is for when you open a document while Bike is running. When Bike re-opens a document when starting it will restore the exact row expand/collapse state. For more information on restoring documents see [Using Windows](using-windows.md).
+
+### File Extensions
 
 When you save a Bike document the filename will default to a `.bike`, `.opml`, or `.txt` file extension. This is usually what you want.
 

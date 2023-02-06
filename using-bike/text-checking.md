@@ -43,7 +43,7 @@ In Bike just type. If a bad autocorrection happens use the Delete key to reverse
 
 Autocorrect replaces what you've typed with something else. Often this is helpful, but sometimes it is wrong. Bike makes each autocorrection easy to spot so you won't be surprised later.
 
-In Bike all autocorrected text is underlined with a blue zigzag line. This underline remains visible until you start typing a new sentence. If you move back into the original sentence the autocorrections will show again.
+In Bike all autocorrected text is underlined with a blue zigzag line. This underline remains visible until you start typing a new word. If you move back into the original word the autocorrections will show again.
 
 ### Reversible
 

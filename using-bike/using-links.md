@@ -23,17 +23,25 @@ Bike includes its own link type that allows you to link directly to a row in you
 
 Bike links are normal URLs. You can paste them into other apps and they'll continue to work as long as Bike is installed on your computer. For example you can paste a Bike link into Apple's Notes app and when you click that link it will open Bike and select the linked row.
 
-This is a Bike link URL:
+Bike links have this pattern:
 
 ```
-bike://dnyzqSRa#Ir
+bike://<rootid>/<focusid>#<selectid>
 ```
 
-Bike links are composed of three parts. The first part, `bike` identifies the link as a Bike link. The second part, `dnyzqSRa`, is the id of the linked to outline. The third part, `Ir`, is the id of the linked to row. A nice feature of these links is that they won't break when you edit your outline or rename your outline file.
+* `<rootid>` The id of the root node of the document that you are linking too.
+* `<focusid>` The id of the row that should be focused after activating the link. This is optional.
+* `<selectedid>` The id of the row that should be selected after activating the link. This is optional.
+
+Here's what an actual Bike link looks like:
+
+```
+bike://KOcw9x9N/ch#zf
+```
 
 #### To create a Bike link:
 
-* Use Edit > Copy Link `Shift-Command-C` to copy a link to the selected row.
+* Use Edit > Copy Link `Shift-Command-C` to copy a link to the selected row. If your view is focused when you copy then the link will also include the focused row id.
 
 Alternatively you can drag a row by its triangle handle and then hold down the `Control` key before releasing the mouse. A link to the dragged row will be inserted into your outline.
 

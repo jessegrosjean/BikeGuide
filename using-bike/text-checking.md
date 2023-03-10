@@ -1,6 +1,6 @@
 # Text Checking
 
-![Checking Panel](../.gitbook/assets/check.png)
+![Checking Panel](../.gitbook/assets/text-checking.png)
 
 Bike supports autocorrect, substitutions, user replacements, and spell checking. Bike's text checking interface is custom built, adopting and then improving upon macOS standard behavior.
 
@@ -9,6 +9,8 @@ Bike supports autocorrect, substitutions, user replacements, and spell checking.
 ## Spelling and grammar check
 
 Bike will highlight spelling errors in your outline with a red zigzag underline. To fix a spelling error move the text caret to the end of the word. After a half second the text caret will bounce and a popup will show with a suggestion.
+
+<figure><img src="../.gitbook/assets/word-suggestions (1).png" alt=""><figcaption></figcaption></figure>
 
 Sometimes text checking can't guess a word. In that case the text caret still bounce when it tries, but no popup will show. Then you'll have to fix the spelling manually. This happens to me quite often because I really can't spell, or even come close sometimes!
 
@@ -55,17 +57,21 @@ You can also reverse an autocorrections by placing the text caret at the end of 
 
 ## Text checking panel
 
-Most autocorrect and spelling options can be found in the text checking panel. To show the text checking panel use Edit > Checking > Show Checking or use the Check Next or Check Previous commands. They also show the text checking panel.
+To show the text checking panel use Edit > Checking > Show Checking or use the Check Next or Check Previous commands. They also show the text checking panel.
 
 #### To select a correction
 
 * Press the `Down` arrow to select any suggestion
 * Or type your own correction into the text field
 
-#### To apply a correction
+#### To apply a correction and find the next
 
 * Click the `Replace` button in the checking panel
 * Or press `Return` to apply the correction
+
+#### To apply a correction and return to work
+
+* Press `Option-Return` to apply the correction and return to work
 
 #### To hide the checking panel
 

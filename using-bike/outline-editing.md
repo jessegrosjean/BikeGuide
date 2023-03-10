@@ -2,7 +2,7 @@
 
 ![Outline Editing](../.gitbook/assets/outline-editing.png)
 
-In addition to [Text Editing](text-editing.md) Bike supports outline editing mode. When in outline editing mode rows are always fully selected as shown above. You can tell you are in outline editing mode because the selection is green.
+In addition to [Text Editing](text-editing.md) Bike supports outline editing mode. When in outline editing mode rows are fully selected and shown in a different color.
 
 #### To enter and exit outline editing mode
 

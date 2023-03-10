@@ -2,7 +2,7 @@
 
 ![Text Editing](../.gitbook/assets/text-selection.png)
 
-Text editing should work as you expect. This is a nice feature of Bike. Often outliner apps constrain text editing in various ways. Bike doesn't do that.
+Text editing should work as you expect. This is a nice feature of Bike. Often outliner applications constrain text editing in various ways. Bike doesn't do that.
 
 ### Bike Text Editing
 

@@ -1,5 +1,7 @@
 # Keyboard Shortcuts
 
+This page lists important Bike specific keyboard shortcuts. Other shortcuts that are not listed here can be found when browsing Bike's application menus.
+
 ### Text
 
 * Formatting: `Command-K`
@@ -28,6 +30,11 @@
 * Collapse Row: `Command-9` or `Escape` to outline mode, then `Left`
 * Expand All Rows: `Control-Command-0`
 * Collapse All Rows: `Control-Command-9`
+
+### View
+
+* Toggle Focus mode: `Option-Command-F`
+* Toggle Typewriter Mode: `Option-Command-T`
 
 ### More
 

@@ -28,7 +28,7 @@ The best thing about shortcuts is that "Just go for it" is a viable choice. Ther
 
 #### Look at examples
 
-If you get stuck an example or two can help. I've created a short tutorial and some example shortcuts \[here in this post]\([https://www.hogbaysoftware.com/posts/bike-automate-with-shortcuts/](https://www.hogbaysoftware.com/posts/bike-automate-with-shortcuts/)). More examples may be found on Bike's [extension wiki](https://support.hogbaysoftware.com/t/bike-extensions-wiki/4810). If you create a shortcut that you like please add it to the wiki for others to learn from.
+If you get stuck an example can help. I've created a short tutorial and some example shortcuts here in [this post](https://www.hogbaysoftware.com/posts/bike-automate-with-shortcuts/). More examples may be found on Bike's [extension wiki](https://support.hogbaysoftware.com/t/bike-extensions-wiki/4810). If you create a shortcut that you like please add it to the wiki for others to learn from.
 
 #### Read the documentation
 

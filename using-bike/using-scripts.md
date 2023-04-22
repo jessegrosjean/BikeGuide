@@ -1,6 +1,6 @@
 # Using Scripts
 
-Use scripts to automate Bike and integrate with other apps. You can find existing Bike scripts on Bike's [extension wiki](https://support.hogbaysoftware.com/t/bike-extensions-wiki/4810). This section shows how to run existing scripts that someone else has written. If you want to create your own scripts please see the [Creating Scripts](../customizing-bike/creating-scripts.md) section.
+Use scripts to automate Bike and integrate with other apps. You can find existing Bike scripts on Bike's [extension wiki](https://support.hogbaysoftware.com/t/bike-extensions-wiki/4810). This section shows how to run scripts that someone else has written. If you want to create your own scripts please see the [Creating Scripts](../customizing-bike/creating-scripts.md) section.
 
 #### To try a script:
 

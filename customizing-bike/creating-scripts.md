@@ -167,13 +167,14 @@ set monthName to do shell script "date +'%B, %Y'"
 set monthId to do shell script "date +'%Y/%m'" & "/00"
 set dayName to do shell script "date +'%B %d, %Y'"
 set dayId to do shell script "date +'%Y/%m/%d'"
+set timeName to do shell script "date +'%l:%M %p' | sed 's/^ //'"
 
 tell application "Bike"
   tell front document
     set y to my getOrMake(yearId, yearName, root row)
     set m to my getOrMake(monthId, monthName, y)
     set d to my getOrMake(dayId, dayName, m)
-    select at make row at front of rows of d
+    select at make row at front of rows of d with properties {name:timeName}
   end tell
 end tell
 

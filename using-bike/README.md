@@ -14,6 +14,7 @@ First get oriented by reading [Getting Started](../getting-started.md).
 * [Using Focus Mode](using-focus-mode.md)
 * [Using Typewriter Mode](using-typewriter-mode.md)
 * [Using Full Screen Mode](using-full-screen-mode.md)
+* [Using Navigation Bar](using-navigation-bar.md)
 * [Using Status Bar](using-status-bar.md)
 * [Using Windows](using-windows.md)
 * [Using Scripts](using-scripts.md)

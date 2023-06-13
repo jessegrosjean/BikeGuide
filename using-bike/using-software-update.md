@@ -1,6 +1,6 @@
 # Using Software Update
 
-If you are using the direct download version of Bike then you can control over when to check for updates and what kinds of updates to check for. If you are using the Mac App Store version of Bike then updates are handled by the Mac App Store.
+If you are using the direct download version of Bike then you can control when to check for updates and what kinds of updates to check for. If you are using the Mac App Store version of Bike then updates are handled by the Mac App Store.
 
 For the direct download version of Bike:
 

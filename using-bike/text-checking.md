@@ -1,6 +1,6 @@
 # Text Checking
 
-![Checking Panel](../.gitbook/assets/text-checking.png)
+![Checking Panel](../.gitbook/assets/TextChecking.png)
 
 Bike supports autocorrect, substitutions, user replacements, and spell checking. Bike's text checking interface is custom built, adopting and then improving upon macOS standard behavior.
 

@@ -1,6 +1,6 @@
 # Using Find Panel
 
-![Find Panel](../.gitbook/assets/find.png)
+![Find Panel](../.gitbook/assets/Finding.png)
 
 Use the find panel to find text in your outline.
 

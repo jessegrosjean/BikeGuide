@@ -7,7 +7,7 @@ Bike has two great ways to view big outlines:
 
 #### To collapse rows in your outline
 
-![Collapse](../.gitbook/assets/collapse.png)
+![Collapse](../.gitbook/assets/Folding.png)
 
 * Collapse Row (`Command-9`)
 * Expand Row (`Command-0`)
@@ -18,7 +18,7 @@ Bike has two great ways to view big outlines:
 
 #### To focus into your outline
 
-![Focus In](../.gitbook/assets/focus-in.png)
+![Focus In](../.gitbook/assets/Focusing.png)
 
 * Focus In (`Option-Command-Right`)
 * Focus Out (`Option-Command-Left`)

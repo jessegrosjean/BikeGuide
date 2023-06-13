@@ -15,14 +15,14 @@ From macOS User Guide:
 
 #### To open a single document in multiple windows
 
-![Multiple Window Views](../.gitbook/assets/windows.png)
+![Multiple Window Views](../.gitbook/assets/Windows.png)
 
 * Use the menu item Window > Duplicate Tab to New Window
 * Each window maintains its own selection, focused row, and expanded row.
 
 #### To open a single document in multiple tabs
 
-<figure><img src="../.gitbook/assets/tabs.png" alt=""><figcaption><p>Multiple Tab Views</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Tabs.png" alt=""><figcaption><p>Multiple Tab Views</p></figcaption></figure>
 
 * Use the menu item Window > Duplicate Tab
 * Each tab maintains its own selection, focused row, and expanded row.

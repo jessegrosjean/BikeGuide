@@ -1,6 +1,6 @@
 # Using Links
 
-![Links](../.gitbook/assets/links.png)
+![Links](../.gitbook/assets/Links.png)
 
 Bike allows you to insert links into your outline.
 

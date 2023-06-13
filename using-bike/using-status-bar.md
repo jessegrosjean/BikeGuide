@@ -1,6 +1,6 @@
 # Using Status Bar
 
-<figure><img src="../.gitbook/assets/statusbar.png" alt=""><figcaption><p>Status Bar</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/StatusBar.png" alt=""><figcaption><p>Status Bar</p></figcaption></figure>
 
 Bike's status bar, at the bottom of the window, gives you quick access to options, navigation, and text statistics. When an option is set the options button will highlight. When you have focused into a row the navigation button will highlight.
 

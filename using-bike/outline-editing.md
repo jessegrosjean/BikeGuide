@@ -1,6 +1,6 @@
 # Outline Editing
 
-![Outline Editing](../.gitbook/assets/outline-editing.png)
+![Outline Editing](../.gitbook/assets/OutlineEditing.png)
 
 In addition to [Text Editing](text-editing.md) Bike supports outline editing mode. When in outline editing mode rows are fully selected and shown in a different color.
 

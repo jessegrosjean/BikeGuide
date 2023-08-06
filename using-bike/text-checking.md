@@ -1,6 +1,6 @@
-# Text Checking
+# Using Text Checking
 
-![Checking Panel](../.gitbook/assets/TextChecking.png)
+![Checking Panel](../.gitbook/assets/CheckingPanel.png)
 
 Bike supports autocorrect, substitutions, user replacements, and spell checking. Bike's text checking interface is custom built, adopting and then improving upon macOS standard behavior.
 
@@ -80,16 +80,9 @@ To show the text checking panel use Edit > Checking > Show Checking or use the C
 
 ### Checking panel options
 
-* _Show spelling errors_: Use macOS spell checker to perform spell checking, highlighting problems in your outline.&#x20;
-* _Show grammar errors_: Use the macOS spell checker to perform grammar checking, highlighting problems in your outline.
+* _Show spelling_: Use macOS spell checker to perform spell checking, highlighting problems in your outline.&#x20;
+* _Show grammar with spelling_: Use the macOS spell checker to perform grammar checking, highlighting problems in your outline.
 
-### Checking panel autocorrect options
+### Autocorrect options
 
-Autocorrect options all apply only as you are typing. For example if you paste text into an outline that text is not autocorrected.
-
-* _Correct spelling_: Replace misspelled words with a correct spelling if possible.
-* _Capitalize words_: Capitalize words at the start of a sentence.
-* _Use smart quotes_: Replace typed quotes with typographic smart quotes.
-* _Use smart dashes_: Replace `--` with `—`. Also replaces `...` with `…`.
-* _Use text replacements_: Replaces short sequences of characters that you set in System settings with expanded text. For example if you frequently type the same text over and over again it can be useful to setup a short replacement for that text.&#x20;
-* _Double-space for period_: Replace two spaces with a period. To me this really only makes sense on iOS, but I'm including it here for completeness.
+Autocorrect options are accessible in the Bike > Settings > Autocorrect settings panel. Autocorrect options all apply only as you are typing. For example if you paste text into an outline that text is not autocorrected.

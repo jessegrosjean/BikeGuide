@@ -3,12 +3,13 @@
 First get oriented by reading [Getting Started](../getting-started.md).
 
 * [Text Editing](text-editing.md)
-* [Text Checking](text-checking.md)
 * [Text Formatting](text-formatting.md)
+* [Row Types](row-formatting-types.md)
 * [Outline Editing](outline-editing.md)
 * [Outline Viewing](outline-viewing.md)
 * [Using Documents](using-documents.md)
 * [Using Find Panel](using-find-panel.md)
+* [Using Text Checking](text-checking.md)
 * [Using Links](using-links.md)
 * [Using Text Wrap](using-text-wrap.md)
 * [Using Focus Mode](using-focus-mode.md)

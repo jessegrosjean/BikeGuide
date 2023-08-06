@@ -1,12 +1,12 @@
 # Getting Started
 
 {% embed url="https://vimeo.com/698171831" %}
-Bike: Tool for thought
+Bike: Structured Focused Writing
 {% endembed %}
 
 Bike is an outliner.&#x20;
 
-Indent to create a structured outline. Fold this outline to hide details. Focus your outline to see specifics. Use your outline to track ideas, projects, writing, to-do lists. More generally outliners are great _tools for thought_.
+Indent to create a structured outline. Fold this outline to hide details. Focus your outline to see specifics. Use your outline to track ideas, projects, writing, to-do lists.
 
 #### To create a row
 
@@ -38,5 +38,6 @@ Next I suggest you read:
 
 * [Text Editing](using-bike/text-editing.md)
 * [Text Formatting](using-bike/text-formatting.md)
+* [Row Formatting Types](using-bike/row-formatting-types.md)
 * [Outline Editing](using-bike/outline-editing.md)
 * [Keyboard Shortcuts](keyboard-shortcuts.md)

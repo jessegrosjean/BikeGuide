@@ -1,5 +1,5 @@
 ---
-description: Tool for thought
+description: Structured Focused Writing
 ---
 
 # Bike
@@ -9,6 +9,6 @@ description: Tool for thought
 
 Welcome to the Bike User Guide.
 
-Use Bike to record and process your ideas. Bike is a fast and fluid outliner – a simple and effective tool that also feels nice to use. If you don't have Bike yet please visit Bike's home page for a free download and a fun intro movie:
+Use Bike to think, write, organize. Make lists, take notes, create documents. Bike's an unusually fast outliner designed for your Mac. If you don't have Bike yet please visit Bike's home page for a free download and a fun intro movie:
 
-* [Bike – Tool for thought](https://hogbaysoftware.netlify.app/bike/)
+* [Bike – Tool for thought](https://www.hogbaysoftware.com/bike/)

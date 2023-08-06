@@ -24,15 +24,18 @@ In Outline Editing mode the arrow keys have different behavior:
   Move up by row
 * `Down` Key\
   Move down by row
+*   `Space` Key
+
+    Toggle rows _done_ status
 
 The row commands described in the [Text Editing](text-editing.md) section work differently too. They work on a row and all contained rows, not just individual rows. Movements are also restricted to the outline structure.
 
-* Row > Duplicate (`Command-Shift-D`)
-* Row > Delete (`Command-Shift-K`)
-* Row > Indent (`Control-Command-Right`)
-* Row > Outdent (`Control-Command-Left`)
-* Row > Move Up (`Control-Command-Up`)
-* Row > Move Down (`Control-Command-Down`)
+* Outline > Duplicate (`Command-Shift-D`)
+* Outline > Delete (`Command-Shift-K`)
+* Outline > Indent (`Control-Command-Right`)
+* Outline > Outdent (`Control-Command-Left`)
+* Outline > Move Up (`Control-Command-Up`)
+* Outline > Move Down (`Control-Command-Down`)
 
 Give it a try. Create a small outline and then try the above commands. First in text editing mode, second in outline editing mode. You'll soon see and understand the differences. Outline Editing mode can save a lot of time.
 
@@ -40,7 +43,7 @@ Give it a try. Create a small outline and then try the above commands. First in 
 
 Some command work the same in both modes:
 
-* Row > Insert Row (`Command-Return`)\
+* Outline > Insert Row (`Command-Return`)\
   Insert a new row
-* Row > Group (`Option-Command-G`)\
+* Outline > Group (`Option-Command-G`)\
   Inserts a new row above the selection. And then moves the selection into that new row.

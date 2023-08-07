@@ -6,7 +6,7 @@
 * [Using Bike](using-bike/README.md)
   * [Text Editing](using-bike/text-editing.md)
   * [Text Formatting](using-bike/text-formatting.md)
-  * [Row Formatting Types](using-bike/row-formatting-types.md)
+  * [Row Types](using-bike/row-types.md)
   * [Outline Editing](using-bike/outline-editing.md)
   * [Outline Viewing](using-bike/outline-viewing.md)
   * [Using Documents](using-bike/using-documents.md)

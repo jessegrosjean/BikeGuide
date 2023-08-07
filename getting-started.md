@@ -38,6 +38,6 @@ Next I suggest you read:
 
 * [Text Editing](using-bike/text-editing.md)
 * [Text Formatting](using-bike/text-formatting.md)
-* [Row Formatting Types](using-bike/row-formatting-types.md)
+* [Row Types](using-bike/row-types.md)
 * [Outline Editing](using-bike/outline-editing.md)
 * [Keyboard Shortcuts](keyboard-shortcuts.md)

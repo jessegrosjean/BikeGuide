@@ -4,7 +4,7 @@ First get oriented by reading [Getting Started](../getting-started.md).
 
 * [Text Editing](text-editing.md)
 * [Text Formatting](text-formatting.md)
-* [Row Formatting Types](row-formatting-types.md)
+* [Row Types](row-types.md)
 * [Outline Editing](outline-editing.md)
 * [Outline Viewing](outline-viewing.md)
 * [Using Documents](using-documents.md)

@@ -5,6 +5,7 @@ Bike uses the following open source software packages:
 * [CombineExt](https://github.com/CombineCommunity/CombineExt)
 * [GraphicsRenderer](https://github.com/shaps80/GraphicsRenderer)
 * [Motion](https://github.com/b3ll/Motion)
+* [Nucleo](https://github.com/helix-editor/nucleo)
 * [Preferences](https://github.com/sindresorhus/Preferences)
 * [Sparkle](https://sparkle-project.org)
 * [Swift Collections](https://github.com/apple/swift-collections)

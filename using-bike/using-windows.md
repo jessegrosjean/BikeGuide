@@ -27,6 +27,12 @@ From macOS User Guide:
 * Use the menu item Window > Duplicate Tab
 * Each tab maintains its own selection, focused row, and expanded row.
 
+#### To open multiple document in a single window in separate tabs
+
+* Use the menu item File > New Tab (`Option-Command-N`) to open a new untitled document in a new tab. (Must hold down `Option` to see that menu item.
+* Use the menu item Window > Merge All Windows to merge all windows into a single window with multiple tabs.
+* You can also drag existing tabs from window to window when the tab bar is visible. The tab bar is always visible if a window has multiple tabs... to make it visible when only a single tab is present use the menu View > Show Tab Bar.
+
 ### Bike Window Restoration
 
 macOS has a standard feature that saves windows when you quit an application and restores them next time you open the application.

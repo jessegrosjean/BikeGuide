@@ -6,10 +6,11 @@ The OPML format in particular is a [common standard](http://opml.org) for outlin
 
 #### Bike Compatible Apps
 
-This list welcome your feedback, additions, results, and notes. I have made this list by  searching and reading product pages and release notes. Some things may be out of date or just untrue. Please let me know what needs fixing!
+This list welcome your feedback, additions, results, and notes. I have made this list by searching and reading product pages and release notes. Some things may be out of date or just untrue. Please let me know what needs fixing!
 
 * [Bike (macOS)](https://www.hogbaysoftware.com/bike/) – Bike can read and write `bike`, `opml`, and `txt` directly to the file system as a supported file format. It can also read/write those formats to the clipboard.
 * [Checkvist (Web)](https://checkvist.com) – Import and export OPML. Copy and paste outlines with Bike, may need formatting cleanup.
+* [Cloud Outliner (macOS + iOS)](https://xwavesoft.com/cloud-outliner-for-iphone-ipad-mac-os-x.html) – Import and export OPML.
 * [Drummer (Web + Electron)](http://drummer.scripting.com) – Uses OPML as native format. The Electron version saves OPML directly to disk so you can work on the same file with Bike and Drummer without import/export. Both the web and Electron versions support import and export of OPML. Copy and paste outlines with Bike.
 * [Dynalist (Web)](https://dynalist.io) – Import and export OPML. Copy and paste outlines with Bike, many need formatting cleanup.
 * [iThoughtsX (macOS, iOS, Windows)](https://www.toketaware.com) – Import and export OPML. Copy and paste outlines with Bike, may need formatting cleanup.

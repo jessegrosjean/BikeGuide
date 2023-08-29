@@ -17,6 +17,7 @@
   * [Using Focus Mode](using-bike/using-focus-mode.md)
   * [Using Typewriter Mode](using-bike/using-typewriter-mode.md)
   * [Using Full Screen Mode](using-bike/using-full-screen-mode.md)
+  * [Using the Choice Palette](using-bike/using-the-choice-palette.md)
   * [Using Navigation Bar](using-bike/using-navigation-bar.md)
   * [Using Status Bar](using-bike/using-status-bar.md)
   * [Using Windows](using-bike/using-windows.md)

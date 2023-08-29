@@ -6,7 +6,7 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 
 * Formatting: `Command-E`
 * Add Link: `Command-K`
-* Add Row Link: `Shift-Command-K`
+* Add Row Link: `Command-Option-K`
 * Bold: `Command-B`
 * Italic: `Command-I`
 * Code: `` Shift-Command-` ``

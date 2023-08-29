@@ -42,7 +42,7 @@ bike://KOcw9x9N/ch#zf
 
 #### To create a Bike link:
 
-* Use Format > Add Link to Row… `Shift-Command-K` to quickly select a row and insert a link to that row. &#x20;
+* Use Format > Add Link to Row… `Command-Option-K` to quickly select a row and insert a link to that row. &#x20;
 * Use Edit > Copy Link `Shift-Command-C` to copy a link to the selected row. If your view is focused when you copy then the link will also include the focused row id.
 
 Alternatively you can drag a row by its triangle handle and then hold down the `Control` key before releasing the mouse. A link to the dragged row will be inserted into your outline.

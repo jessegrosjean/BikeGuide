@@ -26,7 +26,7 @@ Bike solves this problem with a new concept: _Typing Affinity_. When your text c
 
 Rich text formatting is command based, to make text bold you need to use the bold command. This is strait forward, but can become slow if you can't remember the right keyboard shortcuts.
 
-Bike's formatting popover makes this easier. You only need to learn one keyboard shortcut (`Command-K`) to show the formatting popover. Once the popover is showing you can use single key shortcuts to apply formatting commands. These shortcuts are shown in the popover so you don't need to memorize them.
+Bike's formatting popover makes this easier. You only need to learn one keyboard shortcut (`Command-E`) to show the formatting popover. Once the popover is showing you can use single key shortcuts to apply formatting commands. These shortcuts are shown in the popover so you don't need to memorize them.
 
 #### Visible Typing Attributes
 

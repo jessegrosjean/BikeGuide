@@ -22,5 +22,6 @@ Bike has two great ways to view big outlines:
 
 * Go > Focus In (`Option-Command-Right`)
 * Go > Focus Out (`Option-Command-Left`)
+* Go > Focus Heading… (`Command-P`) to quickly select and focus a heading.&#x20;
 
 In [Outline Editing](outline-editing.md) mode you can use arrow keys to expand and collapse rows.

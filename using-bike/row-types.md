@@ -1,6 +1,4 @@
-# Row Formatting Types
-
-
+# Row Types
 
 <figure><img src="../.gitbook/assets/RowTypes.png" alt=""><figcaption><p>Row Types</p></figcaption></figure>
 
@@ -10,21 +8,21 @@ Use row types to add another level of structure and meaning to your outlines. Ad
 
 The easiest way to use row types is through Bike's new "smart row types" feature. In a new row, type one of the following markdown inspired shortcuts--followed by a space:
 
-| #         | Heading         |
-| --------- | --------------- |
-| >         | Blockquote      |
-| \`\`\`    | Code Block      |
-| :         | Note            |
-| ---       | Horizontal Rule |
-| \[], -\[] | Task List       |
-| 1.        | Ordered List    |
-| -, \*, +  | Unordered List  |
+| #                      | Heading         |
+| ---------------------- | --------------- |
+| >                      | Blockquote      |
+| \`\`\`                 | Code Block      |
+| :                      | Note            |
+| ---                    | Horizontal Rule |
+| \[], -\[], \[ ], -\[ ] | Task List       |
+| 1.                     | Ordered List    |
+| -, \*, +               | Unordered List  |
 
 The shortcut text is replaced and the row type is set. Row types are supported in both `.bike` and `.opml` outlines. If smart row types are not working, make sure you have checked Settings > Autocorrect > Use smart row types.
 
 #### Use the Formatting Popover
 
-Use the same Formatting Popover (`Command-K`) that you use for text formatting to also set row types. Open the popover, and then press the down arrow to get a list of availible row types to choose from. This is fast, and you don't have to remember any of the row type completions described above.
+Use the same Formatting Popover (`Command-E`) that you use for text formatting to also set row types. Open the popover, and then press the down arrow to get a list of availible row types to choose from. This is fast, and you don't have to remember any of the row type completions described above.
 
 #### Use the Format > Row menu
 

@@ -4,7 +4,9 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 
 ### Text
 
-* Formatting: `Command-K`
+* Formatting: `Command-E`
+* Add Link: `Command-K`
+* Add Row Link: `Shift-Command-K`
 * Bold: `Command-B`
 * Italic: `Command-I`
 * Code: `` Shift-Command-` ``
@@ -26,6 +28,7 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 
 * Focus In: `Option-Command-Right`
 * Focus Out: `Option-Command-Left`
+* Focus Heading…: `Command-P`
 * Expand Row: `Command-0` or `Escape` to outline mode, then `Right`
 * Collapse Row: `Command-9` or `Escape` to outline mode, then `Left`
 * Expand All Rows: `Control-Command-0`

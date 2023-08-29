@@ -24,12 +24,13 @@ Indent to create a structured outline. Fold this outline to hide details. Focus 
 
 #### To focus into a specific part of your outline, hiding everything else
 
-* Command-Click a rows's handle or (`Option-Command-Right`)
-* Command-Click on a focused rows's handle to unfocus it or (`Option-Command-Left`)
+* Click the focus button to the right of a row's text.
+* Click that same focus button to unfocus an already focused row.
+* Use Go > Focus Heading… `Command-P` to quickly select and focus on any heading in your outline.
 
 **To format text in your outline**
 
-* Show the formatting popover with `Command-K`
+* Show the formatting popover with `Command-E`
 * Select formatting options from the popover with your mouse or with the single letter keyboard shortcuts displayed on the panel.
 
 That's it, just a few commands. Internalize these commands. _Learn the keyboard shortcuts_. Once you've done that Bike will be a great place for you to think.

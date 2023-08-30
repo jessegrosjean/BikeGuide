@@ -1,44 +1,61 @@
 # Using the Choice Palette
 
-Bike's choice palette allows you to quickly find and select items in long lists. The choice palette is used by the Go > Focus Heading and Format > Add Link to Row commands. In the future I expect it will show up in other places too.
+Quickly find and select items in long lists. Bike's choice palette is used by the "Go > Focus Heading" and "Format > Add Link to Row" commands. In the future I expect the choice palette to show up in other places too.
 
-#### Show choice palette
+<figure><img src="../.gitbook/assets/Focus Heading 1.png" alt=""><figcaption><p>Choice palette</p></figcaption></figure>
 
-When the choice palette is shown it lists all items. Use the arrow keys or mouse to select an item. Press Return to choose that item and close the palette.
+#### To make a choice
 
-Here you can see I've just selected Go > Focus Heading in my Moby Dick test document. In this example I have adjusted the palettes settings (see below) so that all rows are listed, instead of just headings and top level rows.
+* Use up/down arrow keys (or mouse) to select an item
+* Press Return key to select choice and close the palette
+* Press Escape key to close the palette without selecting an item
 
-<figure><img src="../.gitbook/assets/Focus Heading 1.png" alt=""><figcaption><p>Choice palette before filtering</p></figcaption></figure>
+#### To filter the availible choices
 
-#### Filter choice palette
-
-To filter the list of items start typing. The search is "fuzzy", and by default the results show ordered by how well they match.
-
-Here you can see that I've typed "md" and that has matched "Moby Dick" as my best match. Using acronyms in the filter field works well for short items.
-
-Filtering is really fast, even in big outlines.
+Filtering is really fast, even in big outlines!
 
 <figure><img src="../.gitbook/assets/Focus Heading 2.png" alt=""><figcaption><p>Choice palette while filtering</p></figcaption></figure>
 
-#### Use special characters to control filtering
+* Start typing to filter the list
+* Filtering is "fuzzy". Matches must have all searched letters, but they can also have unmatching letters between.
+* Results are ordered by how well they match, this can be configured in the palettes settings.
+* Acronym filtering (first letter of each word) works well when looking for shorter "topic" rows.
+* Filter method can be customized with special characters:
+  * Insert `!` at the start to invert the matching
+  * Insert `'` at the start to use substring matching
+  * Insert `^` at the start to use prefix matching
+  * Insert `$` at the end to use suffix matching
 
-* Insert `!` at the start to invert the matching
-* Insert `'` at the start to use substring matching
-* Insert `^` at the start to use prefix matching
-* Insert `$` at the end to use suffix matching
+When you filter your list the containing parent items of each match are always included in the results, even if those containing items don't match.
 
-#### Choice Palette Settings
+### Choice Palette Settings
 
-To the right of the filter field is a settings button. Each choice palette has it's own settings. For example the settings for "Focus Heading" can be different then the settings for "Add Link to Row".
+To the right of the filter field is the settings button. Each choice palette has its own settings. The settings for "Focus Heading" can be different then the settings for "Add Link to Row".
 
-* _Sort by match quality_: When checked the list isn't just filtered, matching items are also ordered by how well they match your query.
-* _Remove duplicate parents_: When matches are ordered (if they have parents) it can be the case that parents get listed in the results multiple times. Check this option to remove those duplicate parents, but doing this will also mean that the results are no longer strickly sorted by match quality.
-*   _Outline Path_: When the list of items is the rows in your outline you can use an "outline path" to select the set of rows that you'll see and filter.
+#### Sort by match quality
+
+When checked the best matches are shown first. Otherwise the outline is only filtered, leaving items in natural order.
+
+#### Remove duplicate containing parent items
+
+When the above sorting option is selected you might see duplicate containing parent items in your filter results.
+
+<figure><img src="../.gitbook/assets/Filter Options.png" alt=""><figcaption><p>No filter, sorted matches, sorted matches + remove duplicates</p></figcaption></figure>
+
+1. Unfiltered list
+2. Filtered list, matches sorted.
+   * Notice how item "one" shows up in the list twice. This is because the results are ordered and item "two > a" shows up after item "one > a", but before item "one > ba".
+   *   This view is nice because you see all top matches at the top of your list. The drawback is that you may see duplicate containing items, sibling matches are not always listed togather.
 
 
+3. Filtered list, matches sorted, duplicates removed.
+   * Notice that now the list contains no duplicates.
+   * This view is nice because the sibling items "one > a" and "one > ba" are next to each other and there are no duplicates. The drawback is that while the item "two > a" is the second best match, it is shown in the third position.
 
-    For example the "Go to heading" commands shows "heading" and top level rows by default. Maybe you don't use heading typed rows in your outline, and woud like to see level 1, 2, and 3 rows listed in the "Focus Heading" list.  You can do that by customizing the outine path.
+#### Outline Path
 
+Use the "outline path" setting to specifiy the rows that you'll see and filter.
 
+For example the "Focus Heading" commands shows "heading" type and top level rows by default. If you would like to see different rows when you "Focus Heading" you can do that by customizing the outline path.
 
-    It's never that simple right... outline paths are a new in progress feature, and there's no documentation yet. Polishing and documenting outine path syntax will be a focus of the next Bike release.
+At the moment outline paths are a new in progress feature. Undocumented, probably some bugs. Polishing and documenting outline paths will be focus of next big Bike release. In the mentime feel free to ask questions or make suggestions in Bike's support forums.

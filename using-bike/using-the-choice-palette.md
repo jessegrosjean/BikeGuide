@@ -10,14 +10,14 @@ Quickly find and select items in long lists. Bike's choice palette is used by th
 * Press Return key to select choice and close the palette
 * Press Escape key to close the palette without selecting an item
 
-#### To filter the availible choices
+#### To filter the available choices
 
 Filtering is really fast, even in big outlines!
 
 <figure><img src="../.gitbook/assets/Focus Heading 2.png" alt=""><figcaption><p>Choice palette while filtering</p></figcaption></figure>
 
 * Start typing to filter the list
-* Filtering is "fuzzy". Matches must have all searched letters, but they can also have unmatching letters between.
+* Filtering is "fuzzy". Matches must have all searched letters, but they can also have unmatched letters between.
 * Results are ordered by how well they match, this can be configured in the palettes settings.
 * Acronym filtering (first letter of each word) works well when looking for shorter "topic" rows.
 * Filter method can be customized with special characters:
@@ -45,7 +45,7 @@ When the above sorting option is selected you might see duplicate containing par
 1. Unfiltered list
 2. Filtered list, matches sorted.
    * Notice how item "one" shows up in the list twice. This is because the results are ordered and item "two > a" shows up after item "one > a", but before item "one > ba".
-   *   This view is nice because you see all top matches at the top of your list. The drawback is that you may see duplicate containing items, sibling matches are not always listed togather.
+   *   This view is nice because you see all top matches at the top of your list. The drawback is that you may see duplicate containing items, sibling matches are not always listed together.
 
 
 3. Filtered list, matches sorted, duplicates removed.
@@ -54,8 +54,8 @@ When the above sorting option is selected you might see duplicate containing par
 
 #### Outline Path
 
-Use the "outline path" setting to specifiy the rows that you'll see and filter.
+Use the "outline path" setting to specify the rows that you'll see and filter.
 
 For example the "Focus Heading" commands shows "heading" type and top level rows by default. If you would like to see different rows when you "Focus Heading" you can do that by customizing the outline path.
 
-At the moment outline paths are a new in progress feature. Undocumented, probably some bugs. Polishing and documenting outline paths will be focus of next big Bike release. In the mentime feel free to ask questions or make suggestions in Bike's support forums.
+At the moment outline paths are a new in progress feature. Undocumented, probably some bugs. Polishing and documenting outline paths will be focus of next big Bike release. In the meantime feel free to ask questions or make suggestions in Bike's support forums.

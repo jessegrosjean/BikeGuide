@@ -2,6 +2,10 @@
 
 This page lists important Bike specific keyboard shortcuts. Other shortcuts that are not listed here can be found when browsing Bike's application menus.
 
+### Edit
+
+* Check Next: `Command-;`
+
 ### Format
 
 * Bold: `Command-B`
@@ -9,11 +13,10 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 * Code: `` Shift-Command-` ``
 * Highlight: `Shift-Command-H`
 * Strikethrough: `Shift-Command--`
-* Edit Formatting: `Command-E`
-* Clear Formatting: `Option-Command-Delete`
-* Check Next: `Command-;`
 * Add Link: `Command-K`
 * Add Row Link: `Command-Option-K`
+* Edit Formatting: `Command-E`
+* Clear Formatting: `Option-Command-Delete`
 
 ### Outline
 

@@ -9,12 +9,28 @@ Bike has two great ways to view big outlines:
 
 ![Collapse](../.gitbook/assets/Folding.png)
 
-* Outline > Collapse Row (`Command-9`)
-* Outline > Expand Row (`Command-0`)
-* Outline > Collapse All (`Control-Command-9`)\
-  Collapse the selected row and all rows that it contains. This is a nice way to clean up a view, when you next expand the row its contained rows will still be collapsed.
-* Outline > Expand All (`Control-Command-0`)\
+*   Outline > Expand Row (`Command-0`)
+
+    Expand selected row.
+*   Outline > Collapse Row (`Command-9`)
+
+    Collapse selected row.
+* Outline > Expand Row Completely (`Control-Command-0`)\
   Expand the selected row and all rows that it contains. See all contained rows.
+* Outline > Collapse Row Completely (`Control-Command-9`)\
+  Collapse the selected row and all rows that it contains. This is a nice way to clean up a view, when you next expand the row its contained rows will still be collapsed.
+*   Outline > Expand All (`Control-Command-0`)
+
+    Expand all top level rows.
+*   Outline > Collapse All (`Control-Command-9`)
+
+    Collapse all top level rows.
+*   Outline > Expand All by Level (`Shift-Command-0`)
+
+    Find the minimum level that is collapsed. Expand all rows at that level.
+*   Outline > Collapse All by Level (`Shift-Command-9`)
+
+    Find the maximum level that is expanded. Collapse all rows at that level.
 
 #### To focus into your outline
 

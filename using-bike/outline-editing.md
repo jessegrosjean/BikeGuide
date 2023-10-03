@@ -43,7 +43,9 @@ Give it a try. Create a small outline and then try the above commands. First in 
 
 Some command work the same in both modes:
 
-* Outline > Insert Row (`Command-Return`)\
+* Outline > New Row (`Command-Return`)\
   Insert a new row
 * Outline > Group (`Option-Command-G`)\
   Inserts a new row above the selection. And then moves the selection into that new row.
+* Outline > Move to Heading... (`Command-\`)\
+  Move selected rows to choosen heading row.

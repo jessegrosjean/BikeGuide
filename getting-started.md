@@ -26,7 +26,7 @@ Indent to create a structured outline. Fold this outline to hide details. Focus 
 
 * Click the focus button to the right of a row's text.
 * Click that same focus button to unfocus an already focused row.
-* Use Go > Focus Heading… `Command-P` to quickly select and focus on any heading in your outline.
+* Use Go > Focus Heading… `Command-P` to focus any heading in your outline.
 
 **To format text in your outline**
 

@@ -45,6 +45,9 @@ Some command work the same in both modes:
 
 * Outline > New Row (`Command-Return`)\
   Insert a new row
+*   Outline > Sort Rows
+
+    Sort top level selected rows, or if only a single row is selected then sorts children of that row.
 * Outline > Group (`Option-Command-G`)\
   Inserts a new row above the selection. And then moves the selection into that new row.
 * Outline > Move to Heading... (`Command-\`)\

@@ -72,9 +72,9 @@ You don’t have to include all filtering options in each step. For example the 
 
     Same behavior as above, but makes the predicate test explicit. See "Step Predicate" below to learn how predicates work.
 
-#### Step Axis
+#### Step Axes
 
-By default each step passes the children of matched rows into the next step. This is because "child" is the default axis, but other axis's are also possible.
+By default each step passes the children of matched rows into the next step. This is because "child" is the default axis, but other axes are also possible.
 
 *   `/a`
 
@@ -84,12 +84,12 @@ By default each step passes the children of matched rows into the next step. Thi
     Descendant axis, all descendants of the outline root are passed to the step. This searches entire outline for "a".
 *   `//a/..b`
 
-    This has two non-default axis's. First use the descendant access to search outline for "a". Then use the ".." parent axis to pass the parents of the "a" rows and match the parents that contain "b".
+    This has two non-default axes. First use the descendant access to search outline for "a". Then use the ".." parent axis to pass the parents of the "a" rows and match the parents that contain "b".
 * `/a` can also be written as `/child::a` to be more explicit. Some common steps have shortcut syntax, others need to be written out followed by `::`.
 
 <details>
 
-<summary>List of step axis</summary>
+<summary>List of step axes</summary>
 
 * `parent::` or shortcut `..`
 * `self::` or shortcut `.`

@@ -23,6 +23,7 @@
   * [Using Documents](using-bike/using-documents.md)
   * [Using Scripts](using-bike/using-scripts.md)
   * [Using Shortcuts](using-bike/using-shortcuts.md)
+  * [Using Outline Paths](using-bike/using-outline-paths.md)
   * [Using Software Update](using-bike/using-software-update.md)
 * [Customizing Bike](customizing-bike/README.md)
   * [Creating Scripts](customizing-bike/creating-scripts.md)

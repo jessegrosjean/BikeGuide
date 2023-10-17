@@ -21,4 +21,5 @@ First get oriented by reading [Getting Started](../getting-started.md).
 * [Using Documents](using-documents.md)
 * [Using Scripts](using-scripts.md)
 * [Using Shortcuts](using-shortcuts.md)
+* [Using Outline Paths](using-outline-paths.md)
 * [Using Software Update](using-software-update.md)

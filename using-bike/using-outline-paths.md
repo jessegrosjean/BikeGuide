@@ -24,6 +24,9 @@ Unlike file paths the default test is "contains text" instead of "equals file na
 *   `/a/b`
 
     Select "b" children of top level "a" rows
+*   `.a`
+
+    A relative path that selects the current row if it contains "a". Generally you won't need to use relative paths. But it's good to know that they exist, and good to know that paths need to start with `/` or `.` to match rows. Otherwise see "Value Expressions".
 
 ### Path Expressions
 
@@ -91,7 +94,7 @@ By default each step passes the children of matched rows into the next step. Thi
 
 #### Step Type
 
-Each step can include a row type test. Only rows matching that type are eligible to match the step.
+Each step can include a row type test at the start.
 
 *   `//task`
 
@@ -101,11 +104,11 @@ Each step can include a row type test. Only rows matching that type are eligible
     Match all tasks that are contained by a top level heading.
 *   `//"task"`
 
-    Match all rows that contain the text "task". When you want to search for text that in some way conflicts with outline path syntax you need to put that text in quotes.
+    Match all rows that contain the text "task". When you want to search for text that in some way conflicts with outline path syntax put that text in quotes to make it a value.
 
 <details>
 
-<summary>Row Types</summary>
+<summary>List of row types</summary>
 
 * `body`
 * `heading`
@@ -132,22 +135,20 @@ Each step can include a predicate test. You can then combine predicates with `an
     Matches rows that do not have a @done attribute.
 *   `//@text contains "get rich"`
 
-    Match rows that contain the text "get rich". See "Comparison relations" for a full list of comparisons you can make.
-*   `//not @done and @text contains "get rich"`
+    Match rows that contain the text "get rich". This example uses the `contains` relation.
+*   `//@text contains "get rich" and not @done`
 
-    Combine predicates. This is a valuable outline path! Use it to find all rows that are unfinished and will make you rich.
+    Combine predicates. Use it to find all rows that will make you rich and are unfinished!
 
 <details>
 
-<summary>Row attributes</summary>
+<summary>More on row attributes</summary>
 
-Each row in your outline has associated attributes that you can use in predicate tests.
+Each row in your outline has associated attributes that you can use in outlihne path predicate tests.
 
-Some attributes are built in to all rows, other attributes are optional and maybe be set by scripts or other features within Bike. For example when you click the checkmark of a task row it toggles the row's @done attribute.
+Some attributes are built in to all rows, other attributes are optional and maybe be set by scripts or other features within Bike. For example when you click the checkmark of a task row it adds the @done attribute.
 
-Use Window > Outline Path Explorer and notice that the outline shown in that window shows each row's attributes.
-
-Built in attributes include:
+Open Window > Outline Path Explorer and notice that the outline view showns each row's attributes. The built in attributes include:
 
 * `@id`
 * `@type`
@@ -158,7 +159,9 @@ Built in attributes include:
 
 <details>
 
-<summary>Comparison relations</summary>
+<summary>More on comparison relations</summary>
+
+Use the following relations in your comparision predicates:
 
 * `beginswith`
 * `contains`
@@ -171,18 +174,59 @@ Built in attributes include:
 * `>`
 * `>=`
 
-You can also include relation modifiers in brackets after the relation. For example `beginswith[s]` will perform a case sensitive test.&#x20;
-
-The available modifiers are:
+Use relation modifiers in brackets after the relation to change how it is evaluated. For example `beginswith[s]` will perform a case sensitive test instead of the default case insensitive test. The available modifiers are:
 
 * `i` Case insensitive compare (default)
 * `s` Case sensitive compare
-* `n` Numeric compare. Values are converted to numbers before comparing. This means `"01"` will equal `"1.0"`, which is not true when doing the default string compare.
+*   `n` Numeric compare
+
+    Values are converted to numbers before comparing. This means `"01"` will equal `"1.0"`, which is not true when doing the default string compare.
 
 </details>
 
 #### Step Slice
 
-Each step produces an outline ordered list of matches that are passed on to the next step. Use slicing if you want to limit what is passed based on ordered position.
+Each step produces a list of ordered matches. Use position based slicing if you want to limit the step results by position.
+
+*   `//a[1]`
+
+    Match the first row that contains "a"
+*   `//a[-1]`
+
+    Match the last row that contains "a"
+*   `//a[2:]`
+
+    Match all rows that contain "a", but skip the first.
+*   `//a[:-1]`
+
+    Match all rows that contain "a", but skip the last.
+*   `//a[2:5]`
+
+    Match rows 2, 3, 4 that contain "a".
 
 ### Value Expressions
+
+You have already seen lots of simple value expression such as `a` or `"a"`. That's maybe all you will ever need, but for some outline paths you might want more...
+
+Normally you put values expressions on the right side of comparison predicates, but an entire outline path can also be a values expression. If you don't start your outline path with a `/` (global path) or `.` (relative path) then it is processed as a value expression.
+
+You can see this in the Outline Path Explorer window, type "hello world". Notice that the message on the trailing side of the search field says "hello world" instead of telling you how many rows you matched. This is because "hello world" is a value expression that evaluates to "hello world".
+
+*   `hello world`
+
+    Unquoted text value expression that evaluates to `hello world`.
+*   `"hello world"`
+
+    Quoted text value expression that evaluates to `hello world`. Quoting is need when your text value conflicts with other outline path syntax.
+*   `count(//a)`
+
+    Function value expression that returns the count of rows containing "a".
+*   `$variable`
+
+    Variable value expression that returns the value of the variable named "variable". Currently no variables are set, but in the future I think they will be important for some advanced features. For example `$now` will be current time. `$focused` will be id of focused row. Those will be useful for outline paths in stylesheets.
+*   `@attribute`
+
+    Attribute value expression that returns the value of the attribute named "attribute" for the current row. This value expression will always return `nil` if it's not used within a path step.
+*   `1` or `(1 + 1) / 2`
+
+    Math value expression that evaluates to `1`. Math operators (`+`, `-`, `*`, `/`) require single whitespace on either side. This is so `/` doesn't conflict with path step separator. It doesn't make sense to use Math operators with text. `1 + "1"` is an invalid path. `1 + @attribute` is ok, but will return `nan` if the attribute can't be converted to a number.

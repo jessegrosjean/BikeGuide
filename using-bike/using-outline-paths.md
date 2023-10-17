@@ -8,11 +8,22 @@ Outline paths are a work in progress and only available in the current preview r
 
 On your computer you use file paths to specify files.
 
-Outline paths serve a similar purpose, but are uses to specify rows in your outline. Simple outline paths look like file paths. More powerful and complex outline paths are also possible.
+Outline paths serve a similar purpose, but are uses to specify rows in your outline. Simple outline paths look like file paths. More powerful and complex outline paths are also possible, but can get pretty complex looking.
 
-Outline paths don't do much on their own, but they are an important building block for stylesheets and filtering. For now my focus is on their design and on tools to make them easier to understand. In future releases I'll be using them to implement those other features.
+Outline paths don't do much on their own, but they are an important building block for stylesheets and filtering. Those features are not available yet. Now my focus is on implementing outline paths and on tools to make them easier to understand.
 
-* Bike > Window > Outline Path Explorer
+### Outline Path Explorer
+
+<figure><img src="../.gitbook/assets/Outline Path Explorer.png" alt=""><figcaption><p>Outline Path Explorer</p></figcaption></figure>
+
+The main tool that I'm working on is Outline Path Explorer.&#x20;
+
+In the Outline Path Explorer you type the outline path in the text field at the top. The results are displayed in a label to the trailing side of the search field. Next you see a diagnostics text area that shows how your outline path was parsed. Last you see your outline with rows matching the path in green.
+
+#### To open the Outline Path Explorer:
+
+1. Open an outline where you would like to evaluate outline paths&#x20;
+2. Open menu Window > Outline Path Explorer
 
 ### Basic paths
 
@@ -188,21 +199,21 @@ Use relation modifiers in brackets after the relation to change how it is evalua
 
 Each step produces a list of ordered matches. Use position based slicing if you want to limit the step results by position.
 
-*   `//a[1]`
+*   `//a[0]`
 
     Match the first row that contains "a"
 *   `//a[-1]`
 
     Match the last row that contains "a"
-*   `//a[2:]`
+*   `//a[1:]`
 
     Match all rows that contain "a", but skip the first.
 *   `//a[:-1]`
 
     Match all rows that contain "a", but skip the last.
-*   `//a[2:5]`
+*   `//a[1:4]`
 
-    Match rows 2, 3, 4 that contain "a".
+    Match second, third, and fourth rows that contain "a".
 
 ### Value Expressions
 

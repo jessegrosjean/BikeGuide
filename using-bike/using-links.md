@@ -15,7 +15,7 @@ Anytime there is a link in your document Bike will insert a "link button" after 
 
 More information on formatting and activating links can be found in the [text-formatting.md](text-formatting.md "mention") section.
 
-### Bike Specific Links
+### Bike Row Links
 
 Bike includes its own link type that allows you to link directly to a row in your outline. When activating a Bike link you can:
 
@@ -43,13 +43,13 @@ bike://KOcw9x9N/ch#zf
 #### To create a Bike link:
 
 * Use Format > Add Link to Row… `Command-Option-K` to quickly select a row and insert a link to that row. &#x20;
-* Use Edit > Copy Link `Shift-Command-C` to copy a link to the selected row. If your view is focused when you copy then the link will also include the focused row id.
+* Use Edit > Copy > Row Link `Shift-Command-C` to copy a link to the selected row. If your view is focused when you copy then the link will also include the focused row id.
 
 Alternatively you can drag a row by its triangle handle and then hold down the `Control` key before releasing the mouse. A link to the dragged row will be inserted into your outline.
 
-### Bike Path Links
+### Bike Path Row Links
 
-Bike links also have an alternative form. Bike path links use a file path to locate the associated outline file instead of using the outline's id.
+Bike links also have an alternative form. Bike path row links use a file path to locate the associated outline file instead of using the outline's id.
 
 This is a Bike path link:
 
@@ -57,11 +57,11 @@ This is a Bike path link:
 bike:///Users/jessegrosjean/Documents/todo.bike#aF
 ```
 
-Path links are more likely to break than normal Bike links. If you move or rename the linked to outline then the link will break. I generally recommend using normal Bike links.
+Path row links are more likely to break than standard Bike links. If you move or rename the linked to outline then the link will break. I generally recommend using normal Bike links.
 
 #### To create a Bike path link:
 
-* Use Edit > Copy Path Link to copy a path link to the selected row.
+* Use Edit > Copy > Path Row Link to copy a path row link to the selected row.
 
 ### What if a link stops working?
 

@@ -59,7 +59,7 @@ bike:///Users/jessegrosjean/Documents/todo.bike#aF
 
 Path row links are more likely to break than standard Bike links. If you move or rename the linked to outline then the link will break. I generally recommend using normal Bike links.
 
-#### To create a Bike path link:
+#### To create a Bike path row link:
 
 * Use Edit > Copy > Path Row Link to copy a path row link to the selected row.
 

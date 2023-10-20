@@ -58,9 +58,7 @@ Use `union`, `except`, and `intersect` to combine the results of multiple outlin
 
 ### Path Steps
 
-Paths are divided into steps. For example the path `/a/b` has two steps. Each step contains filtering logic.
-
-You don’t have to include all filtering options in each step. For example the following steps have the same  behavior.
+Paths are divided into steps. For example the path `/a/b` has two steps. Each step contains filtering logic. You don’t have to include all filtering options in each step. For example the following steps have the same  behavior.
 
 *   `/a`
 
@@ -76,7 +74,7 @@ You don’t have to include all filtering options in each step. For example the 
 
 By default each step passes the children of the matched rows to the next step. This is because "child" is the default axis. Other axes are also possible.
 
-For example, say you want to search your entire outline for the text "pizza". That would be difficult if each step could only process the children of the previous step. To search the entire outline we would need to keep creating longer outline paths to seach each level of the outline:
+For example, say you want to search your entire outline for the text "pizza". That would be difficult if each step could only process the children of the previous step. To search the entire outline we would need to keep creating longer paths to seach each level of the outline:
 
 * \`/pizza\`
 * \`/\*/pizza\`

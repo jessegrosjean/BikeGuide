@@ -8,9 +8,9 @@ Outline paths are a work in progress and only available in the current preview r
 
 On your computer you use file paths to specify files.
 
-Outline paths serve a similar purpose, but are uses to specify rows in your outline. Simple outline paths look like file paths. More powerful and complex outline paths are also possible, but can get pretty complex looking.
+Outline paths are similar, but used to specify rows in your outline. Simple outline paths look like file paths. More powerful and complex outline paths are also possible.
 
-Outline paths don't do much on their own, but they are an important building block for stylesheets and filtering. Those features are not available yet. Now my focus is on implementing outline paths and on tools to make them easier to understand.
+Outline paths don't do much on their own, but they are an important building block for later features such as stylesheets and filtering. Right now my focus is on outline paths and on tools to make outline paths easier to understand.
 
 ### Outline Path Explorer
 
@@ -18,7 +18,7 @@ Outline paths don't do much on their own, but they are an important building blo
 
 The main tool that I'm working on is Outline Path Explorer.&#x20;
 
-In the Outline Path Explorer you type the outline path in the text field at the top. The results are displayed in a label to the trailing side of the search field. Next you see a diagnostics text area that shows how your outline path was parsed. Last you see your outline with rows matching the path in green.
+In the Outline Path Explorer you type an outline path in the text field at the top. The results are displayed in a label to the trailing side of the search field. Next you see a diagnostics text area that shows how your outline path was parsed. Last you see your outline with rows matching the path in green.
 
 #### To open the Outline Path Explorer:
 

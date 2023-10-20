@@ -74,32 +74,65 @@ You don’t have to include all filtering options in each step. For example the 
 
 #### Step Axes
 
-By default each step passes the children of matched rows into the next step. This is because "child" is the default axis, but other axes are also possible.
+By default each step passes the children of the matched rows to the next step. This is because "child" is the default axis. Other axes are also possible.
 
-*   `/a`
+For example, say you want to search your entire outline for the text "pizza". That would be difficult if each step could only process the children of the previous step. To search the entire outline we would need to keep creating longer outline paths to seach each level of the outline:
 
-    Default child axis (what we've been using). Children of the outline root are passed to the step.
-*   `//a`
+* \`/pizza\`
+* \`/\*/pizza\`
+* \`/\*/\*/pizza\`
 
-    Descendant axis, all descendants of the outline root are passed to the step. This searches entire outline for "a".
-*   `//a/..b`
+To solve this we can use the "descendant" axis. It selects all descendants of the rows passed into the step. You can search for pizza anywhere in your outline using the `//` descendant axis like this:
 
-    This has two non-default axes. First use the descendant access to search outline for "a". Then use the ".." parent axis to pass the parents of the "a" rows and match the parents that contain "b".
-* `/a` can also be written as `/child::a` to be more explicit. Some common steps have shortcut syntax, others need to be written out followed by `::`.
+*   `//pizza`
+
+    Descendant axis, selects all descendants of the outline root. They are then filtered to only the ones that contain pizza.
 
 <details>
 
-<summary>List of step axes</summary>
+<summary>Advanced step axes </summary>
 
-* `parent::` or shortcut `..`
-* `self::` or shortcut `.`
-* `child::`
-* `descendant::` or shortcut `//`
-* `descendant-or-self::` or shortcut `///`
-* `following-sibling::`
-* `following::`
-* `preceding-sibling::`
-* `preceding::`
+Another useful axis is "parent". This uses the same `..` sytax that file paths use to go to the parent directory.
+
+*   `//pizza/..box`
+
+    First use the descendant access to find "pizza". Then use the `..` parent axis select the parents of those "pizza" rows, and then filter those parents to those that contain "box. You've found the pizza boxes!
+
+The above examples use the shortcut form of the descendant and parent axes. There is also a more general form where you enter the axis name followed by `::`. This is needed because there are more axes and some don't have shortcut forms:
+
+*   `ancestor::`
+
+    All ancestors of the rows passed into the step
+*   `ancestor-or-self::`
+
+    All rows passed into the step and their ancestors
+*   `parent::` or shortcut `..`
+
+    All parents the rows passed into the step
+*   `self::` or shortcut `.`
+
+    All rows passed into the step
+*   `child::`
+
+    All children of the rows passed into the step
+*   `descendant::` or shortcut `//`
+
+    All descendants of the rows passed into the step
+*   `descendant-or-self::` or shortcut `///`
+
+    All rows passed into the step and their descendants
+*   `following-sibling::`
+
+    All siblings after the rows passed into the step
+*   `following::`
+
+    All rows (in outline) following the rows passed into the step
+*   `preceding-sibling::`
+
+    All siblings before the rows passed into the step
+*   `preceding::`
+
+    All rows (in outline) before the rows passed into the step
 
 </details>
 

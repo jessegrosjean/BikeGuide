@@ -58,4 +58,6 @@ Use the "outline path" setting to specify the rows that you'll see and filter.
 
 For example the "Focus Heading" commands shows "heading" type and top level rows by default. If you would like to see different rows when you "Focus Heading" you can do that by customizing the outline path.
 
-At the moment outline paths are a new in progress feature. Undocumented, probably some bugs. Polishing and documenting outline paths will be focus of next big Bike release. In the meantime feel free to ask questions or make suggestions in Bike's support forums.
+{% content-ref url="using-outline-paths.md" %}
+[using-outline-paths.md](using-outline-paths.md)
+{% endcontent-ref %}

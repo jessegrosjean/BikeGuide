@@ -18,9 +18,9 @@ Outline paths don't do much on their own, but they are an important building blo
 
 Do you know what XPath is?
 
-If you don't feel free to skip this section collapsed section. If you do then you have a leg up in understanding Bike's outline paths.
+If you do then you have a leg up in understanding Bike's outline paths.
 
-Generally outline paths can be thought of as xpath, but with a different syntax and specialized to search Bike outlines. The query model and capabilities of outline paths are very similar to what's possible when querying with xpath. Learn more about [xpath](https://developer.mozilla.org/en-US/docs/Web/XPath).
+Generally outline paths can be thought of as XPath, but with a different syntax and specialized behavior to search Bike outlines. The query model and capabilities of outline paths are very similar to what's possible with XPath. Learn more about [XPath](https://developer.mozilla.org/en-US/docs/Web/XPath).
 
 </details>
 

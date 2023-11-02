@@ -12,6 +12,18 @@ Outline paths are similar, but used to specify rows in your outline. Simple outl
 
 Outline paths don't do much on their own, but they are an important building block for later features such as stylesheets and filtering. Right now my focus is on outline paths and on tools to make outline paths easier to understand.
 
+<details>
+
+<summary>Outline paths are related to XPath</summary>
+
+Do you know what XPath is?
+
+If you don't feel free to skip this section collapsed section. If you do then you have a leg up in understanding Bike's outline paths.
+
+Generally outline paths can be thought of as xpath, but with a different syntax and specialized to search Bike outlines. The query model and capabilities of outline paths are very similar to what's possible when querying with xpath. Learn more about [xpath](https://developer.mozilla.org/en-US/docs/Web/XPath).
+
+</details>
+
 ### Outline Path Explorer
 
 <figure><img src="../.gitbook/assets/Outline Path Explorer.png" alt=""><figcaption><p>Outline Path Explorer</p></figcaption></figure>

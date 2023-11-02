@@ -125,6 +125,9 @@ The above examples use the shortcut form of the descendant and parent axes. Ther
 *   `child::`
 
     All children of the rows passed into the step
+*   `run::`
+
+    All text runs of the rows passed into the step. This step is unique because you are filtering on text runs and their attributes, not rows. This query uses the text run axis to find all bold text in your outline `//*/run::@strong`.
 *   `descendant::` or shortcut `//`
 
     All descendants of the rows passed into the step
@@ -272,15 +275,15 @@ You can see this in the Outline Path Explorer window, type "hello world". Notice
 *   `"hello world"`
 
     Quoted text value expression that evaluates to `hello world`. Quoting is need when your text value conflicts with other outline path syntax.
-*   `count(//a)`
-
-    Function value expression that returns the count of rows containing "a".
-*   `$variable`
-
-    Variable value expression that returns the value of the variable named "variable". Currently no variables are set, but in the future I think they will be important for some advanced features. For example `$now` will be current time. `$focused` will be id of focused row. Those will be useful for outline paths in stylesheets.
 *   `@attribute`
 
     Attribute value expression that returns the value of the attribute named "attribute" for the current row. This value expression will always return `nil` if it's not used within a path step.
+*   `$variable`
+
+    Variable value expression that returns the value of the variable named "variable". Currently no variables are set, but in the future I think they will be important for some advanced features. For example `$now` will be current time. `$focused` will be id of focused row. Those will be useful for outline paths in stylesheets.
 *   `1` or `(1 + 1) / 2`
 
     Math value expression that evaluates to `1`. Math operators (`+`, `-`, `*`, `/`) require single whitespace on either side. This is so `/` doesn't conflict with path step separator. It doesn't make sense to use Math operators with text. `1 + "1"` is an invalid path. `1 + @attribute` is ok, but will return `nan` if the attribute can't be converted to a number.
+*   `count(//a)`
+
+    Function value expression that returns the count of rows containing "a".

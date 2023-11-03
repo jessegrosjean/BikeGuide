@@ -6,11 +6,11 @@ Outline paths are a work in progress and only available in the current preview r
 
 ## What is an outline path?
 
-On your computer you use file paths to specify files.
+On your computer you use file paths to locate files.
 
-Outline paths are similar, but used to specify rows in your outline. Simple outline paths look like file paths. More powerful and complex outline paths are also possible.
+Outline paths are similar, but used to locate rows in your outline. Simple outline paths look just like file paths. More powerful outline paths that work more like database queries are also possible.
 
-Outline paths don't do much on their own, but they are an important building block for later features such as stylesheets and filtering. Right now my focus is on outline paths and on tools to make outline paths easier to understand.
+One important difference between outline paths and file paths is that outline paths often locate many rows, while file paths locate individual files.
 
 <details>
 
@@ -20,18 +20,30 @@ If you already know what [XPath](https://developer.mozilla.org/en-US/docs/Web/XP
 
 </details>
 
+### Where are outline paths used?
+
+Outline paths don't do much on their own, but they are an important building block for other features. Here are some places where they are being used today:
+
+1. Bike's AppleScript dictionary contains a `query` command that takes an outline path and returns the path result.
+2. Bike Shortcut actions contain a "Query Rows" action that takes an outline path and returns matching rows.
+3. The Choice Palette settings uses an outline path to specify the initial set of rows to be displayed in the choice palette before filtering is performed.
+
+In future Bike releases I expect outline paths to start taking a more central role. For example they will be an important part of Bike's stylesheet/theme system. They will also be an important part of filtering Bike outlines.
+
 ### Outline Path Explorer
 
 <figure><img src="../.gitbook/assets/Outline Path Explorer.png" alt=""><figcaption><p>Outline Path Explorer</p></figcaption></figure>
 
-The main tool that I'm working on is Outline Path Explorer.&#x20;
-
-In the Outline Path Explorer you type an outline path in the text field at the top. The results are displayed in a label to the trailing side of the search field. Next you see a diagnostics text area that shows how your outline path was parsed. Last you see your outline with rows matching the path in green.
+Outline paths can be complex. The Outline Path Explorer is a tool to help you compose and understand outline paths.
 
 #### To open the Outline Path Explorer:
 
 1. Open an outline where you would like to evaluate outline paths&#x20;
 2. Open menu Window > Outline Path Explorer
+
+In the Outline Path Explorer type an outline path in the text field at the top. The path results are displayed in a label to the trailing side of the search field.  Next you see your outline with matching rows highlighted green. Matching row text runs are highlighterd in a darker green. Last you see a diagnostics text area that shows how your outline path was parsed.
+
+The outline view in the Outline Path Explorer shows outline text and all outline attributes. For example above each row you will see `@id`, `@level`, and `@type` because every row has those attributes. You might also see other attributes, for example a checked off task will include a `@done` attribute. You can use these attributes in your outine paths.
 
 ### Basic Paths
 

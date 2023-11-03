@@ -33,7 +33,7 @@ In the Outline Path Explorer you type an outline path in the text field at the t
 1. Open an outline where you would like to evaluate outline paths&#x20;
 2. Open menu Window > Outline Path Explorer
 
-### Basic paths
+### Basic Paths
 
 Unlike file paths the default test is "contains text" instead of "equals file name". Outline paths often have multiple matching rows.
 
@@ -197,7 +197,7 @@ Each step can include a predicate test. You can then combine predicates with `an
 
 <summary>More on row attributes</summary>
 
-Each row in your outline has associated attributes that you can use in outlihne path predicate tests.
+Each row in your outline has associated attributes that you can use in outline path predicate tests.
 
 Some attributes are built in to all rows, other attributes are optional and maybe be set by scripts or other features within Bike. For example when you click the checkmark of a task row it adds the @done attribute.
 

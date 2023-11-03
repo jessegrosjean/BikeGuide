@@ -43,5 +43,5 @@ Bike no longer uses the system setting. Instead to leave windows open when quitt
 
 #### Bike "Secondary" Restoration
 
-If standard macOS Window Restoration, described above, is not available then Bike will use secondary restoration. Secondary restoration restores only Bike outline state such as expanded rows, focused row, and selection.
+If standard macOS Window Restoration, described above, is not available then Bike will use secondary restoration. Secondary restoration restores only Bike outline state such as expanded rows, focused row, and selection. It does not restore windows, a new default window is created when opening your outline document.
 

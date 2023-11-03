@@ -14,13 +14,9 @@ Outline paths don't do much on their own, but they are an important building blo
 
 <details>
 
-<summary>Outline paths are related to XPath</summary>
+<summary>Propellor Heads: Outline paths are related to XPath</summary>
 
-Do you know what XPath is?
-
-If you do then you have a leg up in understanding Bike's outline paths.
-
-Generally outline paths can be thought of as XPath, but with a different syntax and specialized behavior to search Bike outlines. The query model and capabilities of outline paths are very similar to what's possible with XPath. Learn more about [XPath](https://developer.mozilla.org/en-US/docs/Web/XPath).
+If you already know what [XPath](https://developer.mozilla.org/en-US/docs/Web/XPath) is then you are well on your way to understanding Bike outline paths. Outline paths have a different syntax, but the underlying query model are almost exactly the same.
 
 </details>
 

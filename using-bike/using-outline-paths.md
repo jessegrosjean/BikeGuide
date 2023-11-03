@@ -274,18 +274,14 @@ Each step produces a list of ordered matches. Use position based slicing if you 
 
 ### Value Expressions
 
-You have already seen lots of simple value expression such as `a` or `"a"`. That's maybe all you will ever need, but for some outline paths you might want more...
-
-Normally you put values expressions on the right side of comparison predicates, but an entire outline path can also be a values expression. If you don't start your outline path with a `/` (global path) or `.` (relative path) then it is processed as a value expression.
-
-You can see this in the Outline Path Explorer window, type "hello world". Notice that the message on the trailing side of the search field says "hello world" instead of telling you how many rows you matched. This is because "hello world" is a value expression that evaluates to "hello world".
+You have already seen many value expressions such as `a`, `"a"`, and `@attribute`. They all generate a value that can be used in your outline path logic. Here are all the value expressions supported in outline paths:
 
 *   `hello world`
 
     Unquoted text value expression that evaluates to `hello world`.
 *   `"hello world"`
 
-    Quoted text value expression that evaluates to `hello world`. Quoting is need when your text value conflicts with other outline path syntax.
+    Quoted text value expression that evaluates to `hello world`. Quoting is need when your text conflicts with other outline path syntax.
 *   `@attribute`
 
     Attribute value expression that returns the value of the attribute named "attribute" for the current row (or current run when using the `run::` axis). This value expression will always return `nil` if it's not used within a path step.
@@ -298,3 +294,7 @@ You can see this in the Outline Path Explorer window, type "hello world". Notice
 *   `1` or `(1 + 1) / 2`
 
     Math value expression that evaluates to `1`. Math operators (`+`, `-`, `*`, `/`) require single whitespace on either side. This is so `/` doesn't conflict with path step separator. It doesn't make sense to use Math operators with text. `1 + "1"` is an invalid path. `1 + @attribute` is ok, but will return `nan` if the attribute can't be converted to a number. You aren't likely to need math expressions in your path with Bike's current features, but I think they will become more useful as outline paths evolve.
+
+If you don't start your outline path with a `/` or a `.` then it is treated as a value expression. For example try typing `1 + 2` in the Outline Path Explorer and note how no rows are matched, but the result of the value expression is displayed trailing the text field.
+
+Using value expressions in this way isn't terribly useful right now... but it's a fun trick! :)

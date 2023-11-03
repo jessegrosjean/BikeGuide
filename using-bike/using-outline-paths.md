@@ -34,16 +34,16 @@ In future Bike releases I expect outline paths to start taking a more central ro
 
 <figure><img src="../.gitbook/assets/Outline Path Explorer.png" alt=""><figcaption><p>Outline Path Explorer</p></figcaption></figure>
 
-Outline paths can be complex. The Outline Path Explorer is a tool to help you compose and understand outline paths.
+Use the Outline Path Explorer to play with outline paths and learn how they work.
 
 #### To open the Outline Path Explorer:
 
-1. Open an outline where you would like to evaluate outline paths&#x20;
+1. Open the outline that you would like to query
 2. Open menu Window > Outline Path Explorer
 
-In the Outline Path Explorer type an outline path in the text field at the top. The path results are displayed in a label to the trailing side of the search field.  Next you see your outline with matching rows highlighted green. Matching row text runs are highlighterd in a darker green. Last you see a diagnostics text area that shows how your outline path was parsed.
+Type an outline path in the top text field in the Outline Path Explorer window. The path results are displayed in a label to the trailing side of the search field. Matching rows are highlighted in green. Matching text runs are highlighted in darker green. Last you see a diagnostics text area that shows how your outline path was understood.
 
-The outline view in the Outline Path Explorer shows outline text and all outline attributes. For example above each row you will see `@id`, `@level`, and `@type` because every row has those attributes. You might also see other attributes, for example a checked off task will include a `@done` attribute. You can use these attributes in your outine paths.
+The outline shown in the Outline Path Explorer shows outline text and all outline attributes. For example above each row you will see `@id`, `@level`, and `@type` because every row has those attributes. You might also see other attributes, for example a checked off task will include a `@done` attribute. There are the attributes you can use in your outline paths.
 
 ### Basic Paths
 

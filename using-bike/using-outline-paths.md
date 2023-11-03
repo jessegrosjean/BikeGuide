@@ -253,19 +253,22 @@ Use relation modifiers in brackets after the relation to change how it is evalua
 
 Each step produces a list of ordered matches. Use position based slicing if you want to limit the step results by position.
 
-*   `//a[0]`
+*   `//a[1]`
 
     Match the first row that contains "a"
 *   `//a[-1]`
 
     Match the last row that contains "a"
-*   `//a[1:]`
+*   `//a[2:]`
 
-    Match all rows that contain "a", but skip the first.
-*   `//a[:-1]`
+    Match rows 2 through last that contain "a".
+*   `//a[2:-1]`
 
-    Match all rows that contain "a", but skip the last.
-*   `//a[1:4]`
+    Match rows 2 through last that contain "a".
+*   `//a[2:-2]`
+
+    Match rows 2 through last -1 that contain "a".
+*   `//a[2:4]`
 
     Match second, third, and fourth rows that contain "a".
 
@@ -285,13 +288,13 @@ You can see this in the Outline Path Explorer window, type "hello world". Notice
     Quoted text value expression that evaluates to `hello world`. Quoting is need when your text value conflicts with other outline path syntax.
 *   `@attribute`
 
-    Attribute value expression that returns the value of the attribute named "attribute" for the current row. This value expression will always return `nil` if it's not used within a path step.
+    Attribute value expression that returns the value of the attribute named "attribute" for the current row (or current run when using the `run::` axis). This value expression will always return `nil` if it's not used within a path step.
+*   `count(//a)`
+
+    Function value expression that returns the count of rows containing "a".
 *   `$variable`
 
     Variable value expression that returns the value of the variable named "variable". Currently no variables are set, but in the future I think they will be important for some advanced features. For example `$now` will be current time. `$focused` will be id of focused row. Those will be useful for outline paths in stylesheets.
 *   `1` or `(1 + 1) / 2`
 
-    Math value expression that evaluates to `1`. Math operators (`+`, `-`, `*`, `/`) require single whitespace on either side. This is so `/` doesn't conflict with path step separator. It doesn't make sense to use Math operators with text. `1 + "1"` is an invalid path. `1 + @attribute` is ok, but will return `nan` if the attribute can't be converted to a number.
-*   `count(//a)`
-
-    Function value expression that returns the count of rows containing "a".
+    Math value expression that evaluates to `1`. Math operators (`+`, `-`, `*`, `/`) require single whitespace on either side. This is so `/` doesn't conflict with path step separator. It doesn't make sense to use Math operators with text. `1 + "1"` is an invalid path. `1 + @attribute` is ok, but will return `nan` if the attribute can't be converted to a number. You aren't likely to need math expressions in your path with Bike's current features, but I think they will become more useful as outline paths evolve.

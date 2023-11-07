@@ -1,9 +1,5 @@
 # Using Outline Paths
 
-{% hint style="warning" %}
-Outline paths are a work in progress and only available in the current preview release of Bike. They aren't very useful yet, but they are looking for your testing and feedback.
-{% endhint %}
-
 ## What is an outline path?
 
 On your computer you use file paths to locate files.

@@ -70,5 +70,17 @@ Links can "break" for some obvious and non-obvious reasons.
 * Create a link to a document and then delete that document. When you activate the link the document won't be found. This is probably not surprising!
 * Create a link to a row in a document and then delete that row. When you activate the link the document will be opened, but you'll get a warning that the linked row could not be found.
 * Bike uses Spotlight searches to resolve links. It associates the outline id with the document file and then searches for that id using Spotlight. This means if something is going wrong with Spotlight then your links won't work. This is a temporary problem, they will work again once the document id is again indexed with Spotlight.
+* Another problem with spotlight searches is that they only find documents that Bike already has Sandbox permission to open. If Bike does not have permision to open the document it won't be included in the results, and the link won't work. See Sandbox Requirements.
 * This association between a document file and root id is done by setting the `com.apple.metadata:kMDItemIdentifier` extended file attribute each time Bike saves a file. This means if a file's extended attributes are somehow lost then links to that file will break until next time the file is opened and saved through Bike.
 * If you have two outline documents with the same outline id (for example if you duplicate an outline file) then links to that root id will open both documents.
+
+### Sandbox Requirements
+
+Bike is a sandboxed app. That means it can only read files that you give it permission to read. The most common way that you give permission is by opening the file in Bike... for example when you use File > Open that has side effect of giving Bike permission. Another common way is by storing your file in Bike's iCloud folder... Bike always has permission to read that folder.
+
+When you link to a row in a Bike outline Bike resolve the link using a Spotlight search. Unfortunately only files that Bike has permission to read will show up in that search... so if a link seems broken, it may be that you don't have permission to read the file. This can be fixed in two ways:
+
+1. Move the link target outline document to a location that it does have permission to read, such as Bike's iCloud folder.
+2. Grant Bike access to the location where you are storing the link target outline document. You can do this using Bike > Settings > Sandbox.
+
+Sandbox behavior can be quite confusing. For example when you open a file in Bike then Bike is granted access to read/write that file. When you close that document Bike retains the right to read/write that file, as long as the document is in your recent documents list. Once it is no longer in your recent documents list, then Bike won't be able to read/write the file.

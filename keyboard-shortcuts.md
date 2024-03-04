@@ -1,6 +1,6 @@
 # Keyboard Shortcuts
 
-This page lists important Bike specific keyboard shortcuts. Other shortcuts that are not listed here can be found when browsing Bike's application menus.
+This page lists important Bike specific keyboard shortcuts. Other shortcuts that are not listed here can be found when browsing Bike's application menus. Bike also support many standard [macOS shortcuts](https://support.apple.com/en-us/HT201236).
 
 ### Edit
 

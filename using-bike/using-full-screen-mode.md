@@ -9,7 +9,7 @@ Full Screen Mode expands your outline editor window to fill the entire screen. I
 * View > Enter Full Screen (`Control-Command-F`)
 * Alternatively click the green window button and choose "Enter Full Screen"
 
-#### To exist full screen mode
+#### To exit full screen mode
 
 * View > Exit Full Screen (`Control-Command-F`)
 * Alternatively click the green window button and choose "Exit Full Screen"

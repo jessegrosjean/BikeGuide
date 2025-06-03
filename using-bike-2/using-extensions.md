@@ -1,6 +1,6 @@
 # Using Extensions
 
-Use extensions to customize and enhance the functionality of Bike. They can add new commands, keybindings, views, and other features to Bike. Sensitive features (such as network requests) are protected by a permission system.
+Extend and customize Bike with extensions. They introduce new commands, keybindings, views, styles, and more. Sensitive features are safeguarded by a permission system.
 
 **To install an extension:**
 

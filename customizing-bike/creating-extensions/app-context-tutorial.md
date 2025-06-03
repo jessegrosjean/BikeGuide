@@ -107,7 +107,7 @@ function archiveDoneCommand(): boolean {
 
 Save, and switch back to Bike.
 
-Mark some rows as done. You can do this by escaping to block selection mode and typing `m d`. Done rows should show with strikethrough text. Once you have some done rows, run the archive command. The done rows should be moved to the Archive row.
+Mark some rows as done. You can do this with Command-Shift-P, and then select the "Bike: Toggle Done" command. Done rows should show with strikethrough text. Once you have some done rows, run the archive command. The done rows should be moved to the Archive row.
 
 ## Next Steps
 

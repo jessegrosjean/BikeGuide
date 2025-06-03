@@ -10,7 +10,7 @@ One important difference between outline paths and file paths is that outline pa
 
 <details>
 
-<summary>Propellor Heads: Outline paths are related to XPath</summary>
+<summary>Outline paths are similar to XPath</summary>
 
 If you already know what [XPath](https://developer.mozilla.org/en-US/docs/Web/XPath) is then you are well on your way to understanding Bike outline paths. Outline paths have a different syntax, but the underlying query model is almost exactly the same.
 
@@ -20,17 +20,15 @@ If you already know what [XPath](https://developer.mozilla.org/en-US/docs/Web/XP
 
 Outline paths don't do much on their own, but they are an important building block for other features. Here are some places where they are being used today:
 
-1. Bike's AppleScript dictionary contains a `query` command that takes an outline path and returns the path result.
-2. Bike Shortcut actions contain a "Query Rows" action that takes an outline path and returns matching rows.
-3. The Choice Palette settings uses an outline path to specify the initial set of rows to be displayed in the choice palette before filtering is performed.
-
-In future Bike releases I expect outline paths to start taking a more central role. For example they will be an important part of Bike's stylesheet/theme system. They will also be an important part of filtering Bike outlines.
+1. Search UI uses outline paths to filter your outline
+2. Outline styles use relative outline paths to select which rules apply
+3. (Not yet ported to Bike 2) AppleScript dictionary's `query` command takes an outline path and returns the path result.
+4. (Not yet ported to Bike 2) Shortcuts "Query Rows" action takes an outline path and returns matching rows.
+5. Choice Palette settings use an outline path to specify the initial set of rows to be displayed in the choice palette before filtering is performed.
 
 ### Outline Path Explorer
 
-<figure><img src="../.gitbook/assets/Outline Path Explorer.png" alt=""><figcaption><p>Outline Path Explorer</p></figcaption></figure>
-
-Use the Outline Path Explorer to play with outline paths and learn how they work.
+Use the Window > Outline Path Explorer to play with outline paths and learn how they work.
 
 #### To open the Outline Path Explorer:
 
@@ -281,16 +279,129 @@ You have already seen many value expressions such as `a`, `"a"`, and `@attribute
 *   `@attribute`
 
     Attribute value expression that returns the value of the attribute named "attribute" for the current row (or current run when using the `run::` axis). This value expression will always return `nil` if it's not used within a path step.
-*   `count(//a)`
+*   `functionName(params?)`
 
-    Function value expression that returns the count of rows containing "a".
-*   `$variable`
-
-    Variable value expression that returns the value of the variable named "variable". Currently no variables are set, but in the future I think they will be important for some advanced features. For example `$now` will be current time. `$focused` will be id of focused row. Those will be useful for outline paths in stylesheets.
+    Functions are composed of a name followed by `()` with optional params. See the [Functions Reference](using-outline-paths.md#functions-reference) for a list of available functions.
 *   `1` or `(1 + 1) / 2`
 
-    Math value expression that evaluates to `1`. Math operators (`+`, `-`, `*`, `/`) require single whitespace on either side. This is so `/` doesn't conflict with path step separator. It doesn't make sense to use Math operators with text. `1 + "1"` is an invalid path. `1 + @attribute` is ok, but will return `nan` if the attribute can't be converted to a number. You aren't likely to need math expressions in your path with Bike's current features, but I think they will become more useful as outline paths evolve.
+    Math value expression that evaluates to `1`. Math operators (`+`, `-`, `*`, `/`) require single whitespace on either side. This is so `/` doesn't conflict with path step separator. It doesn't make sense to use Math operators with text. `1 + "1"` is invalid. `1 + @attribute` is ok, but will return `nan` if the attribute can't be converted to a number. You aren't likely to need math expressions in your path with Bike's current features, but I think they will become more useful as outline paths evolve.
 
 If you don't start your outline path with a `/` or a `.` then it is treated as a value expression. For example try typing `1 + 2` in the Outline Path Explorer and note how no rows are matched, but the result of the value expression is displayed trailing the text field.
 
 Using value expressions in this way isn't terribly useful right now... but it's a fun trick! :)
+
+### Functions Reference
+
+Outline path functions serve a variety of purposes:
+
+1. Easy and efficient access to outline structure.
+2. Access to external editor state such as selection and folding.
+3. Access to math utilities and other behavior that isn't otherwise available.
+
+<details>
+
+<summary>Outline Functions</summary>
+
+These functions provide easy and efficient access to outline structure.
+
+In some cases you might accomplish similar results with more complex outline path queries. For example instead of using `depth()` you could use `count(.ancestor::*)`, but you should expect `depth()` to have better performance.&#x20;
+
+*   parent() -> boolean
+
+    True if has children
+*   depth() -> number
+
+    Number of steps to root
+*   leaf() -> boolean
+
+    True if has no children
+*   first-child() -> boolean
+
+    True if is first child of parent
+*   last-child() -> boolean
+
+    True if is last child of parent
+*   nth-child() -> boolean
+
+    True if is nth child of parent
+*   first-of-type() -> boolean
+
+    True if is first of type in siblings
+*   last-of-type() -> boolean
+
+    True if is last of type in siblings
+*   nth-of-type() -> boolean
+
+    True if is nth of type in siblings
+*   only-child() -> boolean
+
+    True if has no siblings
+*   only-of-type() -> boolean
+
+    True if is only of type in siblings
+*   start-of-matches(relative path expression) -> boolean
+
+    True if element matches relative path and previous sibling does not. Useful when styling attribute runs and you want to special case the first match in a sequence of matching runs. You can implement the same logic using the preceding-sibling axis, but this function shorter and faster.
+*   end-of-matches(relative path expression) -> boolean
+
+    True if element matches relative path and next sibling does not. Useful when styling attribute runs and you want to special case the last match in a sequence of matching runs. You can implement the same logic using the following-sibling axis, but this function shorter and faster.
+
+</details>
+
+<details>
+
+<summary>Editor Functions</summary>
+
+These functions all provide access to editor state. They are only available when evaluating your outline path in the context of an outline editor.
+
+*   focused-root() -> boolean
+
+    True if row is the focused root
+*   focused-branch() -> boolean
+
+    True if row is in the focused branch
+*   focused-depth() -> number
+
+    Number of steps to focused root, or max value if not focused
+*   expanded() -> boolean
+
+    True if row is expanded
+*   collapsed() -> boolean
+
+    True if row is collapsed
+*   search-match() -> boolean
+
+    True if row is matched
+*   search-match-ancestor() -> boolean
+
+    True if row is ancestor of matched row
+*   selection() -> caret|range|block|null
+
+    Returns row selection type
+
+</details>
+
+<details>
+
+<summary>Context Functions</summary>
+
+*   last() -> number
+
+    Size of the evaluation context
+*   position() -> number
+
+    Current position in evaluation context
+
+</details>
+
+<details>
+
+<summary>Util Functions</summary>
+
+* floor(number) -> number
+* ceil(number) -> number
+* round(number) -> number
+* count(expression) -> number
+* boolean(expression) -> boolean
+
+</details>

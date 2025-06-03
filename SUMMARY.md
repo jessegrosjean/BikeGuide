@@ -1,12 +1,12 @@
 # Table of contents
 
 * [Bike 2 (Preview)](README.md)
-* [Using Bike 2](using-bike-2/README.md)
-  * [Outline Editing](using-bike-2/outline-editing.md)
-  * [Using Selection](using-bike-2/using-selection.md)
-  * [Using Extensions](using-bike-2/using-extensions.md)
-  * [Using Outline Paths](using-bike-2/using-outline-paths.md)
-  * [Using Outline Filtering](using-bike-2/using-outline-filtering.md)
+* [Using Bike](using-bike/README.md)
+  * [Outline Editing](using-bike/outline-editing.md)
+  * [Using Selection](using-bike/using-selection.md)
+  * [Using Extensions](using-bike/using-extensions.md)
+  * [Using Outline Paths](using-bike/using-outline-paths.md)
+  * [Using Outline Filtering](using-bike/using-outline-filtering.md)
 * [Customizing Bike](customizing-bike/README.md)
   * [Creating Extensions](customizing-bike/creating-extensions/README.md)
     * [App Context Tutorial](customizing-bike/creating-extensions/app-context-tutorial.md)

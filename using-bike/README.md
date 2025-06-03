@@ -1,25 +1,6 @@
-# Using Bike
+# Using Bike 2
 
-First get oriented by reading [Getting Started](../getting-started.md).
-
-* [Text Editing](text-editing.md)
-* [Text Formatting](text-formatting.md)
-* [Row Types](row-types.md)
-* [Outline Editing](outline-editing.md)
-* [Outline Viewing](outline-viewing.md)
-* [Using Links](using-links.md)
-* [Using Find Panel](using-find-panel.md)
-* [Using Text Checking](text-checking.md)
-* [Using the Choice Palette](using-the-choice-palette.md)
-* [Using Text Wrap](using-text-wrap.md)
-* [Using Focus Mode](using-focus-mode.md)
-* [Using Typewriter Mode](using-typewriter-mode.md)
-* [Using Full Screen Mode](using-full-screen-mode.md)
-* [Using Navigation Bar](using-navigation-bar.md)
-* [Using Status Bar](using-status-bar.md)
-* [Using Windows](using-windows.md)
-* [Using Documents](using-documents.md)
-* [Using Scripts](using-scripts.md)
-* [Using Shortcuts](using-shortcuts.md)
+* [Using Selection](using-selection.md)
+* [Using Extensions](using-extensions.md)
 * [Using Outline Paths](using-outline-paths.md)
-* [Using Software Update](using-software-update.md)
+* [Using Outline Filtering  ](using-outline-filtering.md)

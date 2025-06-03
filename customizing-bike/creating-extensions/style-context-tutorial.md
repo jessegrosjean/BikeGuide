@@ -16,7 +16,7 @@ Styles are powerful, but also quite complex.
 
 This tutorial will show you how styles work and what they can do. If you decide to create your own style, you should also see the default outline style that's [included](https://github.com/jessegrosjean/bike-extension-kit/tree/main/src/!bike.bkext/style) in the Bike extension kit.
 
-Each outline style is an ordered list of rules, organized into layer groups. A rule is composed of a relative [outline path](../../using-bike-2/using-outline-paths.md) and a callback function. The callback function is passed the editor state and a style object to modify. The purpose of layer groups is to allow rules to be inserted into (or imported from) existing outline styles.
+Each outline style is an ordered list of rules, organized into layer groups. A rule is composed of a relative [outline path](../../using-bike/using-outline-paths.md) and a callback function. The callback function is passed the editor state and a style object to modify. The purpose of layer groups is to allow rules to be inserted into (or imported from) existing outline styles.
 
 To style an outline element:
 
@@ -165,7 +165,7 @@ style.layer('selection', (row, run, caret, viewport, include) => {
 
 A few interesting things are happening here.
 
-1. The matching outline path is calling the `selection` function with a `block` parameter value. This function will return true if the current row has block selection. This and other outline path functions are documented in [outline paths](../../using-bike-2/using-outline-paths.md).
+1. The matching outline path is calling the `selection` function with a `block` parameter value. This function will return true if the current row has block selection. This and other outline path functions are documented in [outline paths](../../using-bike/using-outline-paths.md).
 2. For this example, I am reusing the "background" decoration and changing its style. If I give the background rounded corners in my first rule, then the block selection will also have rounded corners. Alternatively, I could have created a new decoration with a new ID to indicate block selection.
 
 ## Show Inline Formatting

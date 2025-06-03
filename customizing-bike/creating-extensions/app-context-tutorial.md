@@ -66,7 +66,7 @@ In Bike, enter block selection mode (press `Escape`), then type `a`. You should 
 
 ### Implement Archive Done
 
-We will need to:
+To do this:
 
 1. Find done rows.
 2. Locate (or create) the Archive row.

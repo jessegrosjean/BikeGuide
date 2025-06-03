@@ -66,7 +66,7 @@ style.layer('base', (row, run, caret, viewport, include) => {
 
 Save, and you should see your outline structure again.
 
-Note that when adding rules we always add them to a layer. This helps to organize them, and makes it possible to modify and import existing styles. Layers are ordered by when they are first used. Now in our outline style the rules in the `base` layer will now always be procesed first, since that's the first layer that we have used.
+Note that when adding rules we always add them to a layer. This helps to organize them, and makes it possible to modify and import existing styles. Layers are ordered by when they are first used. Now in our outline style the rules in the `base` layer will now always be processed first, since that's the first layer that we have used.
 
 ## Define Outline Structure (More)
 
@@ -266,7 +266,7 @@ style.layer('row-formatting', (row, run, caret, viewport, include) => {
 
 ## Editor
 
-Each rule callback takes two parameters—editor and style object. So far, we've just been modifying the style object. We can also read from the editor settings that we can use in our style.
+Each rule callback takes two parameters—editor and style object. So far, we've just been modifying the style object. We can also read from values from the editor that we can use in our style rules.
 
 For example, you might add these lines to the first match-all `.*` rule:
 
@@ -275,7 +275,7 @@ row.text.font = editor.theme.font
 row.text.lineHeightMultiple = editor.theme.lineHeightMultiple
 ```
 
-Now when you View > Text Size > Zoom In/Out, the outline text size will change in your theme. In addition to user settings, the editor also includes system state such as `isKey` or `isTyping`.
+The editor's theme contains user prefered values. Now when you View > Text Size > Zoom In/Out, the text in your editor. In addition to theme, the editor also includes settings and system state such as `isKey` or `isTyping`.
 
 ## Building Complex Outline Styles
 
@@ -283,7 +283,7 @@ Creating a full style that supports all of Bike's features is quite complex. Her
 
 ### Add Rules
 
-It may be that you don't need to create a whole new style; maybe you just want to add a few rules to an existing style(s). You can do this using the `defineOutlineStyleModifier` API. This allows you to insert rules into existing outline styles.
+It may be that you don't need to create a whole new style; maybe you just want to add a few rules to an existing style(s). You can do this using the `defineOutlineStyleModifier` API. This allows you to insert rules into specific layers of existing outline styles.
 
 ### Import Rules
 

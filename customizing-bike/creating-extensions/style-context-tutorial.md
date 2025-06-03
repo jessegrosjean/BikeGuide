@@ -132,7 +132,7 @@ In `style/main.ts`, replace the selection layer with:
 style.layer('selection', (row, run, caret, viewport, include) => {
   run(`.@view-selected-range`, (editor, run) => {
     run.decoration('selection', (selection, layout) => {
-      selection.zPosition = 1
+      selection.zPosition = -1
       selection.color = Color.textBackgroundSelected().withAlpha(0.5)
     })
   })
@@ -149,7 +149,7 @@ In `style/main.ts`, replace the selection layer to also show block selections:
 style.layer('selection', (row, run, caret, viewport, include) => {
   run(`.@view-selected-range`, (editor, run) => {
     run.decoration('selection', (selection, layout) => {
-      selection.zPosition = 1
+      selection.zPosition = -1
       selection.color = Color.textBackgroundSelected().withAlpha(0.5)
     })
   })
@@ -248,7 +248,7 @@ style.layer('row-formatting', (row, run, caret, viewport, include) => {
 
 Decorations have `x`, `y`, `width`, and `height` properties of type `LayoutValue`. You get layout values from the passed-in `layout` parameter. These are logical values that are resolved later in the layout process to position the decoration.
 
-In `style/main.ts`, add a new rule for unchecked "done" tasks:
+In `style/main.ts`, add a new rule for "done" tasks that shows a checkmark:
 
 ```typescript
 style.layer('row-formatting', (row, run, caret, viewport, include) => {
@@ -264,6 +264,8 @@ style.layer('row-formatting', (row, run, caret, viewport, include) => {
   })
 })
 ```
+
+Note that in this rule we don't need to redo all the mark positioning work. This is because we are using the same 'mark' decoration layer. It is already positioned correctly. We only need to change the image content to show the check.
 
 ## Editor
 

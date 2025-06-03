@@ -16,7 +16,7 @@ Styles are powerful, but also quite complex.
 
 This tutorial will show you how styles work and what they can do. If you decide to create your own style, you should also see the default outline style that's [included](https://github.com/jessegrosjean/bike-extension-kit/tree/main/src/!bike.bkext/style) in the Bike extension kit.
 
-Each outline style is an ordered list of rules, organized into layer groups. A rule is composed of a relative [outline path](../../using-bike/using-outline-paths.md) and a callback function. The callback function is passed the editor state and a style object to modify. The purpose of layer groups is to allow rules to be inserted into (or imported from) existing outline styles.
+Each outline style is an ordered list of rules, organized into layer groups. A rule is composed of a relative [outline path](../../using-bike/using-outline-paths.md) and a callback function. The callback function is passed the editor state and a style object to modify. The purpose of layer groups is to allow rules to be inserted into (or included from) existing outline styles.
 
 To style an outline element:
 
@@ -39,10 +39,11 @@ Tutorial assumes that you have run the `npm run watch` command. Your extension s
 
 We will start by creating an empty outline style in `style/main.ts`:
 
-<pre class="language-typescript"><code class="lang-typescript"><strong>import { defineOutlineStyle } from 'bike/style'
-</strong>
+```typescript
+import { defineOutlineStyle } from 'bike/style'
+
 let style = defineOutlineStyle('tutorial', 'Tutorial')
-</code></pre>
+```
 
 Save and then select your style: Bike > Window > Style Sheets > Tutorial.
 
@@ -66,7 +67,7 @@ style.layer('base', (row, run, caret, viewport, include) => {
 
 Save, and you should see your outline structure again.
 
-Note that when adding rules we always add them to a layer. This helps to organize them, and makes it possible to modify and import existing styles. Layers are ordered by when they are first used. Now in our outline style the rules in the `base` layer will now always be processed first, since that's the first layer that we have used.
+Note that when adding rules we always add them to a layer. This helps to organize them, and makes it possible to modify and include existing styles. Layers are ordered by when they are first used. Now in our outline style the rules in the `base` layer will now always be processed first, since that's the first layer that we have used.
 
 ## Define Outline Structure (More)
 
@@ -285,9 +286,9 @@ Creating a full style that supports all of Bike's features is quite complex. Her
 
 It may be that you don't need to create a whole new style; maybe you just want to add a few rules to an existing style(s). You can do this using the `defineOutlineStyleModifier` API. This allows you to insert rules into specific layers of existing outline styles.
 
-### Import Rules
+### Include Rules
 
-It may be that you do want to create a whole new style, but you want to import rules into that style from other outline styles. For example, maybe you want to include the "run-formatting" rules from the standard style.
+It may be that you do want to create a whole new style, but you want to include rules into that style from other outline styles. For example, maybe you want to include the "run-formatting" rules from the standard style.
 
 You can include rules from other styles like this:
 

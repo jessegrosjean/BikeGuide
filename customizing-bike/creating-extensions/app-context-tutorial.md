@@ -1,8 +1,8 @@
 # App Context Tutorial
 
-Use the app context to add commands, keybindings, and work with system resources such as the clipboard. When creating an extension, the app context is likely where you should start.
+Use the app context to add commands, keybindings, and work with system resources like the clipboard. When creating an extension, the app context is likely where you should start.
 
-#### Summary
+#### App Ccontext Summary
 
 * [App Context API](https://github.com/jessegrosjean/bike-extension-kit/tree/main/api/app).
 * Entry point `app/main.ts`.
@@ -71,9 +71,13 @@ We will need to:
 2. Locate (or create) the Archive row.
 3. Move done rows to the Archive row.
 
-In `app/main.ts`:
+In `app/main.ts`, add new Row import and updated archiveDoneCommand:
 
 ```typescript
+import { AppExtensionContext, Row } from 'bike/app'
+
+...
+
 function archiveDoneCommand(): boolean {
   // Get frontmost editor
   let editor = bike.frontmostOutlineEditor

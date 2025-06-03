@@ -4,7 +4,7 @@ Extend and customize Bike with extensions. They introduce new commands, keybindi
 
 ## Documentation
 
-This section of the user guide is an overview and tutorial. If you don't want to follow through step by step, I have also made these screencasts which cover the same information.
+This section of the user guide provides an overview and tutorial. If you prefer not to follow the step-by-step instructions, I’ve also created screencasts that cover the same information.
 
 - [Setup & Build](https://vimeo.com/1089520938)
 - [Creating Extensions](https://vimeo.com/1089816472)
@@ -12,7 +12,7 @@ This section of the user guide is an overview and tutorial. If you don't want to
 - [DOM Context Extensions](https://vimeo.com/1089831661)
 - [Style Context Extensions](https://vimeo.com/1089520938)
 
-For the most updated and detailed API documentation see [bike-extension-kit/api](https://github.com/jessegrosjean/bike-extension-kit/api)
+For the most up-to-date and detailed API documentation, refer to [bike-extension-kit/api](https://github.com/jessegrosjean/bike-extension-kit/api).
 
 ## Install Bike Extension Kit
 

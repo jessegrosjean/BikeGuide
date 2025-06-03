@@ -6,13 +6,11 @@ Extend and customize Bike with extensions. They introduce new commands, keybindi
 
 Use the [Bike Extension Kit](https://github.com/jessegrosjean/bike-extension-kit) to create and modify extensions.
 
-The kit requires some setup. The first step to Bike extension development is to download the extension kit and follow the kit's README.md setup instructions. Once you've got it working, the development cycle is fast–save a change to the extension, see results immediately in Bike.
+The extension kit requires setup. First, download the kit and follow the kit's README.md setup instructions. Once you've got it working, the development cycle is fast–save a change to the extension, then Bike reloads the extension immediately.
 
 ## Extension Development Overview
 
 You've set up the kit and built and installed some existing extensions. Now we'll take a closer look at what an individual extension looks like and what it can do.
-
-Extension structure:
 
 ```
 extension.bkext
@@ -26,46 +24,42 @@ extension.bkext
 │   └── main.ts
 ```
 
-Each extension folder has a `manifest.json` which contains the name, permissions, and other metadata. Properties are documented in schemas/manifest.schema.json.
+Each extension has a `manifest.json` file which contains the name, permissions, and other metadata. Properties are documented in the extension kit; schemas/manifest.schema.json.
 
-Each subfolder corresponds to a different context where the extension code can run. These contexts are run separately and have different available APIs. An extension might not need to use all contexts. Delete the subfolder for each unused context.
+Each subfolder corresponds to a different context where the extension code can run. These contexts are run separately and have different available APIs. An extension might not need to use all contexts, and you can safely delete the folder of each unused context.
 
-#### app (Application Logic)
+#### app context (Application Logic)
 
 * Code runs in Bike's native app environment.
 * Interact with outlines, clipboard, networking, etc.
 * Some APIs require appropriate `manifest.json` permissions.
 * Import app context API using `import { SYMBOL } from 'bike/app'`.
 
-#### DOM (DOM/HTML Views)
+#### DOM context (DOM/HTML Views)
 
 * Code runs in web views embedded in Bike’s UI.
 * Web views are sandboxed and have no network access.
-* These views are loaded dynamically using bike/app context APIs.
-* Import bike/dom context API using `import { SYMBOL } from 'bike/dom'`.
+* These views are loaded dynamically using app context APIs.
+* Import DOM context API using `import { SYMBOL } from 'bike/dom'`.
 
-#### Style (Outline Editor Styles)
+#### Style context (Outline Editor Styles)
 
 * Used to define custom stylesheets for Bike’s outline editor.
 * Use outline paths to match outline elements and apply styles.
-* Most extensions will not add styles; delete the src/style folder if unused.
-* Import bike/style context API using `import { SYMBOL } from 'bike/style'`.
+* Most extensions will not add styles; delete the style folder if unused.
+* Import style context API using `import { SYMBOL } from 'bike/style'`.
 
-Most extension development will start in the app context.
-
-The app context gives you direct access to outlines, editors, and system resources. You only need to use the DOM context if you need to display a custom view. The app context and DOM context run separately, but can communicate using `postMessage` and `onmessage`.
-
-The style context is independent, and only needed by extensions that provide outline styles.
+The app context and DOM context can communicate using the `postMessage` and `onmessage` methods. The common pattern involves performing work in the app context, such as querying the outline or making network requests, and then sending the results to the DOM context for display.
 
 ## Create Your First Extension
 
 You should have the Bike Extension Kit installed and open it in Visual Studio Code.
 
-We'll be creating a new extension now. Later, we'll add commands, custom views, and styles. The [finished extension](https://github.com/jessegrosjean/bike-extension-kit/tree/main/src/tutorial.bkext) is included with the extension kit. If you get stuck and something doesn't work, check the finished tutorial to see what is different.
+We'll be creating a new extension now. Later, we'll add commands, custom views, and styles. The [finished extension](https://github.com/jessegrosjean/bike-extension-kit/tree/main/src/tutorial.bkext) is included with the extension kit. If you get stuck and something doesn't work, check the finished tutorial to see where my instructions went wrong.
 
 ### Open Terminal
 
-You need a terminal open to run extension kit commands. You can use the Terminal.app that comes with macOS, or you can use the Terminal app that's built into Visual Studio Code.
+You need a terminal open to run extension kit commands. You can use the Terminal.app that comes with macOS, or you can use the Terminal that's built into Visual Studio Code.
 
 ### Create Extension
 
@@ -95,7 +89,7 @@ To build and install your extension when you save changes:
 npm run watch
 ```
 
-A background process monitors your extension sources for changes. Sometimes, it may need a restart, but generally, it enhances development speed. The rest of the tutorials assume you are in watch mode.
+A background process monitors your extension for changes. The rest of the tutorials assume you are in watch mode, so as soon as you save changes, the results are loaded into Bike.
 
 ### Debug Extension
 
@@ -103,11 +97,11 @@ There are two important sources for debugging your extension.
 
 #### Logging
 
-To view Bike's log explorer:
+To view Bike's Log Explorer:
 
-* Select the menu Bike > Window > Logs Explorer
+* Choose the menu Bike > Window > Logs Explorer
 
-Do that now and you should see logs that your extension is installed and activated. You will also see a notice originating from your extension’s call to `console.log` in the activate function.
+Do that now and you should see in the logs that your extension is installed and activated. You will also see a notice originating from your extension’s call to `console.log` in the activate function.
 
 #### Safari Debugger
 

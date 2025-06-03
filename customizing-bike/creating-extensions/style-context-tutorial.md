@@ -46,13 +46,11 @@ let style = defineOutlineStyle('tutorial', 'Tutorial')
 
 Save and then select your style: Bike > Window > Style Sheets > Tutorial.
 
-Notice that your outline editor now shows no indentation or formatting. Those things are defined by outline style rules, and this style has no rules.
+Notice that your outline editor now shows no indentation or formatting. It also doesn't show selection, etc. Outline styles are responsible for defining the visual state of the outline editor, and this style has no rules.
 
-Outline editing behavior is still there. You can still expand/collapse lines. You can still insert text. You can still select and edit text, though it will be difficult because you won't see selection marks.
+## Define Outline Structure
 
-## Define Visual Structure
-
-In `style/main.ts` add back visual structure:
+In `style/main.ts` show outline structure:
 
 ```typescript
 import { defineOutlineStyle, Insets } from 'bike/style'
@@ -66,9 +64,11 @@ style.layer('base', (row, run, caret, viewport, include) => {
 })
 ```
 
-Save, to rebuild and install your changes. You should now see some indentation.
+Save, and you should see your outline structure again.
 
-When adding rules we always add them to a layer. This helps to organize them, and makes it possible to modify existing styles by adding new rules to a specific layer.
+Note that when adding rules we always add them to a layer. This helps to organize them, and makes it possible to modify and import existing styles. Layers are ordered by when they are first used. Now in our outline style the rules in the `base` layer will now always be procesed first, since that's the first layer that we have used.
+
+## Define Outline Structure (More)
 
 Replace `style/main.ts` to see the structure more clearly:
 
@@ -97,11 +97,11 @@ style.layer('base', (row, run, caret, viewport, include) => {
 
 The visual structure of your outline is now apparent. Rows (blue border) contain text (green border) and potentially other child rows.
 
-The blue and green rectangles are created by attaching decorations to the row and to the row's text. Decorations can also be attached to runs of the row's text. Decorations are attached to the underlying text layout, but they don't affect it. If you need to make space for a decoration, add padding to the element you are decorating.
+The blue and green rectangles are created by attaching decorations to the row and to the row's text. Decorations can also be attached to runs of the row's text. Decorations are attached to the underlying text layout, but they don't affect that layout. If you need to make space for a decoration, add padding to the element you are decorating.
 
 ## Show Selection
 
-Notice that when you select text in the outline editor, you can't see any selection.
+Notice that when you select text in the outline editor, you can't see any selection marks.
 
 In `style/main.ts`, add a selection rule:
 
@@ -113,13 +113,13 @@ style.layer('selection', (row, run, caret, viewport, include) => {
 })
 ```
 
-Now you should see text selections when you select within a single paragraph. They will disappear when you select multiple paragraphs, but we'll fix that eventually.
+Save, and now you should see selection marks when you select within a single paragraph. They will disappear when you select multiple paragraphs, but we'll fix that eventually.
 
 How would you even know about that `@view-selected-range` attribute we just used? This is where the outline path explorer is useful. Select Window > Outline Path Explorer. Then make sure that "Show View Attributes" is selected. Then make some selections.
 
 You should see the `@view-selected-range` attribute show up in the outline path explorer when you select a range of text. You can also type `.@view-selected-range` into the outline path explorer’s search field, and then the selected range of text will be highlighted green.
 
-You can use the outline path explorer to find the attributes that you can use when styling, and you can also see which elements will be selected by your outline paths when the editor is in various states.
+You can use the outline path explorer to find attributes to use when styling, and you can also see which elements will be selected by your outline paths when the editor is in various states.
 
 ### Improving the selection
 
@@ -138,9 +138,9 @@ style.layer('selection', (row, run, caret, viewport, include) => {
 })
 ```
 
-This is similar to how we used decorations to draw boxes around rows and row text. One difference is that in this case, we had to set the `zPosition` property. We want to make sure that the text selection draws behind the run's text.
+This is similar to how we used decorations to draw boxes around rows and row text. One difference is that in this case, we set the `zPosition` property. We want to make sure that the text selection draws behind the run's text.
 
-In Bike, there are two selection modes–text selection mode and block selection mode. So far, we are only showing text selections. When you extend the selection beyond a single paragraph, Bike starts using block selection mode.
+In Bike, there are two selection modes–text selection mode and block selection mode. So far, we are only styling text selections. When you extend the selection beyond a single paragraph, Bike starts using block selection mode.
 
 In `style/main.ts`, replace the selection layer to also show block selections:
 
@@ -165,7 +165,7 @@ style.layer('selection', (row, run, caret, viewport, include) => {
 
 A few interesting things are happening here.
 
-1. The matching outline path is calling the `selection` function with a `block` parameter value. This function will return true if the current row has block selection.
+1. The matching outline path is calling the `selection` function with a `block` parameter value. This function will return true if the current row has block selection. This and other outline path functions are documented in [outline paths]().
 2. For this example, I am reusing the "background" decoration and changing its style. If I give the background rounded corners in my first rule, then the block selection will also have rounded corners. Alternatively, I could have created a new decoration with a new ID to indicate block selection.
 
 ## Show Inline Formatting

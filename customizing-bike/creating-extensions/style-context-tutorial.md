@@ -165,7 +165,7 @@ style.layer('selection', (row, run, caret, viewport, include) => {
 
 A few interesting things are happening here.
 
-1. The matching outline path is calling the `selection` function with a `block` parameter value. This function will return true if the current row has block selection. This and other outline path functions are documented in [outline paths]().
+1. The matching outline path is calling the `selection` function with a `block` parameter value. This function will return true if the current row has block selection. This and other outline path functions are documented in [outline paths](../../using-bike-2/using-outline-paths.md).
 2. For this example, I am reusing the "background" decoration and changing its style. If I give the background rounded corners in my first rule, then the block selection will also have rounded corners. Alternatively, I could have created a new decoration with a new ID to indicate block selection.
 
 ## Show Inline Formatting
@@ -188,7 +188,7 @@ While these rules are simple, you can also add decorations to text runs, just li
 
 ## More on Decorations
 
-So far we've used decorations as simple backgrounds, but they can do more. They can be placed and sized. They can contain images, symbols, and text. Let's use decorations to style a task item with a checkbox.
+So far we've used decorations as simple backgrounds, but they can do more. They can be placed and sized. They can contain images, symbols, and text. Let's use decorations to show a checkbox.
 
 In `style/main.ts` start by adding this rule:
 
@@ -202,9 +202,9 @@ style.layer('row-formatting', (row, run, caret, viewport, include) => {
 })
 ```
 
-With that rule in place, when you create a task in your outline, it will have a red background. Decorations can be more than just colors; they can also show images using the contents property.
+With that rule in place, when you create a task in your outline, it will have a red background.
 
-In `style/main.ts`, modify the above rule to show an image:
+In `style/main.ts`, modify the above rule to show an image instead:
 
 ```typescript
 style.layer('row-formatting', (row, run, caret, viewport, include) => {
@@ -247,26 +247,11 @@ style.layer('row-formatting', (row, run, caret, viewport, include) => {
 
 Decorations have `x`, `y`, `width`, and `height` properties of type `LayoutValue`. You get layout values from the passed-in `layout` parameter. These are logical values that are resolved later in the layout process to position the decoration.
 
-In `style/main.ts`, add another rule for unchecked "done" tasks:
+In `style/main.ts`, add a new rule for unchecked "done" tasks:
 
 ```typescript
 style.layer('row-formatting', (row, run, caret, viewport, include) => {
-  row(`.@type = task`, (editor, row) => {
-    row.text.decoration('mark', (mark, layout) => {
-      let lineHeight = layout.firstLine.height;
-      mark.x = layout.leading.offset(-28 / 2);
-      mark.y = layout.firstLine.centerY;
-      mark.width = lineHeight;
-      mark.height = lineHeight;
-      mark.contents.gravity = 'center’;
-      mark.contents.image = Image.fromSymbol(
-        new SymbolConfiguration('square')
-          .withHierarchicalColor(Color.text())
-          .withFont(Font.systemBody())
-      )
-    })
-  })
-
+  ...
   row(`.@type = task and @done`, (editor, row) => {
     row.text.decoration('mark', (mark, layout) => {
       mark.contents.image = Image.fromSymbol(

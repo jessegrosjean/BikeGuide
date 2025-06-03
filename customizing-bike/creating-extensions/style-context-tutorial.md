@@ -2,10 +2,11 @@
 
 Use the style context to create or modify Bike outline styles.
 
-#### Summary
+#### Style Context Summary
 
 * [Style Context API](https://github.com/jessegrosjean/bike-extension-kit/tree/main/api/style).
 * Entry point `style/main.ts`
+* Fun custom styles, but complex!
 * Use to define custom stylesheets for Bike’s outline editor.
 * Import bike/style context API using `import { SYMBOL } from 'bike/style'`.
 
@@ -13,9 +14,11 @@ Use the style context to create or modify Bike outline styles.
 
 Styles are powerful, but also quite complex.
 
-This tutorial will give you a good idea of how outline styles work and what they can do. If you decide to create your own style, you should also closely examine the default outline style that's [included](https://github.com/jessegrosjean/bike-extension-kit/tree/main/src/!bike.bkext/style) in the Bike extension kit.
+This tutorial will show you how styles work and what they can do. If you decide to create your own style, you should also closely examine the default outline style that's [included](https://github.com/jessegrosjean/bike-extension-kit/tree/main/src/!bike.bkext/style) in the Bike extension kit.
 
-Each outline style is an ordered list of rules. Each rule is composed of an [outline path](../../using-bike-2/using-outline-paths.md) and a callback function. For each outline element that is styled, the following steps are performed:
+Each outline style is an ordered list of rules. Each rule is composed of a relative [outline path](../../using-bike-2/using-outline-paths.md) and a callback function. The callback function has two parameters, the editor state and a style object to modify.
+
+To style an outline element:
 
 1. A default style object is created.
 2. A list of the rules that match the element is created.

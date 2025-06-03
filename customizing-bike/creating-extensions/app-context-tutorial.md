@@ -30,14 +30,15 @@ function archiveDoneCommand(): boolean {
 
 In `app/main.ts`, associate that function with a Bike Command:
 
-<pre class="language-typescript"><code class="lang-typescript"><strong>export async function activate(context: AppExtensionContext) {
-</strong>  bike.commands.addCommands({
+```typescript
+export async function activate(context: AppExtensionContext) {
+  bike.commands.addCommands({
     commands: {
       "extension-name:archive-done": archiveDoneCommand,
     },
   });
 }
-</code></pre>
+```
 
 Save, and your updated extension should build and then install into Bike.
 

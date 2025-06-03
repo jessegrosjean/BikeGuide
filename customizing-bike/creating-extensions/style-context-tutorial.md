@@ -16,7 +16,7 @@ Styles are powerful, but also quite complex.
 
 This tutorial will show you how styles work and what they can do. If you decide to create your own style, you should also see the default outline style that's [included](https://github.com/jessegrosjean/bike-extension-kit/tree/main/src/!bike.bkext/style) in the Bike extension kit.
 
-Each outline style is an ordered list of rules. A rule is composed of a relative [outline path](../../using-bike-2/using-outline-paths.md) and a callback function. The callback function is passed the editor state and a style object to modify.
+Each outline style is an ordered list of rules, organized into layer groups. A rule is composed of a relative [outline path](../../using-bike-2/using-outline-paths.md) and a callback function. The callback function is passed the editor state and a style object to modify. The purpose of layer groups is to allow rules to be inserted into (or imported from) existing outline styles.
 
 To style an outline element:
 
@@ -25,7 +25,7 @@ To style an outline element:
 3. The style object is passed to each matching rule and may be modified.
 4. Through this process, the default style object is transformed into a specific style.
 
-The order that you define your rules is important. Each rule can read the current state of the style object when deciding what styles it will apply. Generally, you want generic style rules listed first and refinements listed later.
+The order that you define your rules is important, because each rule can read the current state of the style object when deciding what styles it will apply. Generally, you want generic style rules listed first and refinements listed later.
 
 The rule callbacks must be pure functions. Given the same editor state and style state, they must always generate the same end style state. They should only read values from the editor and style parameters when deciding what style state to set.
 

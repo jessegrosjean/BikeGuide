@@ -14,22 +14,22 @@ Use the style context to create or modify Bike outline styles.
 
 Styles are powerful, but also quite complex.
 
-This tutorial will show you how styles work and what they can do. If you decide to create your own style, you should also closely examine the default outline style that's [included](https://github.com/jessegrosjean/bike-extension-kit/tree/main/src/!bike.bkext/style) in the Bike extension kit.
+This tutorial will show you how styles work and what they can do. If you decide to create your own style, you should also see the default outline style that's [included](https://github.com/jessegrosjean/bike-extension-kit/tree/main/src/!bike.bkext/style) in the Bike extension kit.
 
-Each outline style is an ordered list of rules. Each rule is composed of a relative [outline path](../../using-bike-2/using-outline-paths.md) and a callback function. The callback function has two parameters, the editor state and a style object to modify.
+Each outline style is an ordered list of rules. A rule is composed of a relative [outline path](../../using-bike-2/using-outline-paths.md) and a callback function. The callback function is passed the editor state and a style object to modify.
 
 To style an outline element:
 
 1. A default style object is created.
 2. A list of the rules that match the element is created.
-3. The style object is passed into the callback function of each matching rule.
+3. The style object is passed to each matching rule and may be modified.
 4. Through this process, the default style object is transformed into a specific style.
 
-The order that you define your rules is important. Generally, you want generic style rules listed first and refinements listed later.
+The order that you define your rules is important. Each rule can read the current state of the style object when deciding what styles it will apply. Generally, you want generic style rules listed first and refinements listed later.
 
-The rule callbacks must be pure functions. Given the same editor state and style input values, they must always generate the same end style state. They should only read values from the editor and style parameters when deciding what style values to set.
+The rule callbacks must be pure functions. Given the same editor state and style state, they must always generate the same end style state. They should only read values from the editor and style parameters when deciding what style state to set.
 
-Styles are not inherited from parents as they are in CSS. Instead, you should create a generic rule that matches all elements and sets defaults there. Put this generic rule at the start of your theme and then follow it with more specific rules.
+Styles are not inherited from parents as they are in CSS. Instead, you should create a generic rule that matches all elements and sets defaults there. Put this generic rule in the base layer of your theme and then follow it with more specific rules.
 
 ## Setup
 

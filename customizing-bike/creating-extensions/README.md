@@ -2,6 +2,18 @@
 
 Extend and customize Bike with extensions. They introduce new commands, keybindings, views, styles, and more. Sensitive features are safeguarded by a permission system.
 
+## Documentation
+
+This section of the user guide is an overview and tutorial. If you don't want to follow through step by step, I have also made these screencasts which cover the same information.
+
+- [Setup & Build](https://vimeo.com/1089520938)
+- [Creating Extensions](https://vimeo.com/1089816472)
+- [App Context Extensions](https://vimeo.com/1089829088)
+- [DOM Context Extensions](https://vimeo.com/1089831661)
+- [Style Context Extensions](https://vimeo.com/1089520938)
+
+For the most updated and detailed API documentation see [bike-extension-kit/api](https://github.com/jessegrosjean/bike-extension-kit/api)
+
 ## Install Bike Extension Kit
 
 Use the [Bike Extension Kit](https://github.com/jessegrosjean/bike-extension-kit) to create and modify extensions.

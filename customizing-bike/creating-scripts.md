@@ -29,11 +29,11 @@ Use Bike's scripting dictionary to learn what parts of Bike are scriptable.
 
 Here's the official starting point for learning AppleScript:
 
-* [Introduction to AppleScript Language Guide](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR\_intro.html)
+* [Introduction to AppleScript Language Guide](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html)
 
 The starting point for lesser people, such as myself, is to find example scripts and then randomly change them until they do what you want. I've included some for you below. You can also find scripts in the Bike support form and ask scripting questions.
 
-* [ ](https://support.hogbaysoftware.com/c/bike/22)[Bike Support Forum – Extensions Wiki](https://support.hogbaysoftware.com/t/bike-extensions-wiki/4810)
+* [Bike Support Forum – Extensions Wiki](https://support.hogbaysoftware.com/t/bike-extensions-wiki/4810)
 
 ### Example scripts
 
@@ -111,9 +111,6 @@ tell application "Bike"
     
     -- Now just show "Hello World" and contained rows
     set focused row to row named "Hello World"
-    
-    -- Now just show rows contained by "Hello World"
-    set hoisted row to row named "Hello World"
   end tell
   
   -- Make another document
@@ -137,7 +134,7 @@ This script resets your view state to "Home"
 
 ```
 tell front document of application "Bike"
-  set hoisted row to root row
+  set focused row to root row
   if exists first row then
     select at first row
   end if

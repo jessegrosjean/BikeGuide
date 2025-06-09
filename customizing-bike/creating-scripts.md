@@ -192,20 +192,20 @@ end getOrMake
 
 #### Run app context script
 
-You can call from ApplesScript into Bike's extension API using `run extension script`.
+You can call from ApplesScript into Bike's app [context extension](creating-extensions/app-context-tutorial.md) API using `run extension script`.
 
-Why might you want to do this? Generaly, Bike's extension API is faster and more powerful then the AppleScript API. This lets you jump from AppleScript land, to Bike extension land, and then back again.
+Why might you want to do this? Generaly, Bike's app context extension API is faster and more powerful than the AppleScript API. This lets you jump from AppleScript land, to Bike extension land, and then back to AppleScript land again.
 
-If you want to do this you should first understand the [app context API](creating-extensions/app-context-tutorial.md) you want to call. The script you pass in needs to be plain Javascript, not the TypeScript used in most of the extension API documentation.
+Note: The script run function that you pass should be plain JavaScript, not the TypeScript code used in most of the extension API documentation.
 
-In this example were are:
+Here's a explanation of each step in the process:
 
-1. Calling run extension script command
-2. Passing in the string representation of a Javascript function named "run"
-3. Passing on some options, in this case the string "From Applescript"
+1. Call run extension script command
+2. Pass in the string representation of a Javascript function named "run"
+3. Pass in some options, in this case the string "From Applescript"
 4. Bike will then parse that Javascript function and install it in Bike's app extension context
 5. Bike will then call the `run` function, passing in the provided options (if any)
-6. The function will log the passed in options, use Window > Logs Explorer to see result
+6. The function will log the passed in options–use Window > Logs Explorer to see results
 7. The function also returns the string "From App Extension Context"
 8. And you should see that result printed in Script Editor.
 

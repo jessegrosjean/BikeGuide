@@ -2,6 +2,8 @@
 
 Create scripts to automate Bike and integrate with other apps. If you just want to run a script that someone else has written please see the [Using Scripts](../using-bike/using-scripts.md) section.
 
+Also consider using Bike's more powerful [extension context](creating-extensions/).
+
 ### Overview
 
 When scripting Bike you are dealing with `documents`, `windows`, and `rows`. Documents and windows are common scripting objects with a few Bike extensions–rows are specific to Bike.

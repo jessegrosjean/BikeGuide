@@ -85,12 +85,14 @@ style.layer('base', (row, run, caret, viewport, include) => {
     row.decoration('background', (background, layout) => {
       background.border.width = 1
       background.border.color = Color.systemBlue()
+      background.zPosition = -1
     })
 
     row.text.padding = new Insets(5, 5, 5, 5)
     row.text.decoration('background', (background, layout) => {
       background.border.width = 1
       background.border.color = Color.systemGreen()
+      background.zPosition = -2
     })
   })
 })

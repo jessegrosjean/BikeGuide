@@ -22,7 +22,7 @@ Let's modify the extension that you just created in [Creating Extensions](./) to
 In `app/main.ts`, add a function to implement the command:
 
 ```typescript
-function archiveDoneCommand(): boolean {
+function archiveDoneCommand(context: CommandContext): boolean {
   console.log("Archive Done!");
   return true;
 }
@@ -79,9 +79,9 @@ import { AppExtensionContext, Row } from 'bike/app'
 
 ...
 
-function archiveDoneCommand(): boolean {
+function archiveDoneCommand(context: CommandContext): boolean {
   // Get frontmost editor
-  let editor = bike.frontmostOutlineEditor
+  let editor = context.editor
   if (!editor) return false
 
   // Get the outline, done rows, and archive row

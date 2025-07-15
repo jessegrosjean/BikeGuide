@@ -46,7 +46,7 @@ export async function activate(context: DOMExtensionContext) {
 Modify archive done in `app/main.ts` to show the sheet:
 
 ```typescript
-function archiveDoneCommand(): boolean {
+function archiveDoneCommand(context: CommandContext): boolean {
   ...
 
   bike.frontmostWindow?.presentSheet('archive-done-sheet.js').then((handle) => {

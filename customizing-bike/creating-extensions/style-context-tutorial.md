@@ -1,6 +1,6 @@
 # Style Context Tutorial
 
-Use the style context to create or modify Bike outline styles.
+Use the style context to create or modify Bike editor styles.
 
 #### Style Context Summary
 
@@ -10,13 +10,13 @@ Use the style context to create or modify Bike outline styles.
 * Use to define custom stylesheets for Bike’s outline editor.
 * Import bike/style context API using `import { SYMBOL } from 'bike/style'`.
 
-## Outline Styles Overview
+## Editor Styles Overview
 
 Styles are powerful, but also quite complex.
 
-This tutorial will show you how styles work and what they can do. If you decide to create your own style, you should also see the default outline style that's [included](https://github.com/jessegrosjean/bike-extension-kit/tree/main/src/!bike.bkext/style) in the Bike extension kit.
+This tutorial will show you how styles work and what they can do. If you decide to create your own style, you should also see the default editor style that's [included](https://github.com/jessegrosjean/bike-extension-kit/tree/main/src/!bike.bkext/style) in the Bike extension kit.
 
-Each outline style is an ordered list of rules, organized into layer groups. A rule is composed of a relative [outline path](../../using-bike/using-outline-paths.md) and a callback function. The callback function is passed the editor state and a style object to modify. The purpose of layer groups is to allow rules to be inserted into (or included from) existing outline styles.
+Each editor style is an ordered list of rules, organized into layer groups. A rule is composed of a relative [outline path](../../using-bike/using-outline-paths.md) and a callback function. The callback function is passed the editor state and a style object to modify. The purpose of layer groups is to allow rules to be inserted into (or included from) existing editor styles.
 
 To style an outline element:
 
@@ -35,28 +35,28 @@ Styles are not inherited from parents as they are in CSS. Instead, you should cr
 
 Tutorial assumes that you have run the `npm run watch` command. Your extension should automatically build and install when you save changes.
 
-## Create Outline Style
+## Create Editor Style
 
-We will start by creating an empty outline style in `style/main.ts`:
+We will start by creating an empty editor style in `style/main.ts`:
 
 ```typescript
-import { defineOutlineStyle } from 'bike/style'
+import { defineEditorStyle } from 'bike/style'
 
-let style = defineOutlineStyle('tutorial', 'Tutorial')
+let style = defineEditorStyle('tutorial', 'Tutorial')
 ```
 
 Save and then select your style: Bike > Window > Style Sheets > Tutorial.
 
-Notice that your outline editor now shows no indentation or formatting. It also doesn't show selection, etc. Outline styles are responsible for defining the visual state of the outline editor, and this style has no rules.
+Notice that your outline editor now shows no indentation or formatting. It also doesn't show selection, etc. Editor styles are responsible for defining the visual state of the outline editor, and this style has no rules.
 
 ## Define Outline Structure
 
 In `style/main.ts` show outline structure:
 
 ```typescript
-import { defineOutlineStyle, Insets } from 'bike/style'
+import { defineEditorStyle, Insets } from 'bike/style'
 
-let style = defineOutlineStyle('tutorial', 'Tutorial')
+let style = defineEditorStyle('tutorial', 'Tutorial')
 
 style.layer('base', (row, run, caret, viewport, include) => {
   row(`.*`, (editor, row) => {
@@ -67,16 +67,16 @@ style.layer('base', (row, run, caret, viewport, include) => {
 
 Save, and you should see your outline structure again.
 
-Note that when adding rules we always add them to a layer. This helps to organize them, and makes it possible to modify and include existing styles. Layers are ordered by when they are first used. Now in our outline style the rules in the `base` layer will now always be processed first, since that's the first layer that we have used.
+Note that when adding rules we always add them to a layer. This helps to organize them, and makes it possible to modify and include existing styles. Layers are ordered by when they are first used. Now in our editor style the rules in the `base` layer will now always be processed first, since that's the first layer that we have used.
 
 ## Define Outline Structure (More)
 
 Replace `style/main.ts` to see the structure more clearly:
 
 ```typescript
-import { defineOutlineStyle, Insets, Color } from 'bike/style'
+import { defineEditorStyle, Insets, Color } from 'bike/style'
 
-let style = defineOutlineStyle('tutorial', 'Tutorial')
+let style = defineEditorStyle('tutorial', 'Tutorial')
 
 style.layer('base', (row, run, caret, viewport, include) => {
   row(`.*`, (editor, row) => {
@@ -285,22 +285,22 @@ row.text.lineHeightMultiple = editor.theme.lineHeightMultiple
 
 The editor's theme contains user prefered values. Now when you View > Text Size > Zoom In/Out, the text in your editor. In addition to theme, the editor also includes settings and system state such as `isKey` or `isTyping`.
 
-## Building Complex Outline Styles
+## Building Complex Editor Styles
 
-Creating a full style that supports all of Bike's features is quite complex. Here are some ways to offload that work with existing outline styles, such as the default style that ships with Bike:
+Creating a full style that supports all of Bike's features is quite complex. Here are some ways to offload that work with existing editor styles, such as the default style that ships with Bike:
 
 ### Add Rules
 
-It may be that you don't need to create a whole new style; maybe you just want to add a few rules to an existing style(s). You can do this using the `defineOutlineStyleModifier` API. This allows you to insert rules into specific layers of existing outline styles.
+It may be that you don't need to create a whole new style; maybe you just want to add a few rules to an existing style(s). You can do this using the `defineEditorStyleModifier` API. This allows you to insert rules into specific layers of existing editor styles.
 
 ### Include Rules
 
-It may be that you do want to create a whole new style, but you want to include rules into that style from other outline styles. For example, maybe you want to include the "run-formatting" rules from the standard style.
+It may be that you do want to create a whole new style, but you want to include rules into that style from other editor styles. For example, maybe you want to include the "run-formatting" rules from the standard style.
 
 You can include rules from other styles like this:
 
 ```typescript
-let style = defineOutlineStyle('tutorial', 'Tutorial')
+let style = defineEditorStyle('tutorial', 'Tutorial')
 style.layer('row-formatting', (row, run, caret, viewport, include) => {
   include('bike', 'run-formatting')
 })

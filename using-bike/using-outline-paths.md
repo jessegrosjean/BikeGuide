@@ -21,7 +21,7 @@ If you already know what [XPath](https://developer.mozilla.org/en-US/docs/Web/XP
 Outline paths don't do much on their own, but they are an important building block for other features. Here are some places where they are being used today:
 
 1. Search UI uses outline paths to filter your outline
-2. Outline styles use relative outline paths to select which rules apply
+2. Editor styles use relative outline paths to select which rules apply
 3. (Not yet ported to Bike 2) AppleScript dictionary's `query` command takes an outline path and returns the path result.
 4. (Not yet ported to Bike 2) Shortcuts "Query Rows" action takes an outline path and returns matching rows.
 5. Choice Palette settings use an outline path to specify the initial set of rows to be displayed in the choice palette before filtering is performed.

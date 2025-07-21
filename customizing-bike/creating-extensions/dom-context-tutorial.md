@@ -70,4 +70,4 @@ Bike bundles and loads a single copy of React into each web view. The extension 
 
 ## Next Steps
 
-Follow the [Style Context Tutorial](style-context-tutorial.md) to create your own outline styles.
+Follow the [Style Context Tutorial](style-context-tutorial.md) to create your own editor styles.

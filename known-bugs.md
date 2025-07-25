@@ -1,6 +1,6 @@
 # Known Bugs
 
-Bike 2 is in early preview stage.
+Bike 2 is in middle preview stage. Lots done, still quite a bit to go.
 
 Watch out for:
 

@@ -17,4 +17,5 @@ Requests:
 * TaskPaper style full filter removal of search results–Status: Not sure
 * TaskPaper style tags–Status: Likely in point release after 2.0
 * New row with child/outdent–Status: Some implemented, but need to review and document
-
+    * Also a crash when opt-Return in row with spaces
+* Filter view: Highlight matching text

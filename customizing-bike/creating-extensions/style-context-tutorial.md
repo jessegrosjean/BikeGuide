@@ -59,7 +59,7 @@ import { defineEditorStyle, Insets } from 'bike/style'
 let style = defineEditorStyle('tutorial', 'Tutorial')
 
 style.layer('base', (row, run, caret, viewport, include) => {
-  row(`.*`, (editor, row) => {
+  row(`.*`, (context, row) => {
     row.padding = new Insets(10, 10, 10, 28)
   })
 })
@@ -79,7 +79,7 @@ import { defineEditorStyle, Insets, Color } from 'bike/style'
 let style = defineEditorStyle('tutorial', 'Tutorial')
 
 style.layer('base', (row, run, caret, viewport, include) => {
-  row(`.*`, (editor, row) => {
+  row(`.*`, (context, row) => {
     row.padding = new Insets(10, 10, 10, 28)
 
     row.decoration('background', (background, layout) => {
@@ -110,7 +110,7 @@ In `style/main.ts`, add a selection rule:
 
 ```typescript
 style.layer('selection', (row, run, caret, viewport, include) => {
-  run(`.@view-selected-range`, (editor, run) => {
+  run(`.@view-selected-range`, (context, run) => {
     run.backgroundColor = Color.textBackgroundSelected()
   })
 })
@@ -132,7 +132,7 @@ In `style/main.ts`, replace the selection layer with:
 
 ```typescript
 style.layer('selection', (row, run, caret, viewport, include) => {
-  run(`.@view-selected-range`, (editor, run) => {
+  run(`.@view-selected-range`, (context, run) => {
     run.decoration('selection', (selection, layout) => {
       selection.zPosition = -1
       selection.color = Color.textBackgroundSelected().withAlpha(0.5)
@@ -149,14 +149,14 @@ In `style/main.ts`, replace the selection layer to also show block selections:
 
 ```typescript
 style.layer('selection', (row, run, caret, viewport, include) => {
-  run(`.@view-selected-range`, (editor, run) => {
+  run(`.@view-selected-range`, (context, run) => {
     run.decoration('selection', (selection, layout) => {
       selection.zPosition = -1
       selection.color = Color.textBackgroundSelected().withAlpha(0.5)
     })
   })
   
-  row(`.selection() = block`, (editor, row) => {
+  row(`.selection() = block`, (context, row) => {
     row.text.color = Color.white()
     row.text.decoration('background', (background, layout) => {
       background.color = Color.selectedContentBackground()
@@ -177,11 +177,11 @@ In `style/main.ts`, add support for bold and italic text:
 
 ```typescript
 style.layer(`run-formatting`, (row, run, caret, viewport, include) => {
-  run('.@emphasized', (editor, text) => {
+  run('.@emphasized', (context, text) => {
     text.font = text.font.withItalics()
   })
   
-  run(`.@strong`, (editor, text) => {
+  run(`.@strong`, (context, text) => {
     text.font = text.font.withBold()
   })
 })
@@ -197,7 +197,7 @@ In `style/main.ts` start by adding this rule:
 
 ```typescript
 style.layer('row-formatting', (row, run, caret, viewport, include) => {
-  row(`.@type = task`, (editor, row) => {
+  row(`.@type = task`, (context, row) => {
     row.text.decoration('mark', (mark, layout) => {
       mark.color = Color.systemRed()
     })
@@ -211,7 +211,7 @@ In `style/main.ts`, modify the above rule to show an image instead:
 
 ```typescript
 style.layer('row-formatting', (row, run, caret, viewport, include) => {
-  row(`.@type = task`, (editor, row) => {
+  row(`.@type = task`, (context, row) => {
     row.text.decoration('mark', (mark, layout) => {
       mark.contents.gravity = 'center'
       mark.contents.image = Image.fromSymbol(
@@ -230,7 +230,7 @@ In `style/main.ts`, position the checkbox in a better location:
 
 ```typescript
 style.layer('row-formatting', (row, run, caret, viewport, include) => {
-  row(`.@type = task`, (editor, row) => {
+  row(`.@type = task`, (context, row) => {
     row.text.decoration('mark', (mark, layout) => {
       let lineHeight = layout.firstLine.height;
       mark.commandName = 'bike:toggle-done'
@@ -258,7 +258,7 @@ In `style/main.ts`, add a new rule for "done" tasks that shows a checkmark:
 ```typescript
 style.layer('row-formatting', (row, run, caret, viewport, include) => {
   ...
-  row(`.@type = task and @done`, (editor, row) => {
+  row(`.@type = task and @done`, (context, row) => {
     row.text.decoration('mark', (mark, layout) => {
       mark.contents.image = Image.fromSymbol(
         new SymbolConfiguration('checkmark.square')
@@ -272,18 +272,18 @@ style.layer('row-formatting', (row, run, caret, viewport, include) => {
 
 Note that in this rule we don't need to redo all the mark positioning work. This is because we are using the same 'mark' decoration layer. It is already positioned correctly. We only need to change the image content to show the check.
 
-## Editor
+## Context
 
-Each rule callback takes two parameters—editor and style object. So far, we've just been modifying the style object. We can also read from values from the editor that we can use in our style rules.
+Each rule callback takes two parameters—context and style object. So far, we've just been modifying the style object. We can also read from values from the context that we can use in our style rules.
 
 For example, you might add these lines to the first match-all `.*` rule:
 
 ```typescript
 row.text.font = editor.theme.font
-row.text.lineHeightMultiple = editor.theme.lineHeightMultiple
+row.text.lineHeightMultiple = context.theme.lineHeightMultiple
 ```
 
-The editor's theme contains user prefered values. Now when you View > Text Size > Zoom In/Out, the text in your editor. In addition to theme, the editor also includes settings and system state such as `isKey` or `isTyping`.
+The context's theme contains user preferred values. Now when you View > Text Size > Zoom In/Out, the text in your editor changes size. In addition to theme, the context also includes settings and editor state such as `isKey` or `isTyping`.
 
 ## Building Complex Editor Styles
 

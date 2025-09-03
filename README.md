@@ -1,5 +1,5 @@
 # Bike 2 (Preview)
 
-Bike 2 is in early preview stage.
+Bike 2 is in preview stage.
 
-Many things [do not work](known-bugs.md), it's not usable for day to day outlining. It is progressing and does have some interesting features to try.
+Some things [do not work](known-bugs.md). I do think that it's usable and stable for day to day outlining if you can live without the missing/in progress features.

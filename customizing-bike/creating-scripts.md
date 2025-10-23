@@ -217,10 +217,6 @@ end tell
 tell application "Bike"
 	evaluate input "hello" script "(input) => { return input + \" world\" }"
 end tell
-
-tell application "Bike"
-  run extension script "function run(options) { console.log(options); return \"From App Extension Context\" }" options "From AppleScript
-end tell
 ```
 
 Apple's script editor also allows Javascript syntax, which looks like this:
@@ -230,3 +226,4 @@ Application("Bike").evaluate({ script: "bike.version" })
 
 Application("Bike").evaluate({ input: "hello", script: "(input) => { return input + \" world\" }" })
 ```
+

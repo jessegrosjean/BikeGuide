@@ -12,6 +12,7 @@
   * [Using Outline Filtering](using-bike/using-outline-filtering.md)
 * [Customizing Bike](customizing-bike/README.md)
   * [Creating Scripts](customizing-bike/creating-scripts.md)
+  * [Creating Themes](customizing-bike/creating-themes.md)
   * [Creating Shortcuts](customizing-bike/creating-shortcuts.md)
   * [Creating Extensions](customizing-bike/creating-extensions/README.md)
     * [App Context Tutorial](customizing-bike/creating-extensions/app-context-tutorial.md)

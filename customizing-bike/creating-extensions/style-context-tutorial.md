@@ -159,7 +159,7 @@ style.layer('selection', (row, run, caret, viewport, include) => {
   row(`.selection() = block`, (context, row) => {
     row.text.color = Color.white()
     row.text.decoration('background', (background, layout) => {
-      background.color = Color.selectedContentBackground()
+      background.color = Color.contentBackgroundSelected()
       background.border.color = Color.systemRed()
     })
   })

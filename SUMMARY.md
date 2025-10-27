@@ -6,6 +6,7 @@
   * [Using Selection](using-bike/using-selection.md)
   * [Using Scripts](using-bike/using-scripts.md)
   * [Using Shortcuts](using-bike/using-shortcuts.md)
+  * [Using Themes](using-bike/using-themes.md)
   * [Using Extensions](using-bike/using-extensions.md)
   * [Using Outline Paths](using-bike/using-outline-paths.md)
   * [Using Outline Filtering](using-bike/using-outline-filtering.md)

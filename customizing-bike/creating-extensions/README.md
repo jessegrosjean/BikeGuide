@@ -62,7 +62,7 @@ Each subfolder corresponds to a different context where the extension code can r
 
 The app context and DOM context can communicate using the `postMessage` and `onmessage` methods. The common pattern involves performing work in the app context, such as querying the outline or making network requests, and then sending the results to the DOM context for display.
 
-There is also a `theme` folder. Themes are configuration files used by the style context. Any themes included with an extension will show up in Bike's themes menus when the extension in installed. Themes can also be installed in Bike independent of an extension.
+There is also a `theme` folder. Themes are configuration files used by the style context. Any themes included with an extension will show up in Bike's themes menus when the extension is installed. Themes can also be installed in Bike independent of an extension.
 
 ## Create Your First Extension
 

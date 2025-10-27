@@ -30,6 +30,9 @@ extension.bkext
 │   └── view2.ts
 ├── style (optional)
 │   └── main.ts
+├── theme (optional)
+│   ├── theme1.bktheme
+│   └── theme2.bktheme
 ```
 
 Each extension has a `manifest.json` file which contains the name, permissions, and other metadata. Properties are documented in the extension kit; schemas/manifest.schema.json.
@@ -58,6 +61,8 @@ Each subfolder corresponds to a different context where the extension code can r
 * Import style context API using `import { SYMBOL } from 'bike/style'`.
 
 The app context and DOM context can communicate using the `postMessage` and `onmessage` methods. The common pattern involves performing work in the app context, such as querying the outline or making network requests, and then sending the results to the DOM context for display.
+
+There is also a `theme` folder. Themes are configuration files used by the style context. Any themes included with an extension will show up in Bike's themes menus when the extension in installed. Themes can also be installed in Bike independent of an extension.
 
 ## Create Your First Extension
 

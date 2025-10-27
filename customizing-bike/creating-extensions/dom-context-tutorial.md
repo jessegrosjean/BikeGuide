@@ -16,7 +16,7 @@ Currently, you can present a custom sheet over a window or add custom views to t
 
 ## Setup
 
-Turitoral assumes that you have run the `npm run watch` command. Your extension should automatically build and install when you save changes.
+Turitoral assumes that you have completed the [App Context Tutorial](app-context-tutorial.md) and run the `npm run watch` command. Your extension should automatically build and install when you save changes.
 
 ## Create "Archive Done" Sheet
 

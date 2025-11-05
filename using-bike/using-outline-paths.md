@@ -369,15 +369,18 @@ These functions all provide access to editor state. They are only available when
 *   collapsed() -> boolean
 
     True if row is collapsed
-*   search-match() -> boolean
+*   filter-match() -> boolean
 
     True if row is matched
-*   search-match-ancestor() -> boolean
+*   filter-match-ancestor() -> boolean
 
     True if row is ancestor of matched row
 *   selection() -> caret|range|block|null
 
     Returns row selection type
+*   selection-ancestor() -> caret|range|block|null
+
+    If row is ancestor of selected row, return that row's selection type
 
 </details>
 

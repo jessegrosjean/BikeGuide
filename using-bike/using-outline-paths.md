@@ -380,7 +380,13 @@ These functions all provide access to editor state. They are only available when
     Returns row selection type
 *   selection-ancestor() -> caret|range|block|null
 
-    If row is ancestor of selected row, return that row's selection type
+    Selection type if this row is ancestor of a selected row
+*   selection-descendant() -> caret|range|block|null
+
+    Selection type if this row is descendant of selected row
+*   drop-indicator() -> on|above|below|null
+
+    Drop indicator state for this row
 
 </details>
 

@@ -1,6 +1,6 @@
 # Known Bugs
 
-Bike 2 is in middle preview stage. Lots done, still quite a bit to go.
+Bike 2 is in getting closer to release...
 
 Watch out for:
 
@@ -13,4 +13,3 @@ Requests:
 * TaskPaper style tags–Status: Likely in point release after 2.0
 * New row with child/outdent–Status: Some implemented, but need to review and document
   * Also a crash when opt-Return in row with spaces
-* Filter view: Highlight matching text

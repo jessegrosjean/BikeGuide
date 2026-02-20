@@ -6,6 +6,8 @@ Customize Bike's keybindings through the Keybindings settings panel.
 
 Open **Settings > Keybindings** to view all commands and their current keybindings. Select a command and press Return (or double-click the keybinding cell) to edit it. Press Delete to clear a custom keybinding. User-customized bindings are highlighted in accent color.
 
+Use the mode picker at the top to switch between **Text Mode** and **Block Mode**. Each mode has its own set of keybindings. Text mode is active when the selection is a caret or text range. Block mode is active when entire rows are selected. The same command can have different keybindings in each mode.
+
 ### Key Sequence Format
 
 A key sequence is one or more keys separated by spaces. Each key is a combination of modifiers and a key name joined by hyphens. The format is case-insensitive.

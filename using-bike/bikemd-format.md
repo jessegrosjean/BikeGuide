@@ -2,11 +2,9 @@
 
 Bike Markdown (`.bikemd`) is Bike's text-based file format. It's a subset of standard markdown — open a `.bikemd` file in any markdown viewer and it will render reasonably well.
 
-Because it's plain text, `.bikemd` works well with version control systems like Git and other text-based tools, while still supporting all Bike features.
-
 ### Markdown Subset
 
-Bike Markdown uses standard markdown unordered lists to encode outline hierarchy. Each row is a list item (`- `), and tab indentation creates nesting:
+Bike Markdown uses standard markdown unordered lists to encode outline hierarchy. Each row is a list item (`- `), and indentation creates nesting:
 
 ```
 - Parent
@@ -49,7 +47,7 @@ Inline formatting uses standard markdown syntax:
 
 ### Pandoc Attributes
 
-Standard markdown has no way to attach metadata to rows or text spans. Bike rows and text can carry attributes — persistent IDs, classes, timestamps, custom data — that need to be preserved in the file.
+Standard markdown has no way to attach metadata to rows or text spans. Bike rows and text _can_ carry attributes — persistent IDs, classes, timestamps, custom data — that need to be preserved in the file.
 
 Bike Markdown uses [Pandoc's attribute syntax](https://pandoc.org/MANUAL.html#heading-identifiers) to fill this gap. Attributes are written in curly braces and support IDs, classes, and key-value pairs:
 
@@ -57,12 +55,20 @@ Bike Markdown uses [Pandoc's attribute syntax](https://pandoc.org/MANUAL.html#he
 {#identifier .class key="value"}
 ```
 
+Pandoc attributes are only written when a row or span actually uses features that require them. Plain rows with standard formatting won't have any attribute blocks in the output.
+
 **Row attributes** appear at the end of a row:
 
 ```
-- Important item {id="abc123" created="2024-01-15"}
-- A note {type="note"}
+- A note {type=note}
 - Styled row {.highlight}
+```
+
+**Row IDs** are encoded in the markdown only when they are referenced by a link within the document, or when the ID appears to have been set explicitly (i.e. it doesn't look auto-generated). Auto-generated IDs are omitted to keep the file clean:
+
+```
+- # Section {#intro}
+- See the [intro section](#intro)
 ```
 
 **Inline attributes** use Pandoc's bracketed span syntax `[text]{attrs}` for formatting that has no standard markdown equivalent. For example, highlighted text:

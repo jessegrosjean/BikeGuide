@@ -10,6 +10,7 @@
   - [Using Extensions](using-bike/using-extensions.md)
   - [Using Outline Paths](using-bike/using-outline-paths.md)
   - [Using Outline Filtering](using-bike/using-outline-filtering.md)
+  - [Bike Markdown Format](using-bike/bikemd-format.md)
 - [Customizing Bike](customizing-bike/README.md)
   - [Creating Scripts](customizing-bike/creating-scripts.md)
   - [Creating Themes](customizing-bike/creating-themes.md)

@@ -18,7 +18,7 @@ The easiest way to use row types is through Bike's new "smart row types" feature
 | 1.                     | Ordered List    |
 | -, \*, +               | Unordered List  |
 
-The shortcut text is replaced and the row type is set. Row types are supported in both `.bike` and `.opml` outlines. If smart row types are not working, make sure you have checked Settings > Autocorrect > Use smart row types.
+The shortcut text is replaced and the row type is set. Row types are supported in `.bike`, `.bikemd`, and `.opml` outlines. If smart row types are not working, make sure you have checked Settings > Autocorrect > Use smart row types.
 
 #### Use the Formatting Popover
 

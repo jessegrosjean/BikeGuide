@@ -4,7 +4,6 @@ Bike 2 is in getting closer to release...
 
 Watch out for:
 
-* Missing status bar
 * When viewing on external monitor via HDMI the text starts very small and as you type it expands to normal size. (it seems to be applying the tiny filter size first)
 
 Requests:

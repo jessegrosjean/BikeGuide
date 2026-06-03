@@ -304,12 +304,12 @@ Outline path functions serve a variety of purposes:
 
 These functions provide easy and efficient access to outline structure.
 
-In some cases you might accomplish similar results with more complex outline path queries. For example instead of using `depth()` you could use `count(.ancestor::*)`, but you should expect `depth()` to have better performance.&#x20;
+In some cases you might accomplish similar results with more complex outline path queries. For example instead of using `level()` you could use `count(.ancestor::*)`, but you should expect `level()` to have better performance.&#x20;
 
 *   parent() -> boolean
 
     True if has children
-*   depth() -> number
+*   level() -> number
 
     Number of steps to root
 *   leaf() -> boolean
